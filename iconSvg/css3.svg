@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="63px" height="63px" viewBox="0 0 63 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>CSS3 Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="109.90767%" y1="-14.4673295%" x2="36.3494318%" y2="72.2798295%" id="linearGradient-1">
+            <stop stop-color="#FAD961" offset="0%"></stop>
+            <stop stop-color="#F76B1C" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="55" height="55" rx="7"></rect>
+        <filter x="-11.8%" y="-8.2%" width="127.3%" height="127.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="1" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <text id="text-4" font-family="AvenirNext-Regular, Avenir Next" font-size="14" font-weight="normal" letter-spacing="1.166667" fill="#FFFFFF">
+            <tspan x="8.170666" y="31">CSS3</tspan>
+        </text>
+        <filter x="-2.6%" y="-5.3%" width="107.7%" height="121.1%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="1" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Desktop-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-267.000000, -2399.000000)">
+            <g id="Experience" transform="translate(0.000000, 2046.000000)">
+                <g id="Tech-Skill" transform="translate(165.000000, 187.000000)">
+                    <g id="Tech-Icons" transform="translate(30.000000, 87.000000)">
+                        <g id="CSS3-Icon" transform="translate(75.000000, 80.000000)">
+                            <g>
+                                <g id="Rectangle-3">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                </g>
+                                <g id="HTML5" fill="#FFFFFF" fill-opacity="1">
+                                    <use filter="url(#filter-5)" xlink:href="#text-4"></use>
+                                    <use xlink:href="#text-4"></use>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

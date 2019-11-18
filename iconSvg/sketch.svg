@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="63px" height="63px" viewBox="0 0 63 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>SketchApp Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="123.245739%" y1="-20.9517045%" x2="14.8671875%" y2="87.1015625%" id="linearGradient-1">
+            <stop stop-color="#E0E125" offset="0%"></stop>
+            <stop stop-color="#976800" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="55" height="55" rx="7"></rect>
+        <filter x="-11.8%" y="-8.2%" width="127.3%" height="127.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="1" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <text id="text-4" font-family="AvenirNext-Regular, Avenir Next" font-size="14" font-weight="normal" letter-spacing="1.166667" fill="#FFFFFF">
+            <tspan x="2.803999" y="31">Sketch</tspan>
+        </text>
+        <filter x="-2.0%" y="-5.3%" width="106.0%" height="121.1%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="1" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Desktop-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-417.000000, -2319.000000)">
+            <g id="Experience" transform="translate(0.000000, 2046.000000)">
+                <g id="Tech-Skill" transform="translate(165.000000, 187.000000)">
+                    <g id="Tech-Icons" transform="translate(30.000000, 87.000000)">
+                        <g id="SketchApp-Icon" transform="translate(225.000000, 0.000000)">
+                            <g>
+                                <g id="Rectangle-3">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                </g>
+                                <g id="HTML5" fill="#FFFFFF" fill-opacity="1">
+                                    <use filter="url(#filter-5)" xlink:href="#text-4"></use>
+                                    <use xlink:href="#text-4"></use>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

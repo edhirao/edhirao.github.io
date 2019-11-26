@@ -77,13 +77,7 @@
 
 		
 
-			.darklogo {
-				background: url('darklogo.png') no-repeat; 
-				width: 150px;
-				height: 150px;
-				margin-left: 5px;
-				
-			}
+			
 
 			.lightlogo{
 				background: url('ehlogo.png') no-repeat; 
@@ -91,12 +85,19 @@
 				height: 150px;
 				margin-left: 5px;
 			}
+			#logo.dark {
+				background: url('darklogo.png') no-repeat; 
+				width: 150px;
+				height: 150px;
+				margin-left: 5px;
+				
+			}
 
 	</style>
 <body>
 	
 	<main id="main">
-		<a class="navbar-brand" href="#"><div class='lightlogo'></div></a>
+		<a class="navbar-brand" href="#"><div id="logo" class='lightlogo dark'></div></a>
 		<p> Click to toggle dark mode </p>
 		<label class="switch">
 		<input type="checkbox" onclick="darkLight()" id="checkBox" >
@@ -110,13 +111,11 @@
 	var logo = $('#logo');
 
 	function darkLight() {
-   if (localStorage.toggled != 'dark') {
+   if (localStorage.toggled !== 'dark') {
       $('#main, p, #logo').toggleClass('dark', true);
-	  logo.attr('src', 'darklogo.png');
       localStorage.toggled = "dark";
    } else {
       $('#main, p, #logo').toggleClass('dark', false);
-	  logo.attr('src', 'ehlogo.png');
       localStorage.toggled = "";
    }
 }

@@ -4,189 +4,377 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>Eduardo Hirao</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700|Playfair+Display:400,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,600&display=swap" rel="stylesheet">
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-	<script src="parallax.min.js"></script>
+	<script src="parallaxTest.js"></script>
 	<script src="jquery.magnific-popup.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="magnific-popup.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
-<body  data-spy="scroll" data-target=".navbar" data-offset="50" class="light-theme" id="themeWrapper">
+<body  data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<!-------------------------------------------------- Nav Bar Starts--------------------------------------------------------->
-	<!--c-menu / t-menu -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" >
-		
-		<a class="navbar-brand" href="#"><img src="ehlogo.png" alt="logo" id="logo"></a>
+<!-------------------------------------------------- NAV BAR STARTS --------------------------------------------------------->
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+		<a class="navbar-brand" href="#home"><img src="ehlogo.png" alt="logo" id="logo"></a>
   		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     		<span class="navbar-toggler-icon"></span>
   		</button>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<section class="collapse navbar-collapse" id="navbarSupportedContent">
     		<ul class="navbar-nav mx-auto">
-				<li class="nav-item text-right">
-					<a class="nav-link" href="work.html">Work</a>
-				</li>
+      			<li class="nav-item text-right">
+        			<a class="nav-link" href="#work">Projects</a>
+      			</li>
       			<li class="nav-item text-right">
         			<a class="nav-link" href="#about">About</a>
       			</li>
       			<li class="nav-item text-right">
-        			<a class="nav-link" href="#portfolio">Resume</a>
+        			<a class="nav-link" href="#resume">Resume</a>
       			</li>
       			<li class="nav-item text-right">
         			<a class="nav-link" href="#contact">Contact</a>
       			</li>
-			</ul>
-			
-			<!-- <button class="o-menu__item / t-menu__item / dark_light_mode_toggle">change</button> -->
-  			<div class="progress-container">
+    		</ul>
+		</section>    	
+		<section class="progress-container">
     			<div class="progress-bar" id="myBar"></div>
-  			</div> 
-		</div>    		
+		</section> 	
 	</nav>
 
-<!-------------------------------------------------- Nav Bar Ends --------------------------------------------------------->
-
-<!---------------------------------------------- Hero Section Starts ------------------------------------------------------>
-<main id="main">
-	<div class="rellax" id="herobg">	
-	<!-- <div class="parallax" id="herobg" data-parallax="scroll" data-z-index="1" data-image-src="parallaxBG/japanlight.jpg"> -->
-		<div id="home">	
-			<div class="container flex">
-					<img src="ehlogo.png" id="whitelogo">
-					<h1 class="name">Eduardo<br>Yuki</br><br>Hirao</br></h1>
-					<h2 class="unicorn">Product/UX Designer<br>base in michigan</h2>
-			</div>
-		</div>
-
-		
-	</div>
-	<div class="rellax snow" data-rellax-speed="3"></div>
-	<div class="fog" data-rellax-speed="10"></div>
-	<div class="crane" data-rellax-speed="10"></div>
+<!---------------------------------------------- HERO SECTION STARTS  ------------------------------------------------------>
+<main>
+	<div class="rellax " data-rellax-speed="1" id="lighthero"></div>
+	<div class="rellax snow" data-rellax-speed="6"></div>	
+	<div class="rellax fog" data-rellax-speed="4"></div>
+	<section id="home">	
+		<section class="container flex">
+			<section class="col-lg-12">
+				<img src="ehlogo.png" class="rellax herolightlogo" data-rellax-speed="10">
+				<h1 class="lightTheme name rellax" data-rellax-speed="8">Eduardo <br>Yuki <br>Hirao</h1>
+				<h2 class="lightTheme uxdesign rellax" data-rellax-speed="6">Product/UX Designer <br>Based in Michigan</h2>
+			</section>
+		</section>
+	</section>	
 	<div class="whitespace"></div>
 
-<!------------------------------------------------ Hero Section Ends ------------------------------------------------------>
-<div class="rellax">
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-		Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-		in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-		anim id est laborum.</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-			in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-			anim id est laborum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-					in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-					anim id est laborum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-						in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-						anim id est laborum.</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-		Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-		in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-		anim id est laborum.</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-			in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-			anim id est laborum.</p>
-</div>
-<label class="switch">
-		<input type="checkbox" onclick="darkLight()" id="checkBox" >
-		<span class="slider"></span>
-	</label>
+<!----------------------------------------------- WORK Section STARTS ---------------------------------------------------->
 
+	<section id="work">
+		<section class="container flex">
+			<section class="col-sm-12 subphase">
+				<h2 class="">Projects</h2>
+			</section>
+			<div class="phaseline"></div>
+
+			<section class="container flex bottoms">
+				<section class="subphase flex">
+					<section class="col-lg-7 col-md-12 bottoms">
+							<a href="mikumocase.png" class="magnific">
+								<img src="mikumocase.png" class="caseimg">
+							</a>
+						<!-- <img src="mikumocase.png" class="caseimg"> -->
+					</section>
+
+					<section class="col-lg-5 col-md-12 bottoms">
+						<h3 class="casehead">Mikumo</h3>
+						<p class="">Mikumo is a visually oriented, simple to use cloud storage app that lets anyone upload, delete, move, share, edit files without all 
+							the extra complicated steps.</p>
+					</section>
+				</section>
+
+				<section class="mini-separator"></section>
+
+				<section class="subphase flex">
+					<section class="col-lg-5 col-md-12 bottoms">
+						<h3 class="casehead">BusyBus</h3>
+						<p>BusyBus is a public transportation app that helps anyone in chicago  get to their destination with no complications</p>
+					</section>
+
+					<section class="col-lg-7 col-md-12">
+						<img src="busybuscase.png" class="caseimg">
+					</section>
+				</section>
+			</section>
+		</section>
+	</section>
+
+<!----------------------------------------------- WORK Section ENDS ----------------------------------------------------->
+
+	<div class="separator"></div>
+
+<!-------------------------------------------- ABOUT Section STARTS ------------------------------------------------->
+
+	<section id="about">
+		<section class="container flex">
+			<section class="col-sm-12 subphase">
+				<h2>A Bit About Me</h2>
+			</section>
+
+			<div class="phaseline"></div>
+				
+				<section class="col-sm-12 subphase">
+					<section class="biobox">
+						<h3 class="bio-subh">The Origin</h3>
+						<p class="bio-p">For as long as I can remember, if I didn’t have a ball at my feet or was running* on the streets of Brazil, I was drawing with 
+							a pencil in my hand. I remember drawing Pokémon and Knights of the Zodiac (an anime extremely popular in Brazil) for hours. Art 
+							was such a huge part of my life that I would go in drawing competitions, and in middle school one of my clay sculpture was displayed in a 
+							mall near my house for a few days. But somewhere along the line I lost the passion I once had and focused all my energy in sports.</p>
+					</section>	
+					<section class="biobox">
+						<h3 class="bio-subh">Platoon Ten-Hut!</h3>
+						<p class="bio-p">I tried following in my father’s footsteps as a mechanical engineer, but I quickly learned that I had no aptitude or desire to become one. 
+							Feeling somewhat lost, I joined the Marines. I was rapidly promoted to PFC, and in the two years after I left boot camp, I picked the rank 
+							of Lance Corporal and then became Corporal. As a young Corporal I was assigned as the Field Mess NCOIC (Non-Commissioned Officer In Charge). 
+							As the Field Mess NCOIC, I had the freedom to experiment with ways to make the food more pleasing and improve the overall sanitation while 
+							in garrison and on deployments. In Afghanistan I designed a cup dispenser out of cardboard box that allowed the marines to twist and pull 
+							for a single cup. I called that invention the Twist n’ Pull. </p>
+
+						<p class="bio-p">My other design was dubbed the Shake n’ Take, and was a plastic utensil dispenser that the marines would shake and any plastic utensil set 
+							that was stuck inside would fall, allowing the other sets to stay clean.  I had tried another experiment in Afghanistan that later set a 
+							new standard, at least in my unit, and involved cooking the dehydrated eggs. The dehydrated eggs were easy to make - you add water and put 
+							them inside the tray ration heater. But often times the eggs would’ve come out watery (too much water), or hard (not enough water). Luckily 
+							one of our Corpsman had a rice cooker and I was able to borrow it every morning. To make the eggs even better, I asked all the marines in 
+							the base to save their MRE (Meal Ready to Eat) cheese, so I could use it for the eggs. Thanks to the rice cooker the eggs came out perfectly 
+							so no more eggs or MRE Cheeses were thrown away. Although this is not directly related to design, it did solve a few problems while in 
+							Afghanistan: sanitation, food waste, and food quality, and this greatly boosted the morale.</p>
+					</section>
+					<section class="biobox">
+						<h3 class="bio-subh">Help! I've Fallen and I Can't Get Up!</h3>
+						<p class="bio-p">Once I left the marines I immediately started attending school for architecture. While I was in architecture school I was doing exceptionally 
+							well, however, after a few years, the school decided to terminate the architecture program due to the low student enrollment. When I received 
+							that notice, I panicked and dropped out soon after. Luckily a few months later I decided to sell the house I had bought in SoCal during the 
+							recession, and I used that money to start day trading. Initially things went well, but after a few desperate moves cost me greatly, I decided 
+							to cut my losses.</p>
+					</section>
+					<section class="biobox">
+						<h3  class="bio-subh">UX? What's That?</h3>
+						<p class="bio-p">With the end of my day trading journey I decided to learn more about front-end d*evelopment since I already had some experience with HTML and 
+							CSS. But the more I learned about web development, words like UX, UI, Information Architecture started coming up in my searches, and the 
+							more I realised how much UX fit with my personality. I spent hours, sometimes even seeing the sunrise, looking at websites from other 
+							designers and companies, and thinking of how my next project would look. I started doing more research on UX and discovered that it wasn’t 
+							just art, like the drawings and sculptures I’ve been doing since I was a kid, but also functionality, like all the solutions I came up with 
+							while I was in the Marines. It was a combination of art and functionality brought together, similar to what I was doing as an architect 
+							student. Right then I realized that this whole time design was all around me, and I had never given up on art or design.</p>
+					</section>
+				</section>
+			</section>
+		</section>
+	</section>
+
+<!-----------------------------------------------ABOUT Section ENDS ------------------------------------------------------->
+
+	<div class="separator"></div>
+
+<!-----------------------------------------------RESUME Section STARTS ------------------------------------------------------->
+
+	<section id="resume">
+		<section class="container flex bottoms">
+			<section class="col-sm-12 subphase bottoms">
+				<h2>Resume</h2>
+				<div class="phaseline"></div>
+			</section>
+
+			<section class="col-lg-6 col-md-12">
+				<section class="ressec">
+					<h3 class="reshead">Education</h3>
+					<ul class="resumelist">
+						<li><h4 class="res">TreeHouse / <span class="italicdate">Nov 17 - Nov 18</span></h4></li>
+						<li class="italic">Front-End Development Track</li>
+						<li class="italic">UX Design Track</li>
+						<li class="italic">Web Design Track</li>
+					</ul>
+					<ul class="resumelist">
+						<li><h4 class="res">Udemy / <span class="italicdate">Jun 18 - Nov 18</span></h4></li>
+						<li class="italic">Full-Stack Development</li>
+						<li class="italic">UX Design</li>
+					</ul>
+					<ul class="resumelist">
+						<li><h4 class="res">freeCodeCamp / <span class="italicdate">Nov 18 - Present</span></h4></li>
+						<li class="italic">Responsive Web Design Certification</li>
+						<li class="italic">JavaScript Algorithms & Data Structures Certification</li>
+						<li class="italic">Front End Libraries Certification</li>
+					</ul>
+					<ul class="resumelist">
+						<li><h4 class="res">Bloc / <span class="italicdate">Mar 19 - Present</span></h4></li>
+						<li class="italic">UX/UX Apprenticeship</li>
+						<li class="resdesc">Worked on many projects while learning the design process, by conducting surveys, competitive analysis, user stories, style guides, 
+							preference testing, wireframing, mockups, and building coded prototypes.</li>
+					</ul>
+				</section>
+			</section>
+
+			<section class="col-lg-6 col-md-12">
+				<section class="ressec">
+					<h3 class="reshead">Experience</h3>
+					<ul class="resumelist">
+						<li><h4 class="res">US Marine Corps / <span class="italicdate">Jan 09 - Nov 12</span></h4></li>
+						<li class="italic">Sergeant</li>
+						<li class="resdesc">As the NCOIC(Non-Commissioned Officer In Charge) of the 11th Mar. Reg. Field Mess I had to come up with solutions and ways to 
+						improve sanitation and food quality, and coordinating tasks to Sergeants and below while in garrison or on deployments.</li>
+					</ul>
+
+					<h3 class="reshead">Projects</h3>
+					<ul class="resumelist">
+						<li><h4 class="res">Mikumo</h4></li>
+						<li class="italic">Cloud Storage App(Apprenticeship)</li>
+						<li class="resdesc">Clients asked for a more visually detailed cloud service compared to other competitors to attract more people of different technical 
+							backgrounds. With this in mind, I made an attractive layout, and  eliminated any links that were repetitive in the platform.</li>
+					</ul>
+
+					<h3 class="reshead">Awards</h3>
+					<ul class="resumelist">
+						<li class="italic">Navy & Marine Corps Achievement medal</li>
+						<li class="italic">Good Conduct Medal</li>
+						<li class="italic">National Defense Medal</li>
+						<li class="italic">Afghanistan Campaign Medal(1 Bronze Star)</li>
+						<li class="italic">Global War on Terrorism Medal</li>
+						<li class="italic">Sea Service Ribbon</li>
+						<li class="italic">NATO Medal</li>
+					</ul>
+				</section>
+			</section>
+			<section class="col-lg-12">
+				<h3 class="reshead">Skills</h3>
+			</section>
+
+			<section class="col-lg-3 col-md-6 col-6 resumelist">
+				<ul>
+					<li><h4>Tools</h4></li>
+					<li>Sketch</li>
+					<li>Balsamiq</li>
+					<li>Figma</li>
+					<li>Invision</li>
+					<li>Affinity Photo</li>
+					<li>Affinity Designer</li>
+					<li>Affinity Publisher</li>
+					<li>SketchUp</li>
+					<li>AutoCAD</li>
+					<li>Git/GitHub</li>
+					<li>Dev Tools</li>
+				</ul>
+			</section>
+
+			<section class="col-lg-3 col-md-6 col-6 resumelist">
+				<ul>
+					<li><h4>Research</h4></li>
+					<li>User Surveys</li>
+					<li>Competitive Analysis</li>
+					<li>User personas</li>
+					<li>User Flows</li>
+					<li>Journey Mapping</li>
+					<li>Wireframing</li>
+					<li>Prototyping</li>
+					<li>Style guides</li>
+				</ul>
+			</section>
+
+			<section class="col-lg-3 col-md-6 col-6 resumelist">
+				<ul>
+					<li><h4>Front-End</h4></li>
+					<li>HTML5/CSS3</li>
+					<li>JavaScript</li>
+					<li>jQuery</li>
+					<li>Bootstrap</li>
+				</ul>
+				<ul>
+					<li><h4>Back-End(learning)</h4></li>
+					<li>Node.js</li>
+					<li>MongoDB</li>
+					<li>NoSQL</li>
+				</ul>
+			</section>
+
+			<section class="col-lg-3 col-md-6 col-6 resumelist">
+				<ul>
+					<li><h4>Languages</h4></li>
+					<li>English(Fluent)</li>
+					<li>Portuguese(Native)</li>
+					<li>Spanish(Limited)</li>
+					<li>Italian(Limited)</li>
+					<li>Japanese(Basic)</li>
+				</ul>
+			</section>
+		</section>
+	</section>
+<!-----------------------------------------------RESUME Section ENDS ------------------------------------------------------->
+
+	<div class="separator"></div>
+
+<!-----------------------------------------------CONTACT Section STARTS ------------------------------------------------------->
+	<section id="contact">
+		<section class="flex">
+			<section class="col-sm-12 subphase bottoms">
+				<h2>Contact</h2>
+				<div class="phaseline"></div>
+			</section>
+
+			<section class="col-sm-12">
+				<section class="contact">
+					<form method="POST" action="https://formspree.io/eduardohirao@live.com">
+						<section class="form-group">
+							<label for="name">Name*:</label>
+							<input type="text" name="name" class="form-control" placeholder="name" required>
+						</section>
+						<section class="form-group">
+							<label for="company">Company:</label>
+							<input type="text" name="company"class="form-control" placeholder="company">
+						</section>
+						<section class="form-group">
+							<label for="email">Email*:</label>
+							<input type="email" name="_replyto" class="form-control" placeholder="email" required>
+						</section>
+						<section class="form-group">
+							<label for="message">Message*:</label>
+							<textarea name="messsage" class="form-control" placeholder="message" rows="5" required></textarea>
+						</section>
+						<section class="form-group submit">
+							<input type="submit" class="btn">
+							<input type="hidden" name="_subject" value="New Submission">
+							<input type="hidden" name="_next" value="thanks.html" />
+						</section>
+					</form>
+				</section>
+			</section>
+		</section>
+	</section>
 </main>
+<!-----------------------------------------------CONTACT Section ENDS ------------------------------------------------------->
+<footer id="footlight">
+	<section class="container">
+		<section class="flex">
+			<section class="socicon col-sm-4">
+				<p class="hfooter">Eduardo Hirao</p>
+				<p class="pfooter">Currently: Detroit, MI</p>
+			</section>		
 
+			<section class="socicon col-sm-4">
+				<p class="hfooter">email</p>
+				<a  href="mailto:eduardohirao@live.com" class="pfooter">eduardohirao@live.com</a>
+			</section>
+				
+			<section class="socicon col-sm-4">
+				<p class="hfooter">Social Media</p>
+				<a href="https://www.facebook.com/eduardo.hirao" target="_blank">
+					<p class="pfooter">LinkedIn</p>
+				</a>
 
+				<p class="pfooter">Dribbble</p>
+				<p class="pfooter">GitHub</p>
+				<p class="pfooter">Twitter</p>
+			</section>
+		</section>
+	</section>
+</footer>
 
-<!------------------------------------------------- footer starts -------------------------------------------------------->
 <script src="rellax.min.js"></script>
-<script>
-// document.querySelector('.dark_light_mode_toggle').addEventListener('click', () => {
-//     const body = document.querySelector('body');
-// 	const herobg = document.getElementById("herobg");
-// 	const logo = document.getElementById("logo")
-  
-//     if (body.classList.contains('t--light')) {
-//       body.classList.remove('t--light');
-//       body.classList.add('t--dark');
-// 	  herobg.classList.remove("data-img-src", "parallaxBG/japanlight.jpg");
-// 	  herobg.classList.add("data-img-src", "parallaxBG/japandark.jpg");
-// 	  logo.classList.remove("src", "ehlogo.jpg");
-// 	  logo.classList.add("src", "darklogo.jpg");
-//     }
-//     else {
-//       body.classList.remove('t--dark');
-//       body.classList.add('t--light');
-// 	  logo.classList.remove("src", "darklogo.jpg");
-// 	  logo.classList.add("src", "ehlogo.jpg");
-//     }
-// });
-
-
-
-
-
-// $('#changeTheme').click(function() {
-// 	var themeWrapper = $('#themeWrapper');
-// 	var logo = $('#logo');
-// 	var herobg = $("#herobg");
-// 	var darkbg = $("#darkbg");
-
-// if (themeWrapper.attr('class') === 'light-theme') {
-// 	themeWrapper.attr('class', 'dark-theme');
-// 	logo.attr('src', 'darklogo.png');
-// 	herobg.attr("id","darkbg");
-// 	localStorage.setItem("class", "dark-theme");
-// }
-// else {
-// 	themeWrapper.attr('class', 'light-theme');
-// 	logo.attr('src', 'ehlogo.png');
-// 	darkbg.attr("id", "herobg");
-// 	localStorage.setItem("class", "light-theme");
-// }
-// });
-
-
-
-
-
-</script>
-
-<script type="text/javascript">
-	$('#main').toggleClass(localStorage.toggled);
-
-	var logo = $('#logo');
-
-	function darkLight() {
-   if (localStorage.toggled != 'dark') {
-      $('#main, p').toggleClass('dark', true);
-	  logo.attr('src', 'darklogo.png');
-      localStorage.toggled = "dark";
-   } else {
-      $('#main, p').toggleClass('dark', false);
-	  logo.attr('src', 'ehlogo.png');
-      localStorage.toggled = "";
-   }
-}
-
-if ($('main').hasClass('dark')) {
-      $( '#checkBox' ).prop( "checked", true )
-} else {
-      $( '#checkBox' ).prop( "checked", false )
-}
-</script>
 <script type="text/javascript">
 	var rellax = new Rellax('.rellax');
 </script>
 
-<!-------------------------------------------------  footer ends  -------------------------------------------------------->
 </body>
 </html>
 

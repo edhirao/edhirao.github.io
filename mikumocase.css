@@ -122,16 +122,17 @@ li {
 /************************************************************* HOVERS ************************************************************************/
 
 a:hover,
-#logo:hover,
-.mikumobtn {
+#logo:hover {
 	transition: transform .5s;
 	text-decoration: none;
 }
 
 .mikumobtn:hover {
-	color: #fff;
+	color: #fff !important;
 	background: #6CB019;
+	border-color: white;
 	transform: scale(1.1);
+
 }
 
 a.nav-link:hover, #logo:hover,
@@ -141,15 +142,20 @@ a.nav-link:hover, #logo:hover,
 
 a.nav-link:hover { 
 	color: #323232 !important; 
-	font-weight: 600;
+	/* font-weight: 600; */
 }
 
 /****************************************************** USED IN MOST SECTION *************************************************************/
+
+a.magnific:focus {
+	outline: none;
+}
 
 #logo{
 	width: 50px;
 	height: 50px;
 	margin-left: 5px;
+	transition: all 1s ease;
 }
 
 .flex {
@@ -205,12 +211,14 @@ a.nav-link:hover {
 
 .mikumobtn {
 	margin: auto; 
-	padding: 10px 40px;
-	font-size: 20px;
-	color: white !important;
-	background-color: #6cb019;
-	border-radius: 7px;
+	padding: 5px 60px;
+	font-size: 16px;
+	color: #505050 !important;
+	background-color: white;
+	border-radius: 4px;
 	text-transform: uppercase;
+	border: #323232 1px solid;
+	transition: all 1s ease;
 }
 
 .phaseline {
@@ -221,6 +229,11 @@ a.nav-link:hover {
 }
 
 .subphase {
+	text-align: center;
+	margin: 80px auto auto auto;
+}
+
+.plat {
 	text-align: center;
 	margin: 80px auto auto auto;
 }
@@ -270,6 +283,17 @@ a.nav-link:hover {
 	margin-bottom: 20px;
 	margin-right: 20px; /*** needs fixing later ***/
 }
+
+
+.zoompic {
+	transition: transform 1s;
+	
+}
+
+.zoompic:hover {
+	transform: scale(1.05);
+}
+
 
 
 .topic {
@@ -390,7 +414,7 @@ a.nav-link:hover {
 
 #footlight {
 	width: 100%;
-	height: 150px;
+	height: 100%;
 	border-top: solid #505050 2px;
 }
 
@@ -431,6 +455,11 @@ a.nav-link:hover {
 	.mikumosub {
 		font-size: 25px !important;
 	}
+
+	.plat {
+		text-align: center;
+		margin-top: auto;
+	}
 }
 
 @media only screen and (min-width: 601px) and (max-width: 989px){
@@ -459,6 +488,22 @@ a.nav-link:hover {
 	50%, 100% {
 		opacity: 100;
 	}
+}
+
+@-webkit-keyframes barGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes barGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes barGradient { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 /*************************************************************** Testing *********************************************************************/
@@ -547,3 +592,97 @@ a.nav-link:hover {
 		margin-left: 5px;
 		
 	}
+
+.meeds {
+	transition: all 2s ease;
+}
+
+.meeds:hover {
+	transform: scale(1.1);
+	color: #6cb019 !important;
+	text-decoration: underline #6cb019;
+}
+
+	/************************************************************** TESTING *****************************************************************/
+/************************************************************** TESTING *****************************************************************/
+/************************************************************** TESTING *****************************************************************/
+
+#footlight {
+	border-top: solid #6cb019 4px;
+	background-color: black;
+	color: white !important;
+}
+
+.pfooter {
+	color: white !important;
+}
+
+.bg-dark {
+	background-color: rgba(25, 25, 25, .9) !important;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+	width: 100%;
+	height: 8px;
+	background-color: rgba(25, 25, 25, .9);
+	position: fixed;
+	top: 76px;
+	left: 0px;
+	border-style: none;
+  }
+  
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+		height: 8px;
+		background: linear-gradient(270deg, #6cb019, #3E4E2A);
+		background-size: 400% 400%;
+		width: 0%;
+		-webkit-animation: barGradient 4s ease infinite !important;
+		-moz-animation: barGradient 4s ease infinite !important;
+		animation: barGradient 4s ease infinite !important;
+  }
+
+  a.nav-link {
+	  color: white !important;
+	  transition: all 1s ease;
+	  
+  }
+
+  a.nav-link.active {
+	/* font-weight: 700; */
+	text-decoration: underline #6cb019;
+
+
+  }
+
+  a.nav-link:hover {
+	  color: white !important;
+  }
+
+  .glo {
+	animation: glowing 3000ms infinite;
+  }
+
+
+
+  .linear-wipe {
+	background: linear-gradient(to right, #252525 10%, #6cb019 30%, #252525 50%, #252525 80%);
+	background-size: 200% auto;
+	color: #000;
+	background-clip: text;
+	text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	
+	animation: shine 5s linear infinite;
+  }
+
+	@keyframes shine {
+	  to {
+		background-position: 200% center;
+	  }
+	}
+
+
+	

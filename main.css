@@ -41,6 +41,7 @@ p {
 	text-align: left;
 	line-height: 1.8em;
 	margin-bottom: 0;
+	z-index: 1;
 }
 
 a {
@@ -67,7 +68,7 @@ li {
 
 .subphase {
 	text-align: center;
-	margin: 80px auto auto auto;
+	margin: 100px auto auto auto;
 }
 
 .midmarg {
@@ -114,7 +115,7 @@ li {
 }
 
 .bio-subh {
-	margin-bottom: 24px;
+	/* margin-bottom: 24px; */
 	text-align: left;
 }
 
@@ -153,7 +154,7 @@ a.nav-link:hover, #logo:hover,
 
 a.nav-link:hover { 
 	color: #323232 !important; 
-	font-weight: 600;
+	/* font-weight: 600; */
 }
 
 a.magnific:focus {
@@ -166,6 +167,7 @@ a.magnific:focus {
 	width: 50px;
 	height: 50px;
 	margin-left: 5px;
+	transition: all 1s ease;
 }
 
 .flex {
@@ -178,7 +180,39 @@ a.magnific:focus {
 	background: transparent;
 }
 
+
+.zoompic {
+	transition: transform 1s;
+	
+}
+
+.zoompic:hover {
+	transform: scale(1.05);
+}
+
+.meeds {
+	transition: all 2s ease;
+}
+
+.meeds:hover {
+	transform: scale(1.1);
+	color: #ff7400 !important;
+	text-decoration: underline #ff7400;
+}
+
 /* NAV BAR */
+
+.sstest {
+	font-size: 100px;
+	float: right;
+	color: lightgray;
+	z-index: -1;
+	position: relative;
+	opacity: .4;
+	/* text-transform: uppercase; */
+	font-weight: 600;
+
+}
 
 
 a {
@@ -217,13 +251,13 @@ a {
 .name, .uxdesign, .herolightlogo {
 
 	/* margin: auto; */
-	animation: blurFadeInUnicorn 3s ease-in 20s backwards;
+	/* animation: blurFadeInUnicorn 3s ease-in 20s backwards; */
 	position: absolute;
 	text-align: left;
 }
 
 .name {
-	left: 70vh;
+	left: 50%;
     top: 35vh;
 	animation-delay: 1s;
 }
@@ -237,12 +271,6 @@ a {
 	text-transform: none;
 }
 
-.herolightlogo {
-	left: 45vh;
-	width: 155px;
-	top: 36.5vh;
-	animation-delay: 3s;
-}
 /* ABOUT SECTION */
 
 
@@ -251,11 +279,12 @@ a {
 
 .btn {
 	margin: auto;
-	width: 30%;
+	/* margin-top: 50px; */
+	width: 50%;
 	border: solid #323232 1px;
 	color: #323232;
-	border-radius: 2px;
-
+	border-radius: 4px;
+	text-transform: uppercase;
 }
 
 .socicon {
@@ -267,7 +296,26 @@ a {
 @media only screen and (max-width: 800px){
 
 	.name, .uxdesign, .herolightlogo {
-		left: 10vh;
+		left: 10%;
+	}
+
+	.herolightlogo {
+		/* left: 20%; */
+		width: 0;
+		top: 36.5vh;
+		animation-delay: 3s;
+	}
+
+	.form-group {
+		width: 90% !important;
+	}
+
+	.phaseline {
+		width: 90%;
+	}
+
+	.biobox {
+		width: 100%;
 	}
 }
 @media(min-width: 801px){
@@ -278,9 +326,16 @@ a {
 		margin-bottom: 100px;
 		text-align: left;
 	}
+
+	.herolightlogo {
+	left: 33%;
+	width: 155px;
+	top: 36.5vh;
+	/* animation-delay: 3s; */
+}
 }
 
-/* KEYFRAMES */
+/**************************************** KEYFRAMES *******************************************************************/
 
 @keyframes blurFadeInUnicorn {
 	0% {
@@ -290,6 +345,30 @@ a {
 		opacity: 100;
 	}
 }
+
+@keyframes glowing {
+	0% { box-shadow: 0 0 -10px #c4a300; }
+	40% { box-shadow: 0 0 20px #c4a300; }
+	60% { box-shadow: 0 0 20px #c4a300; }
+	100% { box-shadow: 0 0 -10px #c4a300; }
+  }
+
+@-webkit-keyframes barGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes barGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes barGradient { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
 
 
 
@@ -327,6 +406,7 @@ a {
 
 .resdesc {
 	margin-top: 10px;
+	margin-bottom: 50px;
 }
 
 .ressec {
@@ -339,8 +419,31 @@ a {
 }
 
 .reshead {
-	margin-bottom: 30px;
+	margin-bottom: 0px;
 	text-align: left;
+}
+
+.casep {
+	margin-bottom: 40px;
+	text-align: left;
+}
+
+.resline {
+	margin-left: 0;
+	margin-bottom: 30px;
+	width: 70%;
+	height: 1px;
+	background: #505050;
+
+}
+
+.reslineskill {
+	margin-left: 0;
+	margin-bottom: 30px;
+	width: 100%;
+	height: 1px;
+	background: #505050;
+
 }
 
 .whitespace {
@@ -391,8 +494,13 @@ a {
 
 	#footlight {
 		width: 100%;
-		height: 150px;
+		height: 100%;
 		border-top: solid #505050 2px;
+
+		/*** testing ****/
+		border-top: solid orange 4px;
+		background-color: black;
+		color: white !important;
 	}
 
 	.hfooter {
@@ -412,5 +520,82 @@ a {
 	}
 
 /************************************************************** TESTING *****************************************************************/
+/************************************************************** TESTING *****************************************************************/
+/************************************************************** TESTING *****************************************************************/
+
+#footlight {
+	border-top: solid #ff7400 4px;
+	background-color: black;
+	color: white !important;
+}
+
+.pfooter {
+	color: white !important;
+}
+
+.bg-dark {
+	background-color: rgba(25, 25, 25, .9) !important;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+	width: 100%;
+	height: 8px;
+	background-color: rgba(25, 25, 25, .9);
+	position: fixed;
+	top: 76px;
+	left: 0px;
+	border-style: none;
+  }
+  
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+		height: 8px;
+		background: linear-gradient(270deg, #ff7400, #d61c0e);
+		background-size: 400% 400%;
+		width: 0%;
+		-webkit-animation: barGradient 4s ease infinite !important;
+		-moz-animation: barGradient 4s ease infinite !important;
+		animation: barGradient 4s ease infinite !important;
+  }
+
+  a.nav-link {
+	  color: white !important;
+	  transition: all 1s ease;
+	  
+  }
+
+  a.nav-link.active {
+	/* font-weight: 700; */
+	text-decoration: underline #ff7400;
 
 
+  }
+
+  a.nav-link:hover {
+	  color: white !important;
+  }
+
+  .glo {
+	animation: glowing 3000ms infinite;
+  }
+
+
+
+  .linear-wipe {
+	background: linear-gradient(to right, #252525 20%, #d61c0e 30%, #252525 50%, #252525 80%);
+	background-size: 200% auto;
+	color: #000;
+	background-clip: text;
+	text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	
+	animation: shine 5s linear infinite;
+  }
+
+	@keyframes shine {
+	  to {
+		background-position: 200% center;
+	  }
+	}

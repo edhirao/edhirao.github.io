@@ -312,6 +312,10 @@ a.nav-link.active {
 	padding-bottom: 80px;
 }
 
+.pad-b-half {
+	padding-bottom: 40px;
+}
+
 .italic {
 	font-weight: 300;
 	font-style: italic;

@@ -1,106 +1,241 @@
-/****************************************************** TAGS ***********************************************************/
+/********************************************************************* TAGS *************************************************************************/
+
 * {
 	box-sizing: border-box;
 }
 
 html {
 	scroll-behavior: smooth;
+	color: #323232;
+	background-color: white;
 }
 
 body {
+	margin: 0;
 	font-family: "Raleway", sans-serif;
-}
-
-h1, h2 {
-	text-align: center;
+	background-color: white;
 }
 
 h1, h2, h3 {
+	text-align: center;
 	text-transform: uppercase;
+	margin-block-start: 0;
+    margin-block-end: 0;
 }
 
-h2, h3, h4, h5 {
-	font-weight: 600;
-}
 h1 {
 	font-size: 50px;
 }
 
 h2 {
 	font-size: 40px;
+	font-weight: 300;
 }
 
 h3 {
 	font-size: 30px;
+	font-weight: 600;
 }
 
 h4 { 
 	font-size: 20px;
-}
-
-h5 {
-	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-block-start: 0px;
+    margin-block-end: 10px;
 }
 
 p {
 	font-size: 20px;
-	margin-bottom:0;
+	text-align: left;
 	line-height: 1.8em;
+	margin-bottom: 0;
+	z-index: 1;
+	color: #323232
 }
 
 a {
 	text-decoration: none;
-	color: #323232 !important;
 }
 
 ul {
 	list-style-type: none;
-	font-size: 20px;
 	padding-inline-start: 0;
 }
 
 li {
-	line-height: 1.8em;
-}
-
-/*********************************************************** NAV BAR **********************************************************************/
-
-.nav-link {
 	font-size: 20px;
-	margin: auto 75px auto 0;
-	color: #323232;
+	line-height: 36px;
 }
 
-.bg-dark {
-	background-color: white !important;
+label {
+	margin-bottom: 20px;
+}
+  
+/************************************************************************ NAVBAR *******************************************************************************/
+  
+.header {
+	background-color: rgba(25, 25, 25, .9);
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+	position: fixed;
+	width: 100%;
+	z-index: 3;
+	height: 76px;
 }
 
-/********************************************************* PROGRESS BAR *******************************************************************/
+.header ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+}
+  
+.header li a {
+	display: block;
+	padding: 20px 20px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+  
+.header .logo {
+	display: block;
+	float: left;
+	font-size: 2em;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+ 
+#logo{
+	width: 49px;
+	height: 49px;
+	margin-left: 5px;
+	margin-top: 3px;
+	transition: all 1s ease;
+}
+
+a.nav-link {
+	color: white !important;
+ 	transition: all 1s ease;
+}
+
+a.nav-link.active {
+	text-decoration: underline #6cb019;
+}
+
+.header .menu {
+	clear: both;
+	max-height: 0;
+	transition: max-height .2s ease-out;
+}
+  
+.header .menu-icon {
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	padding: 28px 20px;
+	position: relative;
+	user-select: none;
+}
+  
+.header .menu-icon .navicon {
+	background: white;
+	display: block;
+	height: 2px;
+	position: relative;
+	transition: background .2s ease-out;
+	width: 30px;
+}
+  
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+	background: white;
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+	transition: all .2s ease-out;
+	width: 100%;
+}
+  
+.header .menu-icon .navicon:before {
+	top: 10px;
+}
+  
+.header .menu-icon .navicon:after {
+	top: -10px;
+}
+  
+/* menu btn */
+  
+.header .menu-btn {
+	display: none;
+}
+  
+.header .menu-btn:checked ~ .menu {
+	max-height: 840px;
+}
+  
+.header .menu-btn:checked ~ .menu-icon .navicon {
+	background: transparent;
+}
+  
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+	transform: rotate(-45deg);
+}
+  
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+	transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+	top: 0;
+}
+  
+/******************************************************************** PROGRESS BAR ******************************************************************************/
 
 .progress-container {
-  width: 100%;
-  height: 8px;
-  background: white;
-  position: fixed;
-  top: 72px;
-  left: 0px;
+	width: 100%;
+	height: 8px;
+	background-color: rgba(25, 25, 25, .9);
+	position: fixed;
+	top: 76px;
+	left: 0px;
+	border-style: none;
 }
-
+  
 .progress-bar {
-  	height: 8px;
-  	background: #6cb019;
-  	width: 0%;
+	height: 8px;
+	background: linear-gradient(270deg, #ff7400, #d61c0e);
+	background-size: 400% 400%;
+	width: 0%;
+	-webkit-animation: barGradient 4s ease infinite !important;
+	-moz-animation: barGradient 4s ease infinite !important;
+	animation: barGradient 4s ease infinite !important;
 }
 
-/****************************************************** PARALLAX BACKGROUNDS *************************************************************/
-
-.snow {
-	position: absolute;
-	width:100%;
-	height: 100vh;
-	background: url(parallaxBG/snow.png) no-repeat 50% 50%;
-	background-size: cover;
-}
+.progress-container {
+	width: 100%;
+	height: 8px;
+	background-color: rgba(25, 25, 25, .9);
+	position: fixed;
+	top: 76px;
+	left: 0px;
+	border-style: none;
+  }
+  
+  .progress-bar {
+		height: 8px;
+		background: linear-gradient(270deg, #6cb019, #3E4E2A);
+		background-size: 400% 400%;
+		width: 0%;
+		-webkit-animation: barGradient 4s ease infinite !important;
+		-moz-animation: barGradient 4s ease infinite !important;
+		animation: barGradient 4s ease infinite !important;
+  }
+  
+/********************************************************************** HERO SECTION ***************************************************************************/
 
 .fog {
 	position: absolute;
@@ -119,56 +254,10 @@ li {
 	background-size: cover;
 }
 
-/************************************************************* HOVERS ************************************************************************/
-
-a:hover,
-#logo:hover {
-	transition: transform .5s;
-	text-decoration: none;
-}
-
-.mikumobtn:hover {
-	color: #fff !important;
-	background: #6CB019;
-	border-color: white;
-	transform: scale(1.1);
-
-}
-
-a.nav-link:hover, #logo:hover,
-.flag:hover, .techicon:hover {
-	transform: scale(1.2);
-}
-
-a.nav-link:hover { 
-	color: #323232 !important; 
-	/* font-weight: 600; */
-}
-
-/****************************************************** USED IN MOST SECTION *************************************************************/
-
-a.magnific:focus {
-	outline: none;
-}
-
-#logo{
-	width: 50px;
-	height: 50px;
-	margin-left: 5px;
-	transition: all 1s ease;
-}
-
-.flex {
-  	display: flex;
- 	flex-wrap: wrap;
-}
-
 .whitespace {
 	width: 100%;
-	height: 90vh;
+	height: 100vh;
 }
-
-/* -------------------------------------------------------- MIKUMO CASE STUDY ------------------------------------------------------------- */
 
 .mikumoherologo {
 	animation: blurFadeInUnicorn 3s ease-in 20s backwards;
@@ -209,38 +298,509 @@ a.magnific:focus {
 	font-size: 20px;
 }
 
-.mikumobtn {
-	margin: auto; 
-	padding: 5px 60px;
-	font-size: 16px;
-	color: #505050 !important;
-	background-color: white;
-	border-radius: 4px;
-	text-transform: uppercase;
-	border: #323232 1px solid;
-	transition: all 1s ease;
-}
+/********************************************************************** ESSENTIAL ******************************************************************************/
 
-.phaseline {
-	margin: auto;
-	width: 40%;
-	height: 2px;
-	background: #505050;
-}
-
-.subphase {
+.centers {
 	text-align: center;
-	margin: 80px auto auto auto;
 }
 
-.plat {
-	text-align: center;
-	margin: 80px auto auto auto;
+.bottoms {
+	margin-bottom: 80px;
+}
+
+.pad-b {
+	padding-bottom: 80px;
+}
+
+.italic {
+	font-weight: 300;
+	font-style: italic;
+	font-size: 18px;
+	line-height: 1.8em;
 }
 
 .lightgraybg {
 	background-color: #f8f8f8;
 	width: 100%;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+}
+
+.zoompic {
+	transition: transform 1s;
+}
+
+.phaseline {
+	margin: auto;
+	margin-top: 10px;
+	width: 40%;
+	height: 2px;
+	background: #505050;
+}
+
+.separator {
+	margin: auto;
+	width: 100%;
+	height: 1px;
+	background: #505050;
+}
+
+.ctobtn {
+	margin: auto;
+	width: 50%;
+	height: 40px;
+	border: solid #323232 1px;
+	color: #323232;
+	border-radius: 4px;
+	text-transform: uppercase;
+	transition: all 1s ease;
+}
+
+.pad-r {
+	padding-right: 20px;
+}
+
+.flex {
+	display: flex;
+   flex-wrap: wrap;
+}
+
+a.magnific:focus {
+	outline: none;
+}
+
+.linear-wipe {
+	background: linear-gradient(to right, #252525 10%, #6cb019 30%, #252525 50%, #252525 80%);
+	background-size: 200% auto;
+	color: #000;
+	background-clip: text;
+	text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: shine 5s linear infinite;
+}
+
+/*************************************************************** OVERVIEW SECTION *****************************************************************************/
+
+.lihead {
+	font-weight: 600;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+h3.ovdesc{
+	text-align: left;
+}
+
+.outdesc {
+	margin-top: 80px;
+}
+
+.plat {
+	text-align: center;
+	margin: 160px auto 80px auto;
+}
+
+.mikumodevice {
+	width: 95%;
+}
+
+/****************************************************************** ABOUT SECTION ****************************************************************************/
+
+.bio-p {
+	margin-bottom: 50px;
+}
+
+.biobox {
+	width: 70%;
+	margin: auto;
+}
+
+.bio-subh {
+	text-align: left;
+}
+
+.bioline {
+	margin: 10px auto 30px 0;
+	width: 100%;
+	height: 1px;
+	background: #505050;
+}
+
+/******************************************************************* RESUME SECTION *****************************************************************************/
+
+.italicdate {
+	text-transform: none;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+.res {
+	margin-bottom: 0;
+}
+
+.resdesc {
+	margin-top: 10px;
+	margin-bottom: 50px;
+	line-height: 30px;
+}
+
+.ressec {
+	width: 100%;
+}
+
+.resumelist {
+	width: 90%;
+	margin-bottom: 30px;
+}
+
+.reshead {
+	margin-bottom: 0px;
+	text-align: left;
+}
+
+.resline {
+	margin-left: 0;
+	margin-bottom: 30px;
+	width: 70%;
+	height: 1px;
+	background: #505050;
+}
+
+.reslineskill {
+	margin: auto auto 0;
+	width: 100%;
+	height: 1px;
+	background: #505050;
+}
+
+/******************************************************************* CONTACT SECTION ***************************************************************************/
+
+.form-group {
+	width: 80%;
+	margin: auto;
+}
+
+.form-control {
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	box-shadow: none;
+	height: 40px;
+	padding-left: 10px;
+	border-style: solid;
+	border: solid 1px #aaaaaa;
+}
+
+.form-message {
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	box-shadow: none;
+	height: 200px;
+	padding-left: 10px;
+	padding-top: 10px;
+	border-style: solid;
+	border: solid 1px #aaaaaa;
+}
+
+/******************************************************************* FOOTER SECTION ****************************************************************************/
+
+#footlight {
+	width: 100%;
+	height: 100%;
+	border-top: solid #6cb019 4px;
+	background-color: black;
+	color: white !important;
+}
+
+.meeds {
+	transition: all 2s ease;
+	line-height: 1.1em;
+}
+
+.hfooter {
+	font-size: 16px;
+	font-weight: 600;
+	text-align: left;
+	color: white;
+	margin-bottom: 16px;
+}
+
+.pfooter {
+	font-size: 16px;
+	text-align: left;
+	color: white !important;
+}
+
+.socicon {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	margin-left: 10%;
+}
+
+.submit {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.phase {
+	margin: 100px auto auto auto !important; 
+}
+
+.subphase {
+	text-align: center;
+	margin: 100px auto !important;
+}
+
+/*********************************************************************** HOVERS ********************************************************************************/
+
+a:hover,
+#logo:hover {
+	transition: transform .5s;
+	text-decoration: none;
+}
+
+.ctobtn:hover {
+	color: #fff;
+	background: #323232;
+	transform: scale(1.02);
+}
+
+a.nav-link:hover, #logo:hover,
+.flag:hover, .techicon:hover {
+	transform: scale(1.2);
+}
+
+.meeds:hover {
+	transform: scale(1.1);
+	color: #6cb019 !important;
+	text-decoration: underline #6cb019;
+}
+
+.mikumobtn:hover {
+	color: #fff !important;
+	background: #6CB019;
+	border-color: white;
+	transform: scale(1.1);
+}
+
+.zoompic:hover {
+	transform: scale(1.05);
+}
+
+.ctobtn:hover {
+	color: #fff !important;
+	background: #323232;
+	border-color: white;
+	transform: scale(1.1);
+}
+
+/******************************************************************** GRID SYSTEM ******************************************************************************/
+
+
+.row {
+	position: relative;
+	width: 100%;
+}
+  
+.row [class^="col"] {
+	float: left;
+	margin: 0.5rem 2%;
+	/* min-height: 0.125rem; */
+}
+  
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+.col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+	width: 96%;
+}
+
+.col-1-sm { width: 4.33%; }
+.col-2-sm { width: 12.66%; }
+.col-3-sm { width: 21%; }
+.col-4-sm { width: 29.33%; }
+.col-5-sm { width: 37.66%; }
+.col-6-sm { width: 46%; }
+.col-7-sm { width: 54.33%; }
+.col-8-sm { width: 62.66%; }
+.col-9-sm { width: 71%; }
+.col-10-sm { width: 79.33%; }
+.col-11-sm { width: 87.66%; }
+.col-12-sm { width: 96%; }
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.hidden-sm {
+	display: none;
+}
+
+/******************************************************************** MEDIA QUERY ******************************************************************************/
+
+@media only screen and (min-width: 1175px) {
+	.header li {
+		float: left;
+	}
+
+	.header li a {
+		padding: 20px 40px;
+	}
+
+	.header .menu {
+	  	clear: none;
+	  	float: right;
+	  	max-height: none;
+	  	margin-right: 50px;
+	}
+
+	.header .menu-icon {
+	  	display: none;  
+	}
+
+	.header ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		overflow: hidden;
+	}
+
+	.contact-form {
+		color: #323232;
+		padding: 0 10%;
+		width: 100%;
+		margin-bottom: 100px;
+		text-align: left;
+	}
+	/******************************* GRID SYSTEM MEDIA QUERY ************************/
+	.container { 
+		width: 80%; 
+		margin: auto;
+	}
+	.col-1 { width: 4.33%; }
+	.col-2 { width: 12.66%; }
+	.col-3 { width: 21%; }
+	.col-4 { width: 29.33%; }
+	.col-5 { width: 37.66%; }
+	.col-6 { width: 46%; }
+	.col-7 { width: 54.33%; }
+	.col-8 { width: 62.66%; }
+	.col-9 { width: 71%; }
+	.col-10 { width: 79.33%;}
+	.col-11 { width: 87.66%; }
+	.col-12 { width: 100%; }
+	.hidden-sm {
+		display: block;
+	}
+}
+
+@media (max-width: 767px) {
+
+	.header ul {
+		margin-top: 76px;
+		padding: 0;
+		list-style: none;
+		overflow: hidden;
+		background-color: rgba(25, 25, 25, .9);
+		text-align: center;
+	}
+
+	.form-group {
+		width: 90% !important;
+	}
+
+	.phaseline {
+		width: 90%;
+	}
+
+	.biobox {
+		width: 100%;
+		margin: auto;
+	}
+
+	.name {
+		left:45%;
+		top: 30%;
+		animation-delay: 1s;
+		text-transform: uppercase;
+		font-weight: normal;
+		padding-right: 100px;
+	}
+	
+	.uxdesign {
+		left: 5%;
+		top: 53%;
+		right: 0;
+		animation-delay: 2s;
+		font-size: 40px;
+		font-weight: normal;
+		text-transform: none;
+	}
+	
+	.herolightlogo {
+		left: 8%;
+		top: 31.5%;
+	}
+
+	.ctobtn {
+		margin-bottom: 100px;
+	}
+}
+
+/********************************************************************** KEYFRAMES ******************************************************************************/
+
+@keyframes blurFadeInUnicorn {
+	0% { opacity: 0; }
+	50%, 100% { opacity: 100; }
+}
+
+@-webkit-keyframes barGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@-moz-keyframes barGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@keyframes barGradient { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@keyframes shine {
+	to {
+	  background-position: 200% center;
+	}
+}
+
+/************************************************************* HOVERS ************************************************************************/
+/****************************************************** USED IN MOST SECTION *************************************************************/
+/* -------------------------------------------------------- MIKUMO CASE STUDY ------------------------------------------------------------- */
+
+.mikumobtn {
+	margin: auto; 
+	padding: 5px 60px;
+	font-size: 16px;
+	height: 35px;
+	color: #505050 !important;
+	background-color: white;
+	border-radius: 4px;
+	text-transform: uppercase;
+	font-weight: 300;
+	border: #323232 1px solid;
+	transition: all 1s ease;
 }
 
 .brandspec {
@@ -252,21 +812,9 @@ a.magnific:focus {
 	width: 80%;
 }
 
-.lihead {
-	font-weight: 600;
-	margin-bottom: 10px;
-	text-transform: uppercase;
-}
-
 .marginbottom40 {
 	margin-bottom: 40px;
 }
-
-.overviewdesc {
-	margin-right: 20px;
-	text-align: left;
-}
-
 
 .caseh3 {
 	text-align: center;
@@ -279,9 +827,9 @@ a.magnific:focus {
 }
 .h3alt{
 	text-transform: none;
-	font-weight: 600;
+	font-weight: 400;
 	margin-bottom: 20px;
-	margin-right: 20px; /*** needs fixing later ***/
+	text-align: left;
 }
 
 
@@ -309,11 +857,6 @@ a.magnific:focus {
 }
 
 /* NEEDS TO BE FIXED FOR SMALLER DEVICES */
-
-.mikumodevice {
-	width: 100%;
-	margin-top: 40px;
-}
 
 .surveysec {
 	width: 50%;
@@ -346,6 +889,7 @@ a.magnific:focus {
 	font-style: italic;
 	margin-top: 10px;
 	margin-bottom: 20px;
+	text-align: center;
 }
 
 .threeCol {
@@ -356,6 +900,11 @@ a.magnific:focus {
 .persCompP {
 	font-size: 16px;
 	margin-bottom: 10px;
+	text-align: left;
+}
+
+p.persCompP {
+	text-align: center;
 }
 
 .boldy {
@@ -363,15 +912,12 @@ a.magnific:focus {
 }
 
 .personaInfo {
-	margin-top: 20px;
+	margin-top: 40px;
+	text-transform: none;
 }
 
 .listleft {
 	text-align: left;
-}
-
-.bottoms {
-	margin-bottom: 80px;
 }
 
 .comp {
@@ -404,30 +950,9 @@ a.magnific:focus {
 	 width: 90%;
  }
 
-.socicon {
-	margin: 50px auto;
-}
-
 /********************************************** HOME PAGE ONLY *************************************************************/
 
 /****************************************************** FOOTER SECTION *************************************************************/
-
-#footlight {
-	width: 100%;
-	height: 100%;
-	border-top: solid #505050 2px;
-}
-
-.hfooter {
-	font-size: 16px;
-	font-weight: 600;
-	text-align: left;
-}
-
-.pfooter {
-	font-size: 16px;
-	text-align: left;
-}
 
 /************************************************** Media Queries *********************************************************/
 
@@ -478,211 +1003,3 @@ a.magnific:focus {
 		width: 80%;
 	}
 }
-
-/******************************************************** KEYFRAMES ***************************************************************/
-
-@keyframes blurFadeInUnicorn {
-	0% {
-		opacity: 0;;
-	}
-	50%, 100% {
-		opacity: 100;
-	}
-}
-
-@-webkit-keyframes barGradient {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes barGradient {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes barGradient { 
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-
-/*************************************************************** Testing *********************************************************************/
-
-.light-theme {
-	background-color: #999;
-	color: black;
-  }
-  .dark-theme {
-	background-color: #333;
-	color: white;
-  }
-
-
-
-			/* dark / light mode toggle */
-
-			.switch {
-				position: relative;
-				display: inline-block;
-				width: 60px;
-				height: 34px;
-				align-self: center;
-				}
-			.switch input {
-				opacity: 0;
-				width: 0;
-				height: 0;
-				}
-			.slider {
-				position: absolute;
-				cursor: pointer;
-				top: 0;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				background-color: #ccc;
-				-webkit-transition: 0.4s;
-				transition: 0.4s;
-				}
-			.slider:before {
-				position: absolute;
-				content: "";
-				height: 26px;
-				width: 26px;
-				left: 4px;
-				bottom: 4px;
-				background-color: white;
-				-webkit-transition: 0.4s;
-				transition: 0.4s;
-				}
-			input:checked + .slider {
-				background-color: #2196f3;
-				}
-			input:checked + .slider:before {
-				-webkit-transform: translateX(26px);
-				-ms-transform: translateX(26px);
-				transform: translateX(26px);
-				}
-				/* Rounded sliders */
-			.slider {
-				border-radius: 30px;
-				}
-			.slider:before {
-				border-radius: 50%;
-	}
-
-	/*TOGGLE COLORS*/
-	.dark {
-			background: #545454;
-			color: #efefef;
-	}
-
-
-
-	.lightlogo{
-		background: url('ehlogo.png') no-repeat; 
-		width: 200px;
-		height: 150px;
-		margin-left: 5px;
-	}
-	#logo.dark {
-		background: url('darklogo.png') no-repeat; 
-		width: 150px;
-		height: 150px;
-		margin-left: 5px;
-		
-	}
-
-.meeds {
-	transition: all 2s ease;
-}
-
-.meeds:hover {
-	transform: scale(1.1);
-	color: #6cb019 !important;
-	text-decoration: underline #6cb019;
-}
-
-	/************************************************************** TESTING *****************************************************************/
-/************************************************************** TESTING *****************************************************************/
-/************************************************************** TESTING *****************************************************************/
-
-#footlight {
-	border-top: solid #6cb019 4px;
-	background-color: black;
-	color: white !important;
-}
-
-.pfooter {
-	color: white !important;
-}
-
-.bg-dark {
-	background-color: rgba(25, 25, 25, .9) !important;
-}
-
-/* The progress container (grey background) */
-.progress-container {
-	width: 100%;
-	height: 8px;
-	background-color: rgba(25, 25, 25, .9);
-	position: fixed;
-	top: 76px;
-	left: 0px;
-	border-style: none;
-  }
-  
-  /* The progress bar (scroll indicator) */
-  .progress-bar {
-		height: 8px;
-		background: linear-gradient(270deg, #6cb019, #3E4E2A);
-		background-size: 400% 400%;
-		width: 0%;
-		-webkit-animation: barGradient 4s ease infinite !important;
-		-moz-animation: barGradient 4s ease infinite !important;
-		animation: barGradient 4s ease infinite !important;
-  }
-
-  a.nav-link {
-	  color: white !important;
-	  transition: all 1s ease;
-	  
-  }
-
-  a.nav-link.active {
-	/* font-weight: 700; */
-	text-decoration: underline #6cb019;
-
-
-  }
-
-  a.nav-link:hover {
-	  color: white !important;
-  }
-
-  .glo {
-	animation: glowing 3000ms infinite;
-  }
-
-
-
-  .linear-wipe {
-	background: linear-gradient(to right, #252525 10%, #6cb019 30%, #252525 50%, #252525 80%);
-	background-size: 200% auto;
-	color: #000;
-	background-clip: text;
-	text-fill-color: transparent;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	
-	animation: shine 5s linear infinite;
-  }
-
-	@keyframes shine {
-	  to {
-		background-position: 200% center;
-	  }
-	}
-
-
-	

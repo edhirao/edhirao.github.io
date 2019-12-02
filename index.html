@@ -5,101 +5,89 @@
 	<meta name="viewport" content="width=device-width">
 	<title>Eduardo Hirao</title>
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,600&display=swap" rel="stylesheet">
-	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<script src="parallaxTest.js"></script>
 	<script src="jquery.magnific-popup.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
 	<link rel="stylesheet" type="text/css" href="magnific-popup.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
-<body  data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <!-------------------------------------------------- NAV BAR STARTS --------------------------------------------------------->
 
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-		<!--this is for the white style <a class="navbar-brand" href="#home"><img src="ehlogo.png" alt="logo" id="logo"></a> -->
-		<a class="navbar-brand" href="#"><img src="img/orangeeh.png" alt="logo" id="logo"></a>
-  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    		<span class="navbar-toggler-icon"></span>
-  		</button>
-		<section class="collapse navbar-collapse" id="navbarSupportedContent">
-    		<ul class="navbar-nav mx-auto">
-      			<li class="nav-item text-right">
-        			<a class="nav-link" href="#work">Projects</a>
-      			</li>
-      			<li class="nav-item text-right">
-        			<a class="nav-link" href="#about">About</a>
-      			</li>
-      			<li class="nav-item text-right">
-        			<a class="nav-link" href="#resume">Resume</a>
-      			</li>
-      			<li class="nav-item text-right">
-        			<a class="nav-link" href="#contact">Contact</a>
-      			</li>
-    		</ul>
-		</section>    	
-		<section class="progress-container">
-    			<div class="progress-bar glo" id="myBar"></div>
-		</section> 	
-	</nav>
+<body>
+	<header>
+		<nav class="header">
+			<a href="#" class="logo"><img src="img/orangeeh.png" alt="logo" id="logo"></a>
+			<input class="menu-btn" type="checkbox" id="menu-btn" />
+			<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+			<ul class="menu">
+				<li class="">
+					<a class="nav-link" href="#work">Projects</a>
+				</li>
+				<li class="">
+					<a class="nav-link" href="#about">About</a>
+				</li>
+				<li class="">
+					<a class="nav-link" href="#resume">Resume</a>
+				</li>
+				<li class="">
+					<a class="nav-link" href="#contact">Contact</a>
+				</li>
+			</ul>
+			<section class="progress-container">
+					<div class="progress-bar" id="myBar"></div>
+			</section> 	
+		</nav>
+	</header>
 
 <!---------------------------------------------- HERO SECTION STARTS  ------------------------------------------------------>
 <main>
-	<div class="rellax " data-rellax-speed="1" id="lighthero"></div>
-	<div class="rellax snow" data-rellax-speed="-4"></div>	
-	<div class="rellax fog" data-rellax-speed="4"></div>
+	<div class="rellax" data-rellax-speed="1" id="lighthero"></div>
+	<div class="rellax snow" data-rellax-speed="-4"></div>
 	<section id="home">	
-		<section class="container flex">
-			<section class="col-lg-12">
-				<img src="img/ehlogo.png" class="rellax herolightlogo" data-rellax-speed="10">
-				<h1 class="lightTheme name rellax linear-wipe" data-rellax-speed="8">Eduardo <br>Yuki <br>Hirao</h1>
-				<h2 class="lightTheme uxdesign rellax linear-wipe" data-rellax-speed="6">Product/UX Designer <br>Based in Michigan</h2>
-			</section>
+		<section class="flex">
+			<img src="img/ehlogo.png" class="rellax herolightlogo" data-rellax-speed="10">
+			<h1 class="name rellax linear-wipe" data-rellax-speed="8">Eduardo <br>Yuki <br>Hirao</h1>
+			<h2 class="uxdesign rellax linear-wipe" data-rellax-speed="6">Product/UX Designer <br>Based in Michigan</h2>
 		</section>
 	</section>	
 	<div class="whitespace"></div>
 
 <!----------------------------------------------- WORK Section STARTS ---------------------------------------------------->
-
+<section class="container">
 	<section id="work">
-		<section class="container flex">
-			<section class="col-sm-12 subphase">
+		<section class="flex">
+			<section class="col-12 phase">
 				<h2 class="linear-wipe">Projects</h2>
+				<div class="phaseline"></div>
 			</section>
-			<div class="phaseline"></div>
-			<section class="container flex bottoms">
-				<section class="subphase flex">
-					<section class="col-lg-7 col-md-12 bottoms">
-							<a href="caseStudyMikumo.html" class="">
-								<img src="img/mikumocase.png" class="caseimg zoompic" alt="Mikumo Hero Image">
-							</a>
-						<!-- <img src="mikumocase.png" class="caseimg"> -->
+
+			<section class="">
+				<section class="subphase row">
+					<section class="col-6">
+						<a href="caseStudyMikumo.html" class="">
+							<img src="img/mikumocase.png" class="caseimg zoompic" alt="Mikumo Hero Image">
+						</a>
 					</section>
-					<section class="col-lg-5 col-md-12 bottoms">
+					<section class="col-6">
 						<h3 class="casehead linear-wipe">Mikumo</h3>
 						<p class="casep">Mikumo is a visually oriented, simple to use cloud storage app that lets anyone upload, delete, move, share, edit files without all 
 							the extra complicated steps.</p>
 						<a href="caseStudyMikumo.html">
-							<input type="submit" class="btn" value="View Case Study">
+							<input type="submit" class="ctobtn" value="View Case Study">
 						</a>
 					</section>
 				</section>
 
 				<section class="mini-separator"></section>
-				<section class="subphase flex">
-					<section class="col-lg-5 col-md-12 bottoms">
+				<section class="subphase row">
+					<section class="col-6">
 						<h3 class="casehead linear-wipe">BusyBus</h3>
 						<p class="casep">BusyBus is a public transportation app that helps anyone in chicago  get to their destination with no complications</p>
-						<!-- <input type="submit" class="btn" value="View Case Study"> -->
 					</section>
-					<section class="col-lg-7 col-md-12">
-							
-								<!-- <img src="img/busybuscase.png" class="caseimg"> -->
-								<img src="img/comingsoon.png" class="caseimg" alt="Case Study Coming Soon">
-							
+					<section class="col-6 col-md-12">
+						<img src="img/comingsoon.png" class="caseimg" alt="Case Study Coming Soon">
 					</section>
 				</section>
 			</section>
@@ -113,68 +101,66 @@
 <!-------------------------------------------- ABOUT Section STARTS ------------------------------------------------->
 
 	<section id="about">
-		<section class="container flex">
-			<section class="col-sm-12 subphase">
+		<section class=" row flex">
+			<section class="col-12 phase">
 				<h2 class="linear-wipe">A Bit About Me</h2>
+				<div class="phaseline"></div>
 			</section>
-
-			<div class="phaseline"></div>
 				
-				<section class="col-sm-12 subphase">
-					<section class="biobox">
-						<h3 class="bio-subh linear-wipe">The Origin</h3>
-						<div class="reslineskill"></div>
-						<p class="bio-p">For as long as I can remember, if I didn’t have a ball at my feet or was running* on the streets of Brazil, I was drawing with 
-							a pencil in my hand. I remember drawing Pokémon and Knights of the Zodiac (an anime extremely popular in Brazil) for hours. Art 
-							was such a huge part of my life that I would go in drawing competitions, and in middle school one of my clay sculpture was displayed in a 
-							mall near my house for a few days. But somewhere along the line I lost the passion I once had and focused all my energy in sports.</p>
-					</section>	
-					<section class="biobox">
-						<h3 class="bio-subh linear-wipe">Platoon Ten-Hut!</h3>
-						<div class="reslineskill"></div>
-						<p class="bio-p">I tried following in my father’s footsteps as a mechanical engineer, but I quickly learned that I had no aptitude or desire to become one. 
-							Feeling somewhat lost, I joined the Marines. I was rapidly promoted to PFC, and in the two years after I left boot camp, I picked the rank 
-							of Lance Corporal and then became Corporal.</p> 
-							
-						<p class="bio-p">As a young Corporal I was assigned as the Field Mess NCOIC (Non-Commissioned Officer In Charge). 
-							As the Field Mess NCOIC, I had the freedom to experiment with ways to make the food more pleasing and improve the overall sanitation while 
-							in garrison and on deployments. In Afghanistan I designed a cup dispenser out of cardboard box that allowed the marines to twist and pull 
-							for a single cup. I called that invention the Twist n’ Pull.</p>
-
-						<p class="bio-p">My other design was dubbed the Shake n’ Take, and was a plastic utensil dispenser that the marines would shake and any plastic utensil set 
-							that was stuck inside would fall, allowing the other sets to stay clean.  I had tried another experiment in Afghanistan that later set a 
-							new standard, at least in my unit, and involved cooking the dehydrated eggs. The dehydrated eggs were easy to make - you add water and put 
-							them inside the tray ration heater. But often times the eggs would’ve come out watery (too much water), or hard (not enough water).</p>
-							
-						<p class="bio-p">Luckily one of our Corpsman had a rice cooker and I was able to borrow it every morning. To make the eggs even better, I asked all the marines in 
-							the base to save their MRE (Meal Ready to Eat) cheese, so I could use it for the eggs. Thanks to the rice cooker the eggs came out perfectly 
-							so no more eggs or MRE Cheeses were thrown away. Although this is not directly related to design, it did solve a few problems while in 
-							Afghanistan: sanitation, food waste, and food quality, and this greatly boosted the morale.</p>
-					</section>
-					<section class="biobox">
-						<h3 class="bio-subh linear-wipe">Help! I've Fallen and I Can't Get Up!</h3>
-						<div class="reslineskill"></div>
-						<p class="bio-p">Once I left the marines I immediately started attending school for architecture. While I was in architecture school I was doing exceptionally 
-							well, however, after a few years, the school decided to terminate the architecture program due to the low student enrollment. When I received 
-							that notice, I panicked and dropped out soon after.</p>
+			<section class="col-12 subphase">
+				<section class="biobox">
+					<h3 class="bio-subh linear-wipe">The Origin</h3>
+					<div class="bioline"></div>
+					<p class="bio-p">For as long as I can remember, if I didn’t have a ball at my feet or was running* on the streets of Brazil, I was drawing with 
+						a pencil in my hand. I remember drawing Pokémon and Knights of the Zodiac (an anime extremely popular in Brazil) for hours. Art 
+						was such a huge part of my life that I would go in drawing competitions, and in middle school one of my clay sculpture was displayed in a 
+						mall near my house for a few days. But somewhere along the line I lost the passion I once had and focused all my energy in sports.</p>
+				</section>	
+				<section class="biobox">
+					<h3 class="bio-subh linear-wipe">Platoon Ten-Hut!</h3>
+					<div class="bioline"></div>
+					<p class="bio-p">I tried following in my father’s footsteps as a mechanical engineer, but I quickly learned that I had no aptitude or desire to become one. 
+						Feeling somewhat lost, I joined the Marines. I was rapidly promoted to PFC, and in the two years after I left boot camp, I picked the rank 
+						of Lance Corporal and then became Corporal.</p> 
 						
-						<p class="bio-p">Luckily a few months later I decided to sell the house I had bought in SoCal during the 
-							recession, and I used that money to start day trading. Initially things went well, but after a few desperate moves cost me greatly, I decided 
-							to cut my losses.</p>
-					</section>
-					<section class="biobox">
-						<h3  class="bio-subh linear-wipe">UX? What's That?</h3>
-						<div class="reslineskill"></div>
-						<p class="bio-p">With the end of my day trading journey I decided to learn more about front-end d*evelopment since I already had some experience with HTML and 
-							CSS. But the more I learned about web development, words like UX, UI, Information Architecture started coming up in my searches, and the 
-							more I realised how much UX fit with my personality. I spent hours, sometimes even seeing the sunrise, looking at websites from other 
-							designers and companies, and thinking of how my next project would look.</p>
-							
-						<p class="bio-p">I started doing more research on UX and discovered that it wasn’t 
-							just art, like the drawings and sculptures I’ve been doing since I was a kid, but also functionality, like all the solutions I came up with 
-							while I was in the Marines. It was a combination of art and functionality brought together, similar to what I was doing as an architect 
-							student. Right then I realized that this whole time design was all around me, and I had never given up on art or design.</p>
-					</section>
+					<p class="bio-p">As a young Corporal I was assigned as the Field Mess NCOIC (Non-Commissioned Officer In Charge). 
+						As the Field Mess NCOIC, I had the freedom to experiment with ways to make the food more pleasing and improve the overall sanitation while 
+						in garrison and on deployments. In Afghanistan I designed a cup dispenser out of cardboard box that allowed the marines to twist and pull 
+						for a single cup. I called that invention the Twist n’ Pull.</p>
+
+					<p class="bio-p">My other design was dubbed the Shake n’ Take, and was a plastic utensil dispenser that the marines would shake and any plastic utensil set 
+						that was stuck inside would fall, allowing the other sets to stay clean.  I had tried another experiment in Afghanistan that later set a 
+						new standard, at least in my unit, and involved cooking the dehydrated eggs. The dehydrated eggs were easy to make - you add water and put 
+						them inside the tray ration heater. But often times the eggs would’ve come out watery (too much water), or hard (not enough water).</p>
+						
+					<p class="bio-p">Luckily one of our Corpsman had a rice cooker and I was able to borrow it every morning. To make the eggs even better, I asked all the marines in 
+						the base to save their MRE (Meal Ready to Eat) cheese, so I could use it for the eggs. Thanks to the rice cooker the eggs came out perfectly 
+						so no more eggs or MRE Cheeses were thrown away. Although this is not directly related to design, it did solve a few problems while in 
+						Afghanistan: sanitation, food waste, and food quality, and this greatly boosted the morale.</p>
+				</section>
+				<section class="biobox">
+					<h3 class="bio-subh linear-wipe">Help! I've Fallen and I Can't Get Up!</h3>
+					<div class="bioline"></div>
+					<p class="bio-p">Once I left the marines I immediately started attending school for architecture. While I was in architecture school I was doing exceptionally 
+						well, however, after a few years, the school decided to terminate the architecture program due to the low student enrollment. When I received 
+						that notice, I panicked and dropped out soon after.</p>
+					
+					<p class="bio-p">Luckily a few months later I decided to sell the house I had bought in SoCal during the 
+						recession, and I used that money to start day trading. Initially things went well, but after a few desperate moves cost me greatly, I decided 
+						to cut my losses.</p>
+				</section>
+				<section class="biobox">
+					<h3  class="bio-subh linear-wipe">UX? What's That?</h3>
+					<div class="bioline"></div>
+					<p class="bio-p">With the end of my day trading journey I decided to learn more about front-end d*evelopment since I already had some experience with HTML and 
+						CSS. But the more I learned about web development, words like UX, UI, Information Architecture started coming up in my searches, and the 
+						more I realised how much UX fit with my personality. I spent hours, sometimes even seeing the sunrise, looking at websites from other 
+						designers and companies, and thinking of how my next project would look.</p>
+						
+					<p class="">I started doing more research on UX and discovered that it wasn’t 
+						just art, like the drawings and sculptures I’ve been doing since I was a kid, but also functionality, like all the solutions I came up with 
+						while I was in the Marines. It was a combination of art and functionality brought together, similar to what I was doing as an architect 
+						student. Right then I realized that this whole time design was all around me, and I had never given up on art or design.</p>
 				</section>
 			</section>
 		</section>
@@ -187,13 +173,13 @@
 <!-----------------------------------------------RESUME Section STARTS ------------------------------------------------------->
 
 	<section id="resume">
-		<section class="container flex bottoms">
-			<section class="col-sm-12 subphase bottoms">
+		<section class=" row flex bottoms">
+			<section class="col-12 subphase bottoms">
 				<h2 class="linear-wipe">Resume</h2>
 				<div class="phaseline"></div>
 			</section>
 
-			<section class="col-lg-6 col-md-12">
+			<section class="col-6 col-md-12">
 				<section class="ressec">
 					<h3 class="reshead linear-wipe">Education</h3>
 					<div class="resline"></div>
@@ -223,7 +209,7 @@
 				</section>
 			</section>
 
-			<section class="col-lg-6 col-md-12">
+			<section class="col-6 col-md-12">
 				<section class="ressec">
 					<h3 class="reshead linear-wipe">Experience</h3>
 					<div class="resline"></div>
@@ -256,12 +242,12 @@
 					</ul>
 				</section>
 			</section>
-			<section class="col-lg-12">
+			<section class="col-12">
 				<h3 class="reshead linear-wipe">Skills</h3>
 				<div class="reslineskill"></div>
 			</section>
 
-			<section class="col-lg-3 col-md-6 col-6 resumelist">
+			<section class="col-3 col-6-sm">
 				<ul>
 					<li><h4>Tools</h4></li>
 					<li>Sketch</li>
@@ -278,7 +264,7 @@
 				</ul>
 			</section>
 
-			<section class="col-lg-3 col-md-6 col-6 resumelist">
+			<section class="col-3 col-6-sm">
 				<ul>
 					<li><h4>Research</h4></li>
 					<li>User Surveys</li>
@@ -292,7 +278,7 @@
 				</ul>
 			</section>
 
-			<section class="col-lg-3 col-md-6 col-6 resumelist">
+			<section class="col-3 col-6-sm">
 				<ul>
 					<li><h4>Front-End</h4></li>
 					<li>HTML5/CSS3</li>
@@ -301,14 +287,14 @@
 					<li>Bootstrap</li>
 				</ul>
 				<ul>
-					<li><h4>Back-End(learning)</h4></li>
+					<li><h4>Back-End<br>(learning)</h4></li>
 					<li>Node.js</li>
 					<li>MongoDB</li>
 					<li>NoSQL</li>
 				</ul>
 			</section>
 
-			<section class="col-lg-3 col-md-6 col-6 resumelist">
+			<section class="col-3 col-6-sm">
 				<ul>
 					<li><h4>Languages</h4></li>
 					<li>English(Fluent)</li>
@@ -327,13 +313,13 @@
 <!-----------------------------------------------CONTACT Section STARTS ------------------------------------------------------->
 	<section id="contact">
 		<section class="flex">
-			<section class="col-sm-12 subphase bottoms">
+			<section class="col-12 subphase bottoms">
 				<h2 class="linear-wipe">Contact</h2>
 				<div class="phaseline"></div>
 			</section>
 
-			<section class="col-sm-12">
-				<section class="contact">
+			<section class="col-12">
+				<section class="contact-form">
 					<form method="POST" action="https://formspree.io/eduardohirao@live.com">
 						<section class="form-group">
 							<label for="name">Name*:</label>
@@ -349,10 +335,10 @@
 						</section>
 						<section class="form-group">
 							<label for="message">Message*:</label>
-							<textarea name="messsage" class="form-control" placeholder="message" rows="5" required></textarea>
+							<textarea name="messsage" class="form-message" placeholder="message" rows="5" required></textarea>
 						</section>
 						<section class="form-group submit">
-							<input type="submit" class="btn">
+							<input type="submit" class="ctobtn">
 							<input type="hidden" name="_subject" value="New Submission">
 							<input type="hidden" name="_next" value="thanks.html" />
 						</section>
@@ -361,22 +347,23 @@
 			</section>
 		</section>
 	</section>
+</section>
 </main>
 <!-----------------------------------------------CONTACT Section ENDS ------------------------------------------------------->
 <footer id="footlight">
-	<section class="container">
+	<section class="">
 		<section class="flex">
-			<section class="socicon col-sm-4">
+			<section class="socicon col-3 col-12-sm">
 				<p class="hfooter">Eduardo Hirao</p>
 				<p class="pfooter">Currently: Detroit, MI</p>
 			</section>		
 
-			<section class="socicon col-sm-4">
+			<section class="socicon col-3 col-12-sm">
 				<p class="hfooter">email</p>
 				<a  href="mailto:eduardohirao@live.com" class="pfooter meeds">eduardohirao@live.com</a>
 			</section>
 				
-			<section class="socicon col-sm-4">
+			<section class="socicon col-3 col-12-sm">
 				<p class="hfooter">Social Media</p>
 				<a href="#" target="_blank">
 					<p class="pfooter meeds">LinkedIn</p>
@@ -394,12 +381,11 @@
 		</section>
 	</section>
 </footer>
-
 <script src="rellax.min.js"></script>
 <script type="text/javascript">
 	var rellax = new Rellax('.rellax');
 </script>
-
+<script src="activeScroll.js"></script>
 </body>
 </html>
 

@@ -958,7 +958,8 @@ p.persCompP {
 
 @media only screen and (max-width: 600px){
 	.mikumobtnproto {
-		left: 25%;
+		left: 18%;
+		top: 80%;
 	}
 }
 

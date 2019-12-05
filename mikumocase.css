@@ -4,10 +4,8 @@
 	box-sizing: border-box;
 }
 
-html {
-	scroll-behavior: smooth;
-	color: #323232;
-	background-color: white;
+a {
+	text-decoration: none;
 }
 
 body {
@@ -45,6 +43,13 @@ h4 {
     margin-block-end: 10px;
 }
 
+html {
+	scroll-behavior: smooth;
+	color: #323232;
+	background-color: white;
+}
+
+
 p {
 	font-size: 20px;
 	text-align: left;
@@ -54,13 +59,8 @@ p {
 	color: #323232
 }
 
-a {
-	text-decoration: none;
-}
-
-ul {
-	list-style-type: none;
-	padding-inline-start: 0;
+label {
+	margin-bottom: 20px;
 }
 
 li {
@@ -68,44 +68,13 @@ li {
 	line-height: 36px;
 }
 
-label {
-	margin-bottom: 20px;
+ul {
+	list-style-type: none;
+	padding-inline-start: 0;
 }
   
 /************************************************************************ NAVBAR *******************************************************************************/
   
-.header {
-	background-color: rgba(25, 25, 25, .9);
-	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-	position: fixed;
-	width: 100%;
-	z-index: 3;
-	height: 76px;
-}
-
-.header ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	overflow: hidden;
-}
-  
-.header li a {
-	display: block;
-	padding: 20px 20px;
-	text-decoration: none;
-	color: white;
-	font-size: 20px;
-}
-  
-.header .logo {
-	display: block;
-	float: left;
-	font-size: 2em;
-	padding: 10px 20px;
-	text-decoration: none;
-}
- 
 #logo{
 	width: 49px;
 	height: 49px;
@@ -121,6 +90,38 @@ a.nav-link {
 
 a.nav-link.active {
 	text-decoration: underline #6cb019;
+}
+
+.header {
+	background-color: rgba(25, 25, 25, .9);
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+	position: fixed;
+	width: 100%;
+	z-index: 3;
+	height: 76px;
+}
+
+.header li a {
+	display: block;
+	padding: 20px 20px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+
+.header .logo {
+	display: block;
+	float: left;
+	font-size: 2em;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+.header ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
 }
 
 .header .menu {
@@ -195,19 +196,9 @@ a.nav-link.active {
   
 /******************************************************************** PROGRESS BAR ******************************************************************************/
 
-.progress-container {
-	width: 100%;
-	height: 8px;
-	background-color: rgba(25, 25, 25, .9);
-	position: fixed;
-	top: 76px;
-	left: 0px;
-	border-style: none;
-}
-  
 .progress-bar {
 	height: 8px;
-	background: linear-gradient(270deg, #ff7400, #d61c0e);
+	background: linear-gradient(270deg, #6cb019, #3E4E2A);
 	background-size: 400% 400%;
 	width: 0%;
 	-webkit-animation: barGradient 4s ease infinite !important;
@@ -223,18 +214,8 @@ a.nav-link.active {
 	top: 76px;
 	left: 0px;
 	border-style: none;
-  }
-  
-  .progress-bar {
-		height: 8px;
-		background: linear-gradient(270deg, #6cb019, #3E4E2A);
-		background-size: 400% 400%;
-		width: 0%;
-		-webkit-animation: barGradient 4s ease infinite !important;
-		-moz-animation: barGradient 4s ease infinite !important;
-		animation: barGradient 4s ease infinite !important;
-  }
-  
+}
+
 /********************************************************************** HERO SECTION ***************************************************************************/
 
 .fog {
@@ -246,17 +227,30 @@ a.nav-link.active {
 	top: 10%;
 }
 
+.mikumobtnproto {
+	animation: blurFadeInUnicorn 3s ease-in 20s backwards;
+	animation-delay: 1s;
+	position: absolute;
+	margin: auto;
+	left: 41.5%;
+	top: 80%;
+	padding: 10px 40px;
+	color: white !important;
+	background-color: #6cb019;
+	text-align: center !important;
+	border-radius: 7px;
+	text-transform: uppercase;
+	border-style: none;
+	font-size: 20px;
+	cursor: pointer;
+}
+
 .mikumohero {
 	width: 100%;
 	height: 100vh;
 	position: absolute;
 	background: url(parallaxBG/mikumohero.png) no-repeat 50% 50%;
 	background-size: cover;
-}
-
-.whitespace {
-	width: 100%;
-	height: 100vh;
 }
 
 .mikumoherologo {
@@ -279,41 +273,49 @@ a.nav-link.active {
 	font-weight: 300;
 	text-transform: none;
 	color: white;
+	width: 80%;
+	margin: auto 10% !important;
 }
 
-.mikumobtnproto {
-	animation: blurFadeInUnicorn 3s ease-in 20s backwards;
-	animation-delay: 1s;
-	position: absolute;
-	margin: auto;
-	left: 41.5%;
-	top: 80%;
-	padding: 10px 40px;
-	color: white !important;
-	background-color: #6cb019;
-	text-align: center !important;
-	border-radius: 7px;
-	text-transform: uppercase;
-	border-style: none;
-	font-size: 20px;
+.whitespace {
+	width: 100%;
+	height: 100vh;
+	z-index: -10;
 }
 
 /********************************************************************** ESSENTIAL ******************************************************************************/
 
-.centers {
-	text-align: center;
+a.magnific:focus {
+	outline: none;
 }
 
 .bottoms {
 	margin-bottom: 80px;
 }
 
-.pad-b {
-	padding-bottom: 80px;
+.centers {
+	text-align: center;
 }
 
-.pad-b-half {
-	padding-bottom: 40px;
+.container {
+	width: 90%;
+	margin: auto;
+}
+
+.ctobtn {
+	margin: auto;
+	width: 50%;
+	height: 40px;
+	border: solid #323232 1px;
+	color: #323232;
+	border-radius: 4px;
+	text-transform: uppercase;
+	transition: all 1s ease;
+}
+
+.flex {
+	display: flex;
+   flex-wrap: wrap;
 }
 
 .italic {
@@ -328,13 +330,27 @@ a.nav-link.active {
 	width: 100%;
 }
 
-.container {
-	width: 90%;
-	margin: auto;
+.linear-wipe {
+	background: linear-gradient(to right, #252525 10%, #6cb019 30%, #252525 50%, #252525 80%);
+	background-size: 200% auto;
+	color: #000;
+	background-clip: text;
+	text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: shine 5s linear infinite;
 }
 
-.zoompic {
-	transition: transform 1s;
+.pad-b {
+	padding-bottom: 80px;
+}
+
+.pad-b-half {
+	padding-bottom: 40px;
+}
+
+.pad-r {
+	padding-right: 20px;
 }
 
 .phaseline {
@@ -352,42 +368,20 @@ a.nav-link.active {
 	background: #505050;
 }
 
-.ctobtn {
-	margin: auto;
-	width: 50%;
-	height: 40px;
-	border: solid #323232 1px;
-	color: #323232;
-	border-radius: 4px;
-	text-transform: uppercase;
-	transition: all 1s ease;
+.subh {
+	width: 70%;
+	margin: auto 15%;
 }
 
-.pad-r {
-	padding-right: 20px;
-}
-
-.flex {
-	display: flex;
-   flex-wrap: wrap;
-}
-
-a.magnific:focus {
-	outline: none;
-}
-
-.linear-wipe {
-	background: linear-gradient(to right, #252525 10%, #6cb019 30%, #252525 50%, #252525 80%);
-	background-size: 200% auto;
-	color: #000;
-	background-clip: text;
-	text-fill-color: transparent;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	animation: shine 5s linear infinite;
+.zoompic {
+	transition: transform 1s;
 }
 
 /*************************************************************** OVERVIEW SECTION *****************************************************************************/
+
+h3.ovdesc{
+	text-align: left;
+}
 
 .lihead {
 	font-weight: 600;
@@ -395,8 +389,8 @@ a.magnific:focus {
 	text-transform: uppercase;
 }
 
-h3.ovdesc{
-	text-align: left;
+.mikumodevice {
+	width: 95%;
 }
 
 .outdesc {
@@ -405,11 +399,9 @@ h3.ovdesc{
 
 .plat {
 	text-align: center;
-	margin: 160px auto 80px auto;
-}
-
-.mikumodevice {
-	width: 95%;
+	margin: auto 15% 80px 15%;
+	width: 70%;
+	margin: 
 }
 
 /****************************************************************** ABOUT SECTION ****************************************************************************/
@@ -418,13 +410,13 @@ h3.ovdesc{
 	margin-bottom: 50px;
 }
 
+.bio-subh {
+	text-align: left;
+}
+
 .biobox {
 	width: 70%;
 	margin: auto;
-}
-
-.bio-subh {
-	text-align: left;
 }
 
 .bioline {
@@ -452,15 +444,6 @@ h3.ovdesc{
 	line-height: 30px;
 }
 
-.ressec {
-	width: 100%;
-}
-
-.resumelist {
-	width: 90%;
-	margin-bottom: 30px;
-}
-
 .reshead {
 	margin-bottom: 0px;
 	text-align: left;
@@ -481,12 +464,16 @@ h3.ovdesc{
 	background: #505050;
 }
 
-/******************************************************************* CONTACT SECTION ***************************************************************************/
-
-.form-group {
-	width: 80%;
-	margin: auto;
+.ressec {
+	width: 100%;
 }
+
+.resumelist {
+	width: 90%;
+	margin-bottom: 30px;
+}
+
+/******************************************************************* CONTACT SECTION ***************************************************************************/
 
 .form-control {
 	width: 100%;
@@ -498,6 +485,11 @@ h3.ovdesc{
 	padding-left: 10px;
 	border-style: solid;
 	border: solid 1px #aaaaaa;
+}
+
+.form-group {
+	width: 80%;
+	margin: auto;
 }
 
 .form-message {
@@ -523,11 +515,6 @@ h3.ovdesc{
 	color: white !important;
 }
 
-.meeds {
-	transition: all 2s ease;
-	line-height: 1.1em;
-}
-
 .hfooter {
 	font-size: 16px;
 	font-weight: 600;
@@ -536,10 +523,24 @@ h3.ovdesc{
 	margin-bottom: 16px;
 }
 
+.meeds {
+	transition: all 2s ease;
+	line-height: 1.1em;
+}
+
+.overviewlist {
+	text-align: center;
+	margin: 100px auto auto auto !important;
+}
+
 .pfooter {
 	font-size: 16px;
 	text-align: left;
 	color: white !important;
+}
+
+.phase {
+	margin: 100px auto auto auto !important; 
 }
 
 .socicon {
@@ -551,10 +552,6 @@ h3.ovdesc{
 .submit {
 	text-align: center;
 	margin-top: 50px;
-}
-
-.phase {
-	margin: 100px auto auto auto !important; 
 }
 
 .subphase {
@@ -570,15 +567,16 @@ a:hover,
 	text-decoration: none;
 }
 
-.ctobtn:hover {
-	color: #fff;
-	background: #323232;
-	transform: scale(1.02);
-}
-
 a.nav-link:hover, #logo:hover,
 .flag:hover, .techicon:hover {
 	transform: scale(1.2);
+}
+
+.ctobtn:hover {
+	color: #fff !important;
+	background: #323232;
+	border-color: white;
+	transform: scale(1.1);
 }
 
 .meeds:hover {
@@ -592,32 +590,18 @@ a.nav-link:hover, #logo:hover,
 	background: #6CB019;
 	border-color: white;
 	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.u-flows:hover {
+	transform: scale(1.05);
 }
 
 .zoompic:hover {
 	transform: scale(1.05);
 }
 
-.ctobtn:hover {
-	color: #fff !important;
-	background: #323232;
-	border-color: white;
-	transform: scale(1.1);
-}
-
 /******************************************************************** GRID SYSTEM ******************************************************************************/
-
-
-.row {
-	position: relative;
-	width: 100%;
-}
-  
-.row [class^="col"] {
-	float: left;
-	margin: 0.5rem 2%;
-	/* min-height: 0.125rem; */
-}
   
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
 .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
@@ -637,19 +621,39 @@ a.nav-link:hover, #logo:hover,
 .col-11-sm { width: 87.66%; }
 .col-12-sm { width: 96%; }
 
+.hidden-sm {
+	display: none;
+}
+
+.row {
+	position: relative;
+	width: 100%;
+}
+  
+.row [class^="col"] {
+	float: left;
+	margin: 0.5rem 2%;
+	/* min-height: 0.125rem; */
+}
+
 .row::after {
 	content: "";
 	display: table;
 	clear: both;
 }
 
-.hidden-sm {
-	display: none;
-}
-
 /******************************************************************** MEDIA QUERY ******************************************************************************/
 
 @media only screen and (min-width: 1175px) {
+
+	.contact-form {
+		color: #323232;
+		padding: 0 10%;
+		width: 100%;
+		margin-bottom: 100px;
+		text-align: left;
+	}
+
 	.header li {
 		float: left;
 	}
@@ -676,18 +680,8 @@ a.nav-link:hover, #logo:hover,
 		overflow: hidden;
 	}
 
-	.contact-form {
-		color: #323232;
-		padding: 0 10%;
-		width: 100%;
-		margin-bottom: 100px;
-		text-align: left;
-	}
 	/******************************* GRID SYSTEM MEDIA QUERY ************************/
-	.container { 
-		width: 80%; 
-		margin: auto;
-	}
+
 	.col-1 { width: 4.33%; }
 	.col-2 { width: 12.66%; }
 	.col-3 { width: 21%; }
@@ -700,12 +694,31 @@ a.nav-link:hover, #logo:hover,
 	.col-10 { width: 79.33%;}
 	.col-11 { width: 87.66%; }
 	.col-12 { width: 100%; }
+
+	.container { 
+		width: 80%; 
+		margin: auto;
+	}
+
 	.hidden-sm {
 		display: block;
 	}
 }
 
 @media (max-width: 767px) {
+
+	.biobox {
+		width: 100%;
+		margin: auto;
+	}
+
+	.ctobtn {
+		margin-bottom: 100px;
+	}
+
+	.form-group {
+		width: 90% !important;
+	}
 
 	.header ul {
 		margin-top: 76px;
@@ -716,17 +729,9 @@ a.nav-link:hover, #logo:hover,
 		text-align: center;
 	}
 
-	.form-group {
-		width: 90% !important;
-	}
-
-	.phaseline {
-		width: 90%;
-	}
-
-	.biobox {
-		width: 100%;
-		margin: auto;
+	.herolightlogo {
+		left: 8%;
+		top: 31.5%;
 	}
 
 	.name {
@@ -736,6 +741,10 @@ a.nav-link:hover, #logo:hover,
 		text-transform: uppercase;
 		font-weight: normal;
 		padding-right: 100px;
+	}
+
+	.phaseline {
+		width: 90%;
 	}
 	
 	.uxdesign {
@@ -747,218 +756,7 @@ a.nav-link:hover, #logo:hover,
 		font-weight: normal;
 		text-transform: none;
 	}
-	
-	.herolightlogo {
-		left: 8%;
-		top: 31.5%;
-	}
-
-	.ctobtn {
-		margin-bottom: 100px;
-	}
 }
-
-/********************************************************************** KEYFRAMES ******************************************************************************/
-
-@keyframes blurFadeInUnicorn {
-	0% { opacity: 0; }
-	50%, 100% { opacity: 100; }
-}
-
-@-webkit-keyframes barGradient {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-
-@-moz-keyframes barGradient {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-
-@keyframes barGradient { 
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-
-@keyframes shine {
-	to {
-	  background-position: 200% center;
-	}
-}
-
-/************************************************************* HOVERS ************************************************************************/
-/****************************************************** USED IN MOST SECTION *************************************************************/
-/* -------------------------------------------------------- MIKUMO CASE STUDY ------------------------------------------------------------- */
-
-.mikumobtn {
-	margin: auto; 
-	padding: 5px 60px;
-	font-size: 16px;
-	height: 35px;
-	color: #505050 !important;
-	background-color: white;
-	border-radius: 4px;
-	text-transform: uppercase;
-	font-weight: 300;
-	border: #323232 1px solid;
-	transition: all 1s ease;
-}
-
-.brandspec {
-	width: 60%;
-	margin-left: 30px;
-}
-
-.flowspec {
-	width: 80%;
-}
-
-.marginbottom40 {
-	margin-bottom: 40px;
-}
-
-.caseh3 {
-	text-align: center;
-	margin-top: 100px;
-	font-weight: 300;
-}
-
-.caseh5 {
-	margin-top: 20px;
-}
-.h3alt{
-	text-transform: none;
-	font-weight: 400;
-	margin-bottom: 20px;
-	text-align: left;
-}
-
-
-.zoompic {
-	transition: transform 1s;
-	
-}
-
-.zoompic:hover {
-	transform: scale(1.05);
-}
-
-
-
-.topic {
-	margin-bottom: 20px;
-}
-
-.chart{
-	width: 80%;
-}
-
-.surveys {
-	margin-bottom: 60px;
-}
-
-/* NEEDS TO BE FIXED FOR SMALLER DEVICES */
-
-.surveysec {
-	width: 50%;
-}
-
-.surveylast {
-	margin-bottom: 80px;
-}
-
-.caseh4 {
-	text-align: center;
-	margin-bottom: 20px;
-}
-
-.avatarpersona {
-	width: 35%;
-}
-
-.compLogo {
-	width: 25%;
-	margin-bottom: 20px;
-}
-
-.centers {
-	text-align: center;
-}
-
-.quote {
-	font-size: 16px;
-	font-style: italic;
-	margin-top: 10px;
-	margin-bottom: 20px;
-	text-align: center;
-}
-
-.threeCol {
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
-.persCompP {
-	font-size: 16px;
-	margin-bottom: 10px;
-	text-align: left;
-}
-
-p.persCompP {
-	text-align: center;
-}
-
-.boldy {
-	font-weight: 600;
-}
-
-.personaInfo {
-	margin-top: 40px;
-	text-transform: none;
-}
-
-.listleft {
-	text-align: left;
-}
-
-.comp {
-	text-align: left;
-}
-
-.wiresketch {
-	width: 100%;
-}
-
-.testlist {
-	margin: auto 5%;
-}
-
-.parspace {
-	margin-bottom: 10px;
-}
-
-.brandsketch {
-	width: 90%;
-}
-
-.center-block {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
- }
-
- .preft {
-	 width: 90%;
- }
-
-/********************************************** HOME PAGE ONLY *************************************************************/
-
-/****************************************************** FOOTER SECTION *************************************************************/
-
-/************************************************** Media Queries *********************************************************/
 
 @media only screen and (max-width: 600px){
 	.mikumobtnproto {
@@ -1009,4 +807,189 @@ p.persCompP {
 	}
 }
 
-/* blank*/
+/********************************************************************** KEYFRAMES ******************************************************************************/
+
+@-webkit-keyframes barGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@-moz-keyframes barGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@keyframes barGradient { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@keyframes blurFadeInUnicorn {
+	0% { opacity: 0; }
+	50%, 100% { opacity: 100; }
+}
+
+@keyframes shine {
+	to { background-position: 200% center; }
+}
+
+/* -------------------------------------------------------- MIKUMO CASE STUDY ------------------------------------------------------------- */
+
+.avatarpersona {
+	width: 35%;
+}
+
+.boldy {
+	font-weight: 600;
+}
+
+.brandsketch {
+	width: 90%;
+}
+
+.brandspec {
+	width: 60%;
+	margin-left: 30px;
+}
+
+.caseh3 {
+	text-align: center;
+	margin-top: 100px;
+	font-weight: 300;
+}
+
+.caseh4 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.caseh5 {
+	margin-top: 20px;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centers {
+	text-align: center;
+}
+
+.chart{
+	width: 80%;
+}
+
+.comp {
+	text-align: left;
+}
+
+.compLogo {
+	width: 25%;
+	margin-bottom: 20px;
+}
+
+.h3alt{
+	text-transform: none;
+	font-weight: 400;
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+.flowspec {
+	width: 80%;
+}
+
+.listleft {
+	text-align: left;
+}
+
+.marginbottom40 {
+	margin-bottom: 40px;
+}
+
+.mikumobtn {
+	margin: auto; 
+	padding: 5px 60px;
+	font-size: 16px;
+	height: 35px;
+	color: #505050 !important;
+	background-color: white;
+	border-radius: 4px;
+	text-transform: uppercase;
+	font-weight: 300;
+	border: #323232 1px solid;
+	transition: all 1s ease;
+}
+
+.parspace {
+	margin-bottom: 10px;
+}
+
+.persCompP {
+	font-size: 16px;
+	margin-bottom: 20px;
+	text-align: left;
+	line-height: 1.8em;
+}
+
+p.persCompP {
+	text-align: center;
+}
+
+.personaInfo {
+	margin-top: 40px;
+	text-transform: none;
+}
+
+.preft {
+	width: 90%;
+}
+
+.quote {
+	font-size: 16px;
+	font-style: italic;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.surveys {
+	margin-bottom: 60px;
+}
+
+.surveysec {
+	width: 50%;
+}
+
+.surveylast {
+	margin-bottom: 80px;
+}
+
+.testlist {
+	margin: auto 5%;
+}
+
+.threeCol {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.topic {
+	margin-bottom: 20px;
+}
+
+.u-flows {
+	width: 70%;
+	box-shadow: 5px 5px 5px #909090;
+	border-radius: 9px; 
+	transition: transform 1s;
+}
+
+.wiresketch {
+	width: 100%;
+}

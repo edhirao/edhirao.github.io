@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
-<!-------------------------------------------------- NAV BAR STARTS --------------------------------------------------------->
+<!-- //////////////////////////////////////////////////////////     NAV BAR STARTS     ///////////////////////////////////////////////////////////// -->
 
 <body>
 	<header>
@@ -41,22 +41,22 @@
 		</nav>
 	</header>
 
-<!---------------------------------------------- HERO SECTION STARTS  ------------------------------------------------------>
+<!-- //////////////////////////////////////////////          HERO SECTION STARTS        //////////////////////////////////////////////////////////  -->
 <main>
 	<section id="home">
 		<section class="rellax" data-rellax-speed="1" id="lighthero">
-				<img src="img/ehlogo.png" class="rellax herolightlogo" data-rellax-speed="10">
-				<h1 class="name rellax linear-wipe" data-rellax-speed="8">Eduardo <br>Yuki <br>Hirao</h1>
-				<h2 class="uxdesign rellax linear-wipe" data-rellax-speed="6">Product/UX Designer <br>Based in Michigan</h2>
+			<h1 class="name rellax linear-wipe" data-rellax-speed="10">Olá and Yōkoso! I'm <br><span class="h1-secondline">Eddie Yuki Hirao</span></h1>
+			<div class="heroline rellax" data-rellax-speed="8"></div>
+			<h2 class="uxdesign rellax linear-wipe" data-rellax-speed="6">A Veteran Sergeant in the Marines, Japanese-Brazilian, Eccentric Product/UX Designer 
+				Based in Michigan Always Ready for the Next Mission</h2>
 		</section>
 		<div class="rellax snow" data-rellax-speed="-4"></div>
 		<div class="whitespace"></div>
-		<section id="home">	
 			
 	</section>	
 
 
-<!----------------------------------------------- WORK Section STARTS ---------------------------------------------------->
+<!-- ////////////////////////////////////////////////////      WORK Section STARTS       /////////////////////////////////////////////////// -->
 <section class="container">
 	<section id="work">
 		<section class="flex">
@@ -76,9 +76,7 @@
 						<h3 class="casehead linear-wipe">Mikumo</h3>
 						<p class="casep">Mikumo is a visually oriented, simple to use cloud storage app that lets anyone upload, delete, move, share, edit files without all 
 							the extra complicated steps.</p>
-						<a href="caseStudyMikumo.html">
-							<input type="submit" class="ctobtn" value="View Case Study">
-						</a>
+						<button onclick="window.location.href = 'caseStudyMikumo.html';" class="ctobtn">View Case Study</button>
 					</section>
 				</section>
 
@@ -96,11 +94,11 @@
 		</section>
 	</section>
 
-<!----------------------------------------------- WORK Section ENDS ----------------------------------------------------->
+<!-- ////////////////////////////////////////////             WORK Section ENDS        ///////////////////////////////////////////////////// -->
 
 	<div class="separator"></div>
 
-<!-------------------------------------------- ABOUT Section STARTS ------------------------------------------------->
+<!-- /////////////////////////////////////////////         ABOUT Section STARTS          //////////////////////////////////////////////////// -->
 
 	<section id="about">
 		<section class=" row flex">
@@ -113,7 +111,7 @@
 				<section class="biobox">
 					<h3 class="bio-subh linear-wipe">The Origin</h3>
 					<div class="bioline"></div>
-					<p class="bio-p">For as long as I can remember, if I didn’t have a ball at my feet or was running* on the streets of Brazil, I was drawing with 
+					<p class="bio-p">For as long as I can remember, if I didn’t have a ball at my feet or was running on the streets of Brazil, I was drawing with 
 						a pencil in my hand. I remember drawing Pokémon and Knights of the Zodiac (an anime extremely popular in Brazil) for hours. Art 
 						was such a huge part of my life that I would go in drawing competitions, and in middle school one of my clay sculpture was displayed in a 
 						mall near my house for a few days. But somewhere along the line I lost the passion I once had and focused all my energy in sports.</p>
@@ -168,11 +166,11 @@
 		</section>
 	</section>
 
-<!-----------------------------------------------ABOUT Section ENDS ------------------------------------------------------->
+<!-- /////////////////////////////////////////////////         ABOUT Section ENDS          ///////////////////////////////////////////////////// -->
 
 	<div class="separator"></div>
 
-<!-----------------------------------------------RESUME Section STARTS ------------------------------------------------------->
+<!-- ////////////////////////////////////////          RESUME Section STARTS          ////////////////////////////////////////////// -->
 
 	<section id="resume">
 		<section class=" row flex bottoms">
@@ -308,11 +306,11 @@
 			</section>
 		</section>
 	</section>
-<!-----------------------------------------------RESUME Section ENDS ------------------------------------------------------->
+<!--  ///////////////////////////////////////////////////////    RESUME Section ENDS     /////////////////////////////////////////////////////// -->
 
 	<div class="separator"></div>
 
-<!-----------------------------------------------CONTACT Section STARTS ------------------------------------------------------->
+<!-- ///////////////////////////////////////////////////////   CONTACT Section STARTS    //////////////////////////////////////////////////////// -->
 	<section id="contact">
 		<section class="flex">
 			<section class="col-12 subphase bottoms">
@@ -325,19 +323,19 @@
 					<form method="POST" action="https://formspree.io/eduardohirao@live.com">
 						<section class="form-group">
 							<label for="name">Name*:</label>
-							<input type="text" name="name" class="form-control" placeholder="name" required>
+							<input type="text" id="name" name="name" class="form-control" placeholder="name" required>
 						</section>
 						<section class="form-group">
 							<label for="company">Company:</label>
-							<input type="text" name="company"class="form-control" placeholder="company">
+							<input type="text" id="company" name="company" class="form-control" placeholder="company">
 						</section>
 						<section class="form-group">
 							<label for="email">Email*:</label>
-							<input type="email" name="_replyto" class="form-control" placeholder="email" required>
+							<input type="email" id="email" name="_replyto" class="form-control" placeholder="email" required>
 						</section>
 						<section class="form-group">
 							<label for="message">Message*:</label>
-							<textarea name="messsage" class="form-message" placeholder="message" rows="5" required></textarea>
+							<textarea name="messsage" id="message" class="form-message" placeholder="message" rows="5" required></textarea>
 						</section>
 						<section class="form-group submit">
 							<input type="submit" class="ctobtn">
@@ -351,7 +349,7 @@
 	</section>
 </section>
 </main>
-<!-----------------------------------------------CONTACT Section ENDS ------------------------------------------------------->
+<!-- ////////////////////////////////////////////           CONTACT Section ENDS            ///////////////////////////////////////////////////// -->
 <footer id="footlight">
 	<section class="">
 		<section class="flex">
@@ -384,7 +382,7 @@
 	</section>
 </footer>
 <script src="rellax.min.js"></script>
-<script type="text/javascript">
+<script>
 	var rellax = new Rellax('.rellax');
 </script>
 <script src="activeScroll.js"></script>

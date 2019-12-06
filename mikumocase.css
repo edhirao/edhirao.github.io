@@ -731,6 +731,11 @@ a.nav-link:hover, #logo:hover,
 	.phaseline {
 		width: 90%;
 	}
+
+	.subh {
+		width: 100%;
+		margin: auto;
+	}
 }
 
 @media only screen and (max-width: 600px){

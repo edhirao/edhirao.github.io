@@ -228,12 +228,12 @@ a.nav-link.active {
 }
 
 .mikumobtnproto {
+	margin: auto;
 	animation: blurFadeInUnicorn 3s ease-in 20s backwards;
 	animation-delay: 1s;
-	position: absolute;
-	margin: auto;
-	left: 41.5%;
-	top: 80%;
+	position: relative;
+	/* left: 41.5%; */
+	top: 550px;
 	padding: 10px 40px;
 	color: white !important;
 	background-color: #6cb019;
@@ -256,7 +256,6 @@ a.nav-link.active {
 .mikumoherologo {
 	animation: blurFadeInUnicorn 3s ease-in 20s backwards;
 	position: absolute;
-	margin: auto;
 	left: 30%;
 	width: 40%;
 	top: 36.5vh;
@@ -274,7 +273,7 @@ a.nav-link.active {
 	text-transform: none;
 	color: white;
 	width: 80%;
-	margin: auto 10% !important;
+	margin: auto !important;
 }
 
 .whitespace {
@@ -760,8 +759,8 @@ a.nav-link:hover, #logo:hover,
 
 @media only screen and (max-width: 600px){
 	.mikumobtnproto {
-		left: 18%;
-		top: 80%;
+		/* left: 18%; */
+		top: 550px;
 	}
 }
 
@@ -780,19 +779,13 @@ a.nav-link:hover, #logo:hover,
 		left: 20%;
 	}
 
-	.mikumosub {
-		font-size: 25px !important;
-	}
-
 	.plat {
 		text-align: center;
 		margin-top: auto;
 	}
-}
 
-@media only screen and (min-width: 601px) and (max-width: 989px){
-	.mikumobtnproto {
-		left: 35%;
+	.mikumosub {
+		font-size: 25px !important;
 	}
 }
 

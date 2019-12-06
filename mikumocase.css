@@ -728,47 +728,29 @@ a.nav-link:hover, #logo:hover,
 		text-align: center;
 	}
 
-	.herolightlogo {
-		left: 8%;
-		top: 31.5%;
-	}
-
-	.name {
-		left:45%;
-		top: 30%;
-		animation-delay: 1s;
-		text-transform: uppercase;
-		font-weight: normal;
-		padding-right: 100px;
-	}
-
 	.phaseline {
 		width: 90%;
-	}
-	
-	.uxdesign {
-		left: 5%;
-		top: 53%;
-		right: 0;
-		animation-delay: 2s;
-		font-size: 40px;
-		font-weight: normal;
-		text-transform: none;
 	}
 }
 
 @media only screen and (max-width: 600px){
+	.mikumoherologo {
+		top: 200px;
+	}
+
+	.mikumosub {
+		top: 270px;
+	}
+	
 	.mikumobtnproto {
 		/* left: 18%; */
-		top: 550px;
+		top: 400px;
 	}
+
+
 }
 
 @media only screen and (max-width: 989px){
-
-	.name, .uxdesign, .herolightlogo {
-		left: 10vh;
-	}
 
 	.prefBar {
 		width: 100%;

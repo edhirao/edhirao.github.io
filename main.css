@@ -83,17 +83,16 @@ ul {
 }
 
 a.nav-link {
-	color: white !important;
+	color: #323232 !important;
  	transition: all 1s ease;
 }
 
 a.nav-link.active {
-	text-decoration: underline #ff7400 !important;
+	text-decoration: underline orange!important;
 }
 
 .header {
-	background-color: rgba(25, 25, 25, .9);
-	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+	background-color: white;
 	position: fixed;
 	width: 100%;
 	z-index: 3;
@@ -111,7 +110,7 @@ a.nav-link.active {
 	display: block;
 	padding: 20px 20px;
 	text-decoration: none;
-	color: white;
+	color: #323232;
 	font-size: 20px;
 }
   
@@ -139,7 +138,7 @@ a.nav-link.active {
 }
   
 .header .menu-icon .navicon {
-	background: white;
+	background: #323232;
 	display: block;
 	height: 2px;
 	position: relative;
@@ -149,7 +148,7 @@ a.nav-link.active {
   
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-	background: white;
+	background: #323232;
 	content: '';
 	display: block;
 	height: 100%;
@@ -197,7 +196,7 @@ a.nav-link.active {
 
 .progress-bar {
 	height: 8px;
-	background: linear-gradient(270deg, #ff7400, #d61c0e);
+	background: #323232;
 	background-size: 400% 400%;
 	width: 0%;
 	-webkit-animation: barGradient 4s ease infinite !important;
@@ -208,7 +207,7 @@ a.nav-link.active {
 .progress-container {
 	width: 100%;
 	height: 8px;
-	background-color: rgba(25, 25, 25, .9);
+	background-color: white;
 	position: fixed;
 	top: 76px;
 	left: 0px;
@@ -216,12 +215,28 @@ a.nav-link.active {
 }
 
 /********************************************************************** HERO SECTION ***************************************************************************/
+.boldy {
+	font-weight: 600 !important;
+	color: #ff7400;
+	text-transform: uppercase;
+}
+
+.biglogo {
+	background: url(img/biglogo.png) no-repeat 50% 50%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 30%;
+	z-index: 2;
+
+}
+
 
 #lighthero {
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	background: url(parallaxBG/japanlight.png) no-repeat 50% 50%;
+	background: url(parallaxBG/japandark.jpg) no-repeat 50% 50%;
 	background-size: cover;
 }
 
@@ -255,22 +270,25 @@ a.nav-link.active {
 	font-weight: 300;
 }
 
-.snow {
-	position: absolute;
-	width:100%;
-	height: 100%;
-	background: url(parallaxBG/snow.png) no-repeat 50% 50%;
-	background-size: cover;
-}
-
 .uxdesign {
 	top: 50%;
 	padding-left: 5%;
 	animation-delay: 2s;
-	font-size: 39px;
-	width: 950px;
+	font-size: 24px;
+	width: 700px;
 	font-weight: normal;
 	text-transform: none;
+	color: #777;
+}
+
+.chevron {
+	width: 4%;
+	top: 720px;
+	position: absolute;
+	margin: auto 47%;
+	z-index: 2;
+	cursor: pointer;
+	transition: all 250ms ease;
 }
 
 .whitespace {
@@ -299,7 +317,6 @@ a.magnific:focus {
 
 .ctobtn {
 	margin: auto;
-	width: 50%;
 	height: 40px;
 	border: solid #323232 1px;
 	color: #323232;
@@ -307,6 +324,8 @@ a.magnific:focus {
 	text-transform: uppercase;
 	transition: all 1s ease;
 	cursor: pointer;
+	padding-left: 60px;
+	padding-right: 60px;
 }
 
 .flex {
@@ -348,20 +367,49 @@ a.magnific:focus {
 	background: #505050;
 }
 
+.thirds, .skill-li, .screen-half {
+	width: 100%;
+}
+
+.wide {
+	width: 100%;
+	float: left;
+}
+
 .zoompic {
 	transition: transform 1s;
 }
 
 /*************************************************************** PROJECT SECTION *****************************************************************************/
 
+.busybuscase {
+	width: 50%;
+	float: right;
+}
+
 .casehead {
 	text-align: left;
 	margin-bottom: 20px;
+	text-transform: none;
+	font-weight: 700;
+	font-size: 40px;
 }
 
 .caseimg {
 	width: 90%;
 	box-shadow: #323232 10px 10px 20px;
+}
+
+.greenbox {
+	height: 100%;
+	width: 40%;
+	background: green;
+	float: left;
+}
+
+.mikumocase {
+	width: 100%;
+	float: left:
 }
 
 .casep {
@@ -379,7 +427,7 @@ a.magnific:focus {
 /****************************************************************** ABOUT SECTION ****************************************************************************/
 
 .biobox {
-	width: 70%;
+	width: 80%;
 	margin: auto;
 }
 
@@ -482,16 +530,16 @@ a.magnific:focus {
 #footlight {
 	width: 100%;
 	height: 100%;
-	border-top: solid orange 4px;
-	background-color: black;
-	color: white !important;
+	border-top: solid #323232 4px;
+	background-color: white;
+	color: #323232 !important;
 }
 
 .hfooter {
 	font-size: 16px;
 	font-weight: 600;
 	text-align: left;
-	color: white;
+	color: #323232;
 	margin-bottom: 16px;
 }
 
@@ -503,7 +551,7 @@ a.magnific:focus {
 .pfooter {
 	font-size: 16px;
 	text-align: left;
-	color: white !important;
+	color: #323232 !important;
 }
 
 .phase {
@@ -511,9 +559,8 @@ a.magnific:focus {
 }
 
 .socicon {
-	margin-top: 20px;
-	margin-bottom: 40px;
-	margin-left: 10%;
+	margin-bottom: 20px;
+	padding: 50px;
 }
 
 .submit {
@@ -527,10 +574,6 @@ a.magnific:focus {
 }
 
 /*********************************************************************** HOVERS ********************************************************************************/
-
-a.nav-link:hover {
-	color: white !important;
-}
 
 a:hover,
 #logo:hover {
@@ -560,45 +603,8 @@ a.nav-link:hover, #logo:hover,
 	transform: scale(1.05);
 }
 
-/******************************************************************** GRID SYSTEM ******************************************************************************/
-  
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
-.col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
-	width: 96%;
-}
-
-.col-1-sm { width: 4.33%; }
-.col-2-sm { width: 12.66%; }
-.col-3-sm { width: 21%; }
-.col-4-sm { width: 29.33%; }
-.col-5-sm { width: 37.66%; }
-.col-6-sm { width: 46%; }
-.col-7-sm { width: 54.33%; }
-.col-8-sm { width: 62.66%; }
-.col-9-sm { width: 71%; }
-.col-10-sm { width: 79.33%; }
-.col-11-sm { width: 87.66%; }
-.col-12-sm { width: 96%; }
-
-.hidden-sm {
-	display: none;
-}
-
-.row {
-	position: relative;
-	width: 100%;
-}
-  
-.row [class^="col"] {
-	float: left;
-	margin: 0.5rem 2%;
-	/* min-height: 0.125rem; */
-}
-
-.row::after {
-	content: "";
-	display: table;
-	clear: both;
+.chevron:hover {
+	transform: scale(1.1);
 }
 
 /******************************************************************** MEDIA QUERY ******************************************************************************/
@@ -611,6 +617,11 @@ a.nav-link:hover, #logo:hover,
 		width: 100%;
 		margin-bottom: 100px;
 		text-align: left;
+	}
+
+	.container { 
+		width: 70%; 
+		margin: auto;
 	}
 
 	.header li {
@@ -639,28 +650,27 @@ a.nav-link:hover, #logo:hover,
 		overflow: hidden;
 	}
 
-	/******************************* GRID SYSTEM MEDIA QUERY ************************/
-
-	.col-1 { width: 4.33%; }
-	.col-2 { width: 12.66%; }
-	.col-3 { width: 21%; }
-	.col-4 { width: 29.33%; }
-	.col-5 { width: 37.66%; }
-	.col-6 { width: 46%; }
-	.col-7 { width: 54.33%; }
-	.col-8 { width: 62.66%; }
-	.col-9 { width: 71%; }
-	.col-10 { width: 79.33%;}
-	.col-11 { width: 87.66%; }
-	.col-12 { width: 100%; }
-
-	.container { 
-		width: 80%; 
-		margin: auto;
+	.midori {
+		padding-left: 10%;
+		padding-top: 5%;
+		text-align: left;
 	}
 
-	.hidden-sm {
-		display: block;
+	.lefty {
+		text-align: left !important;
+	}
+
+	.skill-li { 
+		width: 25%; 
+	}
+	
+	.screen-half { 
+		width: 50%; 
+		float: left;
+	}
+
+	.thirds {
+		width: 33.333%;
 	}
 }
 
@@ -693,13 +703,17 @@ a.nav-link:hover, #logo:hover,
 		padding: 0;
 		list-style: none;
 		overflow: hidden;
-		background-color: rgba(25, 25, 25, .9);
+		background-color: white;
 		text-align: center;
 	}
 
 	.heroline {
 		width: 490px;
 		top: 45%;
+	}
+
+	.midori {
+		margin-top: 60px;
 	}
 
 	.mini-separator {
@@ -715,6 +729,10 @@ a.nav-link:hover, #logo:hover,
 		font-size: 40px;
 		animation-delay: 1s;
 		text-transform: uppercase;
+	}
+
+	.skill-li { 
+		width: 50%; 
 	}
 	
 	.uxdesign {
@@ -775,7 +793,5 @@ a.nav-link:hover, #logo:hover,
 }
 
 @keyframes shine {
-	to {
-	  background-position: 200% center;
-	}
+	to { background-position: 200% center;}
 }

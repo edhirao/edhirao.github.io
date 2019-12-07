@@ -218,21 +218,11 @@ a.nav-link.active {
 
 /********************************************************************** HERO SECTION ***************************************************************************/
 
-.fog {
-	position: absolute;
-	width:100%;
-	height: 100vh;
-	background: url(parallaxBG/fog.png) no-repeat 50% 50%;
-	background-size: cover;
-	top: 10%;
-}
-
 .mikumobtnproto {
 	margin: auto;
 	animation: blurFadeInUnicorn 3s ease-in 20s backwards;
 	animation-delay: 1s;
 	position: relative;
-	/* left: 41.5%; */
 	top: 550px;
 	padding: 10px 40px;
 	color: white !important;
@@ -324,6 +314,10 @@ a.magnific:focus {
 	line-height: 1.8em;
 }
 
+.left {
+	text-align: left;
+}
+
 .lightgraybg {
 	background-color: #f8f8f8;
 	width: 100%;
@@ -340,16 +334,16 @@ a.magnific:focus {
 	animation: shine 5s linear infinite;
 }
 
+.ov-li, .thirds, .screen-half {
+	width: 100%;
+}
+
 .pad-b {
 	padding-bottom: 80px;
 }
 
 .pad-b-half {
 	padding-bottom: 40px;
-}
-
-.pad-r {
-	padding-right: 20px;
 }
 
 .phaseline {
@@ -376,6 +370,11 @@ a.magnific:focus {
 	transition: transform 1s;
 }
 
+.wide {
+	width: 100%;
+	float: left;
+}
+
 /*************************************************************** OVERVIEW SECTION *****************************************************************************/
 
 h3.ovdesc{
@@ -400,108 +399,6 @@ h3.ovdesc{
 	text-align: center;
 	margin: auto 15% 80px 15%;
 	width: 70%;
-	margin: 
-}
-
-/****************************************************************** ABOUT SECTION ****************************************************************************/
-
-.bio-p {
-	margin-bottom: 50px;
-}
-
-.bio-subh {
-	text-align: left;
-}
-
-.biobox {
-	width: 70%;
-	margin: auto;
-}
-
-.bioline {
-	margin: 10px auto 30px 0;
-	width: 100%;
-	height: 1px;
-	background: #505050;
-}
-
-/******************************************************************* RESUME SECTION *****************************************************************************/
-
-.italicdate {
-	text-transform: none;
-	font-weight: 300;
-	font-size: 16px;
-}
-
-.res {
-	margin-bottom: 0;
-}
-
-.resdesc {
-	margin-top: 10px;
-	margin-bottom: 50px;
-	line-height: 30px;
-}
-
-.reshead {
-	margin-bottom: 0px;
-	text-align: left;
-}
-
-.resline {
-	margin-left: 0;
-	margin-bottom: 30px;
-	width: 70%;
-	height: 1px;
-	background: #505050;
-}
-
-.reslineskill {
-	margin: auto auto 0;
-	width: 100%;
-	height: 1px;
-	background: #505050;
-}
-
-.ressec {
-	width: 100%;
-}
-
-.resumelist {
-	width: 90%;
-	margin-bottom: 30px;
-}
-
-/******************************************************************* CONTACT SECTION ***************************************************************************/
-
-.form-control {
-	width: 100%;
-	margin-top: 10px;
-	margin-bottom: 20px;
-	border-radius: 5px;
-	box-shadow: none;
-	height: 40px;
-	padding-left: 10px;
-	border-style: solid;
-	border: solid 1px #aaaaaa;
-}
-
-.form-group {
-	width: 80%;
-	margin: auto;
-}
-
-.form-message {
-	width: 100%;
-	margin-top: 10px;
-	margin-bottom: 20px;
-	border-radius: 5px;
-	box-shadow: none;
-	height: 200px;
-	padding-left: 10px;
-	padding-top: 10px;
-	border-style: solid;
-	border: solid 1px #aaaaaa;
 }
 
 /******************************************************************* FOOTER SECTION ****************************************************************************/
@@ -543,9 +440,8 @@ h3.ovdesc{
 }
 
 .socicon {
-	margin-top: 20px;
-	margin-bottom: 40px;
-	margin-left: 10%;
+	margin-bottom: 20px;
+	padding: 50px;
 }
 
 .submit {
@@ -600,57 +496,13 @@ a.nav-link:hover, #logo:hover,
 	transform: scale(1.05);
 }
 
-/******************************************************************** GRID SYSTEM ******************************************************************************/
-  
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
-.col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
-	width: 96%;
-}
-
-.col-1-sm { width: 4.33%; }
-.col-2-sm { width: 12.66%; }
-.col-3-sm { width: 21%; }
-.col-4-sm { width: 29.33%; }
-.col-5-sm { width: 37.66%; }
-.col-6-sm { width: 46%; }
-.col-7-sm { width: 54.33%; }
-.col-8-sm { width: 62.66%; }
-.col-9-sm { width: 71%; }
-.col-10-sm { width: 79.33%; }
-.col-11-sm { width: 87.66%; }
-.col-12-sm { width: 96%; }
-
-.hidden-sm {
-	display: none;
-}
-
-.row {
-	position: relative;
-	width: 100%;
-}
-  
-.row [class^="col"] {
-	float: left;
-	margin: 0.5rem 2%;
-	/* min-height: 0.125rem; */
-}
-
-.row::after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
 /******************************************************************** MEDIA QUERY ******************************************************************************/
 
 @media only screen and (min-width: 1175px) {
 
-	.contact-form {
-		color: #323232;
-		padding: 0 10%;
-		width: 100%;
-		margin-bottom: 100px;
-		text-align: left;
+	.container { 
+		width: 80%; 
+		margin: auto;
 	}
 
 	.header li {
@@ -679,44 +531,36 @@ a.nav-link:hover, #logo:hover,
 		overflow: hidden;
 	}
 
-	/******************************* GRID SYSTEM MEDIA QUERY ************************/
-
-	.col-1 { width: 4.33%; }
-	.col-2 { width: 12.66%; }
-	.col-3 { width: 21%; }
-	.col-4 { width: 29.33%; }
-	.col-5 { width: 37.66%; }
-	.col-6 { width: 46%; }
-	.col-7 { width: 54.33%; }
-	.col-8 { width: 62.66%; }
-	.col-9 { width: 71%; }
-	.col-10 { width: 79.33%;}
-	.col-11 { width: 87.66%; }
-	.col-12 { width: 100%; }
-
-	.container { 
-		width: 80%; 
-		margin: auto;
+	.ov-li {
+		width: 25%;
 	}
 
-	.hidden-sm {
-		display: block;
+	.pad-r {
+		padding-right: 40px;
+	}
+
+	.pad-rlg {
+		padding-right: 80px;
+	}
+	
+	.pad-l {
+		padding-left: 40px;
+	}
+
+	.screen-half { 
+		width: 50%; 
+		float: left;
+	}
+
+	.thirds { 
+		width: 33.333%; 
 	}
 }
 
 @media (max-width: 767px) {
 
-	.biobox {
-		width: 100%;
-		margin: auto;
-	}
-
 	.ctobtn {
 		margin-bottom: 100px;
-	}
-
-	.form-group {
-		width: 90% !important;
 	}
 
 	.header ul {
@@ -748,11 +592,8 @@ a.nav-link:hover, #logo:hover,
 	}
 	
 	.mikumobtnproto {
-		/* left: 18%; */
 		top: 400px;
 	}
-
-
 }
 
 @media only screen and (max-width: 989px){
@@ -819,7 +660,7 @@ a.nav-link:hover, #logo:hover,
 /* -------------------------------------------------------- MIKUMO CASE STUDY ------------------------------------------------------------- */
 
 .avatarpersona {
-	width: 35%;
+	width: 30%;
 }
 
 .boldy {
@@ -869,7 +710,7 @@ a.nav-link:hover, #logo:hover,
 }
 
 .compLogo {
-	width: 25%;
+	width: 20%;
 	margin-bottom: 20px;
 }
 
@@ -877,7 +718,6 @@ a.nav-link:hover, #logo:hover,
 	text-transform: none;
 	font-weight: 400;
 	margin-bottom: 20px;
-	text-align: left;
 }
 
 .flowspec {
@@ -939,7 +779,7 @@ p.persCompP {
 }
 
 .surveys {
-	margin-bottom: 60px;
+	padding-bottom: 60px;
 }
 
 .surveysec {
@@ -955,8 +795,8 @@ p.persCompP {
 }
 
 .threeCol {
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 35px;
+	padding-right: 35px;
 }
 
 .topic {

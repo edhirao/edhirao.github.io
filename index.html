@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Eduardo Hirao</title>
-	<link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,600&display=swap" rel="stylesheet">
+	<title>Eddie Yuki Hirao</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,600,700&display=swap" rel="stylesheet">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153993271-1"></script>
 	<script>
@@ -21,6 +21,7 @@
 	<link rel="stylesheet" type="text/css" href="normalize.css">
 	<link rel="stylesheet" type="text/css" href="magnific-popup.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="icon" href="img/newlogo.png">
 </head>
 
 <!-- //////////////////////////////////////////////////////////     NAV BAR STARTS     ///////////////////////////////////////////////////////////// -->
@@ -28,7 +29,7 @@
 <body>
 	<header>
 		<nav class="header">
-			<a href="#" class="logo"><img src="img/orangeeh.png" alt="logo" id="logo"></a>
+			<a href="#" class="logo"><img src="img/logodark.png" alt="logo" id="logo"></a>
 			<input class="menu-btn" type="checkbox" id="menu-btn" />
 			<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 			<ul class="menu">
@@ -39,10 +40,10 @@
 					<a class="nav-link" href="#about">About</a>
 				</li>
 				<li class="">
-					<a class="nav-link" href="#resume">Resume</a>
+					<a class="nav-link" href="#contact">Contact</a>
 				</li>
 				<li class="">
-					<a class="nav-link" href="#contact">Contact</a>
+					<a class="nav-link" href="resume.pdf" target="__blank">Resume</a>
 				</li>
 			</ul>
 			<section class="progress-container">
@@ -53,14 +54,21 @@
 
 <!-- //////////////////////////////////////////////          HERO SECTION STARTS        //////////////////////////////////////////////////////////  -->
 <main>
+
+		<section id="home">
+				<div class="whitespace">
+					<h1 class="name rellax" data-rellax-speed="10">Olá and Yōkoso! I'm <br><span class="h1-secondline">Eddie Yuki Hirao</span></h1>
+					<!-- <div class="heroline rellax" data-rellax-speed="8"></div> -->
+					<h3 class="uxdesign rellax" data-rellax-speed="6">A Veteran Sergeant in the Marines, Japanese-Brazilian, Eccentric <span class="boldy">
+						Product/UX Designer</span> Based in Michigan Always Ready for the Next Mission</h3>
+					<a href="#work"><img src="img/chevron.png" class="chevron"></a>
+				</div>
+		</section>	
+
 	<section id="home">
-		<section class="rellax" data-rellax-speed="1" id="lighthero">
-			<h1 class="name rellax linear-wipe" data-rellax-speed="10">Olá and Yōkoso! I'm <br><span class="h1-secondline">Eddie Yuki Hirao</span></h1>
-			<div class="heroline rellax" data-rellax-speed="8"></div>
-			<h2 class="uxdesign rellax linear-wipe" data-rellax-speed="6">A Veteran Sergeant in the Marines, Japanese-Brazilian, Eccentric Product/UX Designer 
-				Based in Michigan Always Ready for the Next Mission</h2>
+		<section id="lighthero">
+			<div class="rellax biglogo" data-rellax-speed="5"></div>
 		</section>
-		<div class="rellax snow" data-rellax-speed="-4"></div>
 		<div class="whitespace"></div>
 			
 	</section>	
@@ -68,36 +76,38 @@
 
 <!-- ////////////////////////////////////////////////////      WORK Section STARTS       /////////////////////////////////////////////////// -->
 <section class="container">
+	
 	<section id="work">
 		<section class="flex">
-			<section class="col-12 phase">
+			<section class="wide phase">
 				<h2 class="linear-wipe">Projects</h2>
 				<div class="phaseline"></div>
 			</section>
 
-			<section class="">
-				<section class="subphase row">
-					<section class="col-6">
+			<section class="wide">
+				<section class="subphase flex">
+					<section class="screen-half">
 						<a href="caseStudyMikumo.html" class="">
-							<img src="img/mikumocase.png" class="caseimg zoompic" alt="Mikumo Hero Image">
+							<img src="img/mikumoplat.png" class="mikumocase zoompic" alt="Mikumo App on Multiple Platforms">
 						</a>
 					</section>
-					<section class="col-6">
-						<h3 class="casehead linear-wipe">Mikumo</h3>
-						<p class="casep">Mikumo is a visually oriented, simple to use cloud storage app that lets anyone upload, delete, move, share, edit files without all 
-							the extra complicated steps.</p>
-						<button onclick="window.location.href = 'caseStudyMikumo.html';" class="ctobtn">View Case Study</button>
+					<section class="screen-half midori">
+						<h3 class="casehead">Mikumo</h3>
+						<section class="">
+							<p class="casep">Mikumo is a visually oriented, simple to use cloud storage app for everyone</p>
+							<button onclick="window.location.href = 'caseStudyMikumo.html';" class="ctobtn">View Case Study</button>
+						</section>
 					</section>
 				</section>
 
-				<section class="mini-separator"></section>
-				<section class="subphase row">
-					<section class="col-6">
-						<h3 class="casehead linear-wipe">BusyBus</h3>
+				<section class="subphase lefty flex">
+					<section class="screen-half">
+						<h3 class="casehead">BusyBus</h3>
 						<p class="casep">BusyBus is a public transportation app that helps anyone in chicago  get to their destination with no complications</p>
+						<button class="ctobtn">Coming Soon</button>
 					</section>
-					<section class="col-6 col-md-12">
-						<img src="img/comingsoon.png" class="caseimg" alt="Case Study Coming Soon">
+					<section class="screen-half">
+						<img src="img/busybus.png" class="busybuscase zoompic" alt="Case Study Coming Soon">
 					</section>
 				</section>
 			</section>
@@ -111,15 +121,15 @@
 <!-- /////////////////////////////////////////////         ABOUT Section STARTS          //////////////////////////////////////////////////// -->
 
 	<section id="about">
-		<section class=" row flex">
-			<section class="col-12 phase">
+		<section class="flex">
+			<section class="wide phase">
 				<h2 class="linear-wipe">A Bit About Me</h2>
 				<div class="phaseline"></div>
 			</section>
 				
-			<section class="col-12 subphase">
+			<section class="wide subphase">
 				<section class="biobox">
-					<h3 class="bio-subh linear-wipe">The Origin</h3>
+					<h3 class="bio-subh">The Origin</h3>
 					<div class="bioline"></div>
 					<p class="bio-p">For as long as I can remember, if I didn’t have a ball at my feet or was running on the streets of Brazil, I was drawing with 
 						a pencil in my hand. I remember drawing Pokémon and Knights of the Zodiac (an anime extremely popular in Brazil) for hours. Art 
@@ -127,7 +137,7 @@
 						mall near my house for a few days. But somewhere along the line I lost the passion I once had and focused all my energy in sports.</p>
 				</section>	
 				<section class="biobox">
-					<h3 class="bio-subh linear-wipe">Platoon Ten-Hut!</h3>
+					<h3 class="bio-subh">Platoon Ten-Hut!</h3>
 					<div class="bioline"></div>
 					<p class="bio-p">I tried following in my father’s footsteps as a mechanical engineer, but I quickly learned that I had no aptitude or desire to become one. 
 						Feeling somewhat lost, I joined the Marines. I was rapidly promoted to PFC, and in the two years after I left boot camp, I picked the rank 
@@ -149,7 +159,7 @@
 						Afghanistan: sanitation, food waste, and food quality, and this greatly boosted the morale.</p>
 				</section>
 				<section class="biobox">
-					<h3 class="bio-subh linear-wipe">Help! I've Fallen and I Can't Get Up!</h3>
+					<h3 class="bio-subh">Help! I've Fallen and I Can't Get Up!</h3>
 					<div class="bioline"></div>
 					<p class="bio-p">Once I left the marines I immediately started attending school for architecture. While I was in architecture school I was doing exceptionally 
 						well, however, after a few years, the school decided to terminate the architecture program due to the low student enrollment. When I received 
@@ -160,7 +170,7 @@
 						to cut my losses.</p>
 				</section>
 				<section class="biobox">
-					<h3  class="bio-subh linear-wipe">UX? What's That?</h3>
+					<h3  class="bio-subh">UX? What's That?</h3>
 					<div class="bioline"></div>
 					<p class="bio-p">With the end of my day trading journey I decided to learn more about front-end d*evelopment since I already had some experience with HTML and 
 						CSS. But the more I learned about web development, words like UX, UI, Information Architecture started coming up in my searches, and the 
@@ -182,16 +192,16 @@
 
 <!-- ////////////////////////////////////////          RESUME Section STARTS          ////////////////////////////////////////////// -->
 
-	<section id="resume">
-		<section class=" row flex bottoms">
-			<section class="col-12 subphase bottoms">
+	<!-- <section id="resume">
+		<section class=" flex bottoms">
+			<section class="wide subphase bottoms">
 				<h2 class="linear-wipe">Resume</h2>
 				<div class="phaseline"></div>
 			</section>
 
-			<section class="col-6 col-md-12">
+			<section class="screen-half">
 				<section class="ressec">
-					<h3 class="reshead linear-wipe">Education</h3>
+					<h3 class="reshead">Education</h3>
 					<div class="resline"></div>
 					<ul class="resumelist">
 						<li><h4 class="res">TreeHouse / <span class="italicdate">Nov 17 - Nov 18</span></h4></li>
@@ -219,9 +229,9 @@
 				</section>
 			</section>
 
-			<section class="col-6 col-md-12">
+			<section class="screen-half">
 				<section class="ressec">
-					<h3 class="reshead linear-wipe">Experience</h3>
+					<h3 class="reshead">Experience</h3>
 					<div class="resline"></div>
 					<ul class="resumelist">
 						<li><h4 class="res">US Marine Corps / <span class="italicdate">Jan 09 - Nov 12</span></h4></li>
@@ -230,7 +240,7 @@
 						improve sanitation and food quality, and coordinating tasks to Sergeants and below while in garrison or on deployments.</li>
 					</ul>
 
-					<h3 class="reshead linear-wipe">Projects</h3>
+					<h3 class="reshead">Projects</h3>
 					<div class="resline"></div>
 					<ul class="resumelist">
 						<li><h4 class="res">Mikumo</h4></li>
@@ -239,7 +249,7 @@
 							backgrounds. With this in mind, I made an attractive layout, and  eliminated any links that were repetitive in the platform.</li>
 					</ul>
 
-					<h3 class="reshead linear-wipe">Awards</h3>
+					<h3 class="reshead">Awards</h3>
 					<div class="resline"></div>
 					<ul class="resumelist">
 						<li class="italic">Navy & Marine Corps Achievement medal</li>
@@ -252,12 +262,12 @@
 					</ul>
 				</section>
 			</section>
-			<section class="col-12">
-				<h3 class="reshead linear-wipe">Skills</h3>
+			<section class="wide">
+				<h3 class="reshead">Skills</h3>
 				<div class="reslineskill"></div>
 			</section>
 
-			<section class="col-3 col-6-sm">
+			<section class="skill-li">
 				<ul>
 					<li><h4>Tools</h4></li>
 					<li>Sketch</li>
@@ -274,7 +284,7 @@
 				</ul>
 			</section>
 
-			<section class="col-3 col-6-sm">
+			<section class="skill-li">
 				<ul>
 					<li><h4>Research</h4></li>
 					<li>User Surveys</li>
@@ -288,7 +298,7 @@
 				</ul>
 			</section>
 
-			<section class="col-3 col-6-sm">
+			<section class="skill-li col-6-sm">
 				<ul>
 					<li><h4>Front-End</h4></li>
 					<li>HTML5/CSS3</li>
@@ -304,7 +314,7 @@
 				</ul>
 			</section>
 
-			<section class="col-3 col-6-sm">
+			<section class="skill-li col-6-sm">
 				<ul>
 					<li><h4>Languages</h4></li>
 					<li>English(Fluent)</li>
@@ -315,7 +325,7 @@
 				</ul>
 			</section>
 		</section>
-	</section>
+	</section> -->
 <!--  ///////////////////////////////////////////////////////    RESUME Section ENDS     /////////////////////////////////////////////////////// -->
 
 	<div class="separator"></div>
@@ -323,12 +333,12 @@
 <!-- ///////////////////////////////////////////////////////   CONTACT Section STARTS    //////////////////////////////////////////////////////// -->
 	<section id="contact">
 		<section class="flex">
-			<section class="col-12 subphase bottoms">
+			<section class="wide subphase bottoms">
 				<h2 class="linear-wipe">Contact</h2>
 				<div class="phaseline"></div>
 			</section>
 
-			<section class="col-12">
+			<section class="wide">
 				<section class="contact-form">
 					<form method="POST" action="https://formspree.io/eduardohirao@live.com">
 						<section class="form-group">
@@ -363,17 +373,17 @@
 <footer id="footlight">
 	<section class="">
 		<section class="flex">
-			<section class="socicon col-3 col-12-sm">
+			<section class="socicon thirds">
 				<p class="hfooter">Eddie Yuki Hirao</p>
 				<p class="pfooter">Currently: Detroit, MI</p>
 			</section>		
 
-			<section class="socicon col-3 col-12-sm">
+			<section class="socicon thirds">
 				<p class="hfooter">email</p>
 				<a  href="mailto:eduardohirao@live.com" class="pfooter meeds">eduardohirao@live.com</a>
 			</section>
 				
-			<section class="socicon col-3 col-12-sm">
+			<section class="socicon thirds">
 				<p class="hfooter">Social Media</p>
 				<a href="#" target="_blank">
 					<p class="pfooter meeds">LinkedIn</p>
@@ -398,16 +408,3 @@
 <script src="activeScroll.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-

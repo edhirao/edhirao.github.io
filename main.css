@@ -92,11 +92,12 @@ a.nav-link.active {
 }
 
 .header {
-	background-color: white;
+	background-color: rgba(255,255,255, .5);
 	position: fixed;
 	width: 100%;
 	z-index: 3;
 	height: 76px;
+	backdrop-filter: blur(10px);
 }
 
 .header ul {
@@ -207,7 +208,6 @@ a.nav-link.active {
 .progress-container {
 	width: 100%;
 	height: 8px;
-	background-color: white;
 	position: fixed;
 	top: 76px;
 	left: 0px;
@@ -226,9 +226,8 @@ a.nav-link.active {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	top: 30%;
+	top: 130%;
 	z-index: 2;
-
 }
 
 
@@ -243,6 +242,8 @@ a.nav-link.active {
 .h1-secondline {
 	font-size: 100px;
 	font-weight: 600;
+	-webkit-animation: focus-in-expand 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) .7s both;
+	        animation: focus-in-expand 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) .7s both;
 }
 
 .heroline {
@@ -265,9 +266,10 @@ a.nav-link.active {
 .name {
 	top: 20%;
 	padding-left: 5%;
-	animation-delay: 1s;
 	text-transform: uppercase;
 	font-weight: 300;
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 .uxdesign {
@@ -279,6 +281,8 @@ a.nav-link.active {
 	font-weight: normal;
 	text-transform: none;
 	color: #777;
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1.2s both;
+	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1.2s both;
 }
 
 .chevron {
@@ -289,6 +293,14 @@ a.nav-link.active {
 	z-index: 2;
 	cursor: pointer;
 	transition: all 250ms ease;
+	-webkit-animation: swirl-in-fwd 1s ease-out 2s both;
+	animation: swirl-in-fwd 1s ease-out 2s both;
+}
+
+
+.parallax {
+	min-height: 750px;
+	background: transparent;
 }
 
 .whitespace {
@@ -798,4 +810,89 @@ a.nav-link:hover, #logo:hover,
 
 @keyframes shine {
 	to { background-position: 200% center;}
+}
+
+  @-webkit-keyframes swirl-in-fwd {
+	0% {
+	  -webkit-transform: rotate(-540deg) scale(0);
+			  transform: rotate(-540deg) scale(0);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-transform: rotate(0) scale(1);
+			  transform: rotate(0) scale(1);
+	  opacity: 1;
+	}
+  }
+  @keyframes swirl-in-fwd {
+	0% {
+	  -webkit-transform: rotate(-540deg) scale(0);
+			  transform: rotate(-540deg) scale(0);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-transform: rotate(0) scale(1);
+			  transform: rotate(0) scale(1);
+	  opacity: 1;
+	}
+  }
+
+  @-webkit-keyframes focus-in-expand {
+	0% {
+	  letter-spacing: -0.5em;
+	  -webkit-filter: blur(12px);
+			  filter: blur(12px);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-filter: blur(0px);
+			  filter: blur(0px);
+	  opacity: 1;
+	}
+  }
+  @keyframes focus-in-expand {
+	0% {
+	  letter-spacing: -0.5em;
+	  -webkit-filter: blur(12px);
+			  filter: blur(12px);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-filter: blur(0px);
+			  filter: blur(0px);
+	  opacity: 1;
+	}
+  }
+  
+
+@-webkit-keyframes text-focus-in {
+	0% {
+	  -webkit-filter: blur(12px);
+			  filter: blur(12px);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-filter: blur(0px);
+			  filter: blur(0px);
+	  opacity: 1;
+	}
+}
+@keyframes text-focus-in {
+	0% {
+	  -webkit-filter: blur(12px);
+			  filter: blur(12px);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-filter: blur(0px);
+			  filter: blur(0px);
+	  opacity: 1;
+	}
+}
+
+
+
+
+.fadein {
+    opacity:0;
 }

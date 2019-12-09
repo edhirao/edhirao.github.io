@@ -14,8 +14,8 @@
 
 		gtag('config', 'UA-153993271-1');
 	</script>
-
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="parallax.min.js"></script>
 	<script src="parallaxTest.js"></script>
 	<script src="jquery.magnific-popup.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="normalize.css">
@@ -43,7 +43,7 @@
 					<a class="nav-link" href="#contact">Contact</a>
 				</li>
 				<li class="">
-					<a class="nav-link" href="resume.pdf" target="__blank">Resume</a>
+					<a class="nav-link" href="resume.pdf" target="_blank">Resume</a>
 				</li>
 			</ul>
 			<section class="progress-container">
@@ -66,10 +66,10 @@
 		</section>	
 
 	<section id="home">
-		<section id="lighthero">
+		<section class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="parallaxBG/japandark.jpg">
 			<div class="rellax biglogo" data-rellax-speed="5"></div>
 		</section>
-		<div class="whitespace"></div>
+		<!-- <div class="whitespace"></div> -->
 			
 	</section>	
 
@@ -87,26 +87,31 @@
 			<section class="wide">
 				<section class="subphase flex">
 					<section class="screen-half">
-						<a href="caseStudyMikumo.html" class="">
+						<a href="caseStudyMikumo.html" class="fadein">
 							<img src="img/mikumoplat.png" class="mikumocase zoompic" alt="Mikumo App on Multiple Platforms">
 						</a>
 					</section>
-					<section class="screen-half midori">
-						<h3 class="casehead">Mikumo</h3>
-						<section class="">
-							<p class="casep">Mikumo is a visually oriented, simple to use cloud storage app for everyone</p>
-							<button onclick="window.location.href = 'caseStudyMikumo.html';" class="ctobtn">View Case Study</button>
+
+						<section class="screen-half midori fadein">
+							<div class="">
+							<h3 class="casehead">Mikumo</h3>
+							<section class="">
+								<p class="casep">Mikumo is a visually oriented, simple to use cloud storage app for everyone</p>
+								<button onclick="window.location.href = 'caseStudyMikumo.html';" class="ctobtn">View Case Study</button>
+							</section>
+							</div>
 						</section>
-					</section>
 				</section>
 
 				<section class="subphase lefty flex">
-					<section class="screen-half">
-						<h3 class="casehead">BusyBus</h3>
-						<p class="casep">BusyBus is a public transportation app that helps anyone in chicago  get to their destination with no complications</p>
-						<button class="ctobtn">Coming Soon</button>
+					<section class="screen-half fadein">
+						<div class="">
+							<h3 class="casehead">BusyBus</h3>
+							<p class="casep">BusyBus is a public transportation app that helps anyone in chicago  get to their destination with no complications</p>
+							<button class="ctobtn">Coming Soon</button>
+						</div>
 					</section>
-					<section class="screen-half">
+					<section class="screen-half fadein">
 						<img src="img/busybus.png" class="busybuscase zoompic" alt="Case Study Coming Soon">
 					</section>
 				</section>
@@ -156,7 +161,7 @@
 					<p class="bio-p">Luckily one of our Corpsman had a rice cooker and I was able to borrow it every morning. To make the eggs even better, I asked all the marines in 
 						the base to save their MRE (Meal Ready to Eat) cheese, so I could use it for the eggs. Thanks to the rice cooker the eggs came out perfectly 
 						so no more eggs or MRE Cheeses were thrown away. Although this is not directly related to design, it did solve a few problems while in 
-						Afghanistan: sanitation, food waste, and food quality, and this greatly boosted the morale.</p>
+						Afghanistan: sanitation, food waste, food quality, and greatly boosted the morale.</p>
 				</section>
 				<section class="biobox">
 					<h3 class="bio-subh">Help! I've Fallen and I Can't Get Up!</h3>
@@ -406,5 +411,21 @@
 	var rellax = new Rellax('.rellax');
 </script>
 <script src="activeScroll.js"></script>
+<script>
+$(document).ready(function() {
+    $(window).scroll( function(){
+        $('.fadein').each( function(i){
+            
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            if( bottom_of_window > bottom_of_element ){
+                $(this).animate({'opacity':'1'},1000);
+            }
+            
+        }); 
+    });
+});
+</script>
 </body>
 </html>

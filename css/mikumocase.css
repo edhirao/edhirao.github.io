@@ -76,16 +76,17 @@ ul {
 /************************************************************************ NAVBAR *******************************************************************************/
   
 #logo{
-	width: 49px;
-	height: 49px;
+	width: 45px;
+	height: 45px;
 	margin-left: 5px;
-	margin-top: 3px;
 	transition: all 1s ease;
 }
 
 a.nav-link {
 	color: white !important;
- 	transition: all 1s ease;
+	transition: all 1s ease;
+	background-color: #222;
+	text-align: center;
 }
 
 a.nav-link.active {
@@ -93,27 +94,29 @@ a.nav-link.active {
 }
 
 .header {
-	background-color: rgba(25, 25, 25, .9);
+	background-color: #222;
 	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
 	position: fixed;
 	width: 100%;
 	z-index: 3;
-	height: 76px;
+	height: 64px;
 }
 
 .header li a {
 	display: block;
-	padding: 20px 20px;
+	padding: 10px;
 	text-decoration: none;
 	color: white;
-	font-size: 20px;
+	font-size: 30px;
+	font-weight: 300;
 }
 
 .header .logo {
 	display: block;
 	float: left;
 	font-size: 2em;
-	padding: 10px 20px;
+	padding-left: 20px;
+	padding-top: 8px;
 	text-decoration: none;
 }
 
@@ -123,6 +126,7 @@ a.nav-link.active {
 	list-style: none;
 	overflow: hidden;
 }
+
 
 .header .menu {
 	clear: both;
@@ -138,6 +142,14 @@ a.nav-link.active {
 	position: relative;
 	user-select: none;
 }
+
+.menu-icon {
+	margin-bottom: 0;
+}
+
+#pdf {
+	width: 16px;
+}
   
 .header .menu-icon .navicon {
 	background: white;
@@ -145,7 +157,7 @@ a.nav-link.active {
 	height: 2px;
 	position: relative;
 	transition: background .2s ease-out;
-	width: 30px;
+	width: 50px;
 }
   
 .header .menu-icon .navicon:before,
@@ -193,11 +205,15 @@ a.nav-link.active {
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 	top: 0;
 }
-  
+
+.lastmenu {
+	padding-bottom: 60px !important;
+}
+
 /******************************************************************** PROGRESS BAR ******************************************************************************/
 
 .progress-bar {
-	height: 8px;
+	height: 4px;
 	background: linear-gradient(270deg, #6cb019, #3E4E2A);
 	background-size: 400% 400%;
 	width: 0%;
@@ -208,10 +224,10 @@ a.nav-link.active {
 
 .progress-container {
 	width: 100%;
-	height: 8px;
-	background-color: rgba(25, 25, 25, .9);
+	height: 4px;
+	background-color: #222;
 	position: fixed;
-	top: 76px;
+	top: 61px;
 	left: 0px;
 	border-style: none;
 }
@@ -223,7 +239,7 @@ a.nav-link.active {
 	animation: blurFadeInUnicorn 3s ease-in 20s backwards;
 	animation-delay: 1s;
 	position: relative;
-	top: 550px;
+	top: 70vh;
 	padding: 10px 40px;
 	color: white !important;
 	background-color: #6cb019;
@@ -239,7 +255,7 @@ a.nav-link.active {
 	width: 100%;
 	height: 100vh;
 	position: absolute;
-	background: url(parallaxBG/mikumohero.png) no-repeat 50% 50%;
+	background: url(../parallaxBG/mikumohero.png) no-repeat 50% 50%;
 	background-size: cover;
 }
 
@@ -264,6 +280,7 @@ a.nav-link.active {
 	color: white;
 	width: 80%;
 	margin: auto !important;
+	line-height: 50px;
 }
 
 .whitespace {
@@ -323,17 +340,6 @@ a.magnific:focus {
 	width: 100%;
 }
 
-.linear-wipe {
-	background: linear-gradient(to right, #252525 10%, #6cb019 30%, #252525 50%, #252525 80%);
-	background-size: 200% auto;
-	color: #000;
-	background-clip: text;
-	text-fill-color: transparent;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	animation: shine 5s linear infinite;
-}
-
 .ov-li, .thirds, .screen-half {
 	width: 100%;
 }
@@ -375,6 +381,12 @@ a.magnific:focus {
 	float: left;
 }
 
+.priority {
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 600;
+
+}
 /*************************************************************** OVERVIEW SECTION *****************************************************************************/
 
 h3.ovdesc{
@@ -401,13 +413,19 @@ h3.ovdesc{
 	width: 70%;
 }
 
+.dashboards {
+	box-shadow: #555 2px 2px 20px;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
 /******************************************************************* FOOTER SECTION ****************************************************************************/
 
 #footlight {
 	width: 100%;
 	height: 100%;
 	border-top: solid #6cb019 4px;
-	background-color: black;
+	background-color: #222;
 	color: white !important;
 }
 
@@ -505,7 +523,11 @@ a.nav-link:hover, #logo:hover,
 		margin: auto;
 	}
 
-	.header li {
+	.cont-over {
+		width: 90%;
+	}
+
+	/* .header li {
 		float: left;
 	}
 
@@ -529,7 +551,7 @@ a.nav-link:hover, #logo:hover,
 		padding: 0;
 		list-style: none;
 		overflow: hidden;
-	}
+	} */
 
 	.ov-li {
 		width: 25%;
@@ -563,14 +585,14 @@ a.nav-link:hover, #logo:hover,
 		margin-bottom: 100px;
 	}
 
-	.header ul {
+	/* .header ul {
 		margin-top: 76px;
 		padding: 0;
 		list-style: none;
 		overflow: hidden;
 		background-color: rgba(25, 25, 25, .9);
 		text-align: center;
-	}
+	} */
 
 	.phaseline {
 		width: 90%;
@@ -592,7 +614,6 @@ a.nav-link:hover, #logo:hover,
 	}
 	
 	.mikumobtnproto {
-		top: 400px;
 	}
 }
 
@@ -676,10 +697,19 @@ a.nav-link:hover, #logo:hover,
 	margin-left: 30px;
 }
 
+.brandcolor {
+	width: 50%;
+}
+
 .caseh3 {
 	text-align: center;
 	margin-top: 100px;
 	font-weight: 300;
+	width: 50%;
+	padding-top: 100px;
+    padding-bottom: 10px;
+	border-bottom: 2px solid #323232;
+	margin:auto;
 }
 
 .caseh4 {
@@ -710,7 +740,7 @@ a.nav-link:hover, #logo:hover,
 }
 
 .compLogo {
-	width: 20%;
+	width: 10%;
 	margin-bottom: 20px;
 }
 
@@ -722,6 +752,10 @@ a.nav-link:hover, #logo:hover,
 
 .flowspec {
 	width: 80%;
+}
+
+.goals {
+	height: 260px;
 }
 
 .listleft {
@@ -776,6 +810,7 @@ p.persCompP {
 	margin-top: 10px;
 	margin-bottom: 20px;
 	text-align: center;
+	height: 80px;
 }
 
 .surveys {
@@ -788,6 +823,10 @@ p.persCompP {
 
 .surveylast {
 	margin-bottom: 80px;
+}
+
+.status {
+	height: 80px;
 }
 
 .testlist {

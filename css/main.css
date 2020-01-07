@@ -59,7 +59,7 @@ li {
 }
 
 p {
-	font-size: 20px;
+	font-size: 18px;
 	text-align: left;
 	line-height: 1.8em;
 	margin-bottom: 0;
@@ -75,11 +75,14 @@ ul {
 /************************************************************************ NAVBAR *******************************************************************************/
 
 #logo{
-	width: 49px;
-	height: 49px;
+	width: 45px;
+	height: 45px;
 	margin-left: 5px;
-	margin-top: 3px;
 	transition: all 1s ease;
+}
+
+#pdf {
+	width: 16px;
 }
 
 a.nav-link {
@@ -92,12 +95,11 @@ a.nav-link.active {
 }
 
 .header {
-	background-color: rgba(255,255,255, .5);
+	background-color: white;
 	position: fixed;
 	width: 100%;
 	z-index: 3;
-	height: 76px;
-	backdrop-filter: blur(10px);
+	height: 64px;
 }
 
 .header ul {
@@ -109,17 +111,22 @@ a.nav-link.active {
   
 .header li a {
 	display: block;
-	padding: 20px 20px;
+	padding: 10px;
 	text-decoration: none;
 	color: #323232;
 	font-size: 20px;
+	text-align: center;
+	background-color: white;
+	font-size: 30px;
+	font-weight: 300;
 }
   
 .header .logo {
 	display: block;
 	float: left;
 	font-size: 2em;
-	padding: 10px 20px;
+	padding-left: 20px;
+	padding-top: 8px;
 	text-decoration: none;
 }
   
@@ -137,6 +144,10 @@ a.nav-link.active {
 	position: relative;
 	user-select: none;
 }
+
+.menu-icon {
+	margin-bottom: 0px;
+}
   
 .header .menu-icon .navicon {
 	background: #323232;
@@ -144,7 +155,7 @@ a.nav-link.active {
 	height: 2px;
 	position: relative;
 	transition: background .2s ease-out;
-	width: 30px;
+	width: 50px;
 }
   
 .header .menu-icon .navicon:before,
@@ -192,11 +203,16 @@ a.nav-link.active {
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 	top: 0;
 }
+
+
+.lastmenu {
+    padding-bottom: 60px !important;
+}
   
 /******************************************************************** PROGRESS BAR ******************************************************************************/
 
 .progress-bar {
-	height: 8px;
+	height: 4px;
 	background: #323232;
 	background-size: 400% 400%;
 	width: 0%;
@@ -209,7 +225,7 @@ a.nav-link.active {
 	width: 100%;
 	height: 8px;
 	position: fixed;
-	top: 76px;
+	top: 61px;
 	left: 0px;
 	border-style: none;
 }
@@ -222,7 +238,7 @@ a.nav-link.active {
 }
 
 .biglogo {
-	background: url(img/biglogo.png) no-repeat 50% 50%;
+	background: url(../img/biglogo.png) no-repeat 50% 50%;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -281,13 +297,14 @@ a.nav-link.active {
 	font-weight: normal;
 	text-transform: none;
 	color: #777;
+	line-height: 40px;
 	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1.2s both;
 	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1.2s both;
 }
 
 .chevron {
 	width: 4%;
-	top: 720px;
+	bottom: 5vh;
 	position: absolute;
 	margin: auto 47%;
 	z-index: 2;
@@ -407,6 +424,21 @@ a.magnific:focus {
 	font-size: 40px;
 }
 
+.caseh2{
+	width: 50%;
+	padding-top: 100px;
+    padding-bottom: 10px;
+	border-bottom: 2px solid #323232;
+	margin:auto;
+}
+
+.caseh2alt {
+	width: 50%;
+    padding-bottom: 10px;
+	border-bottom: 2px solid #323232;
+	margin:auto;
+}
+
 .caseimg {
 	width: 90%;
 	box-shadow: #323232 10px 10px 20px;
@@ -439,7 +471,7 @@ a.magnific:focus {
 /****************************************************************** ABOUT SECTION ****************************************************************************/
 
 .biobox {
-	width: 80%;
+	width: 75%;
 	margin: auto;
 }
 
@@ -450,12 +482,30 @@ a.magnific:focus {
 .bioline {
 	margin: 10px auto 30px 0;
 	width: 100%;
-	height: 1px;
-	background: #505050;
+	padding-bottom: 10px;
+	border-bottom: 1px #323232 solid;
 }
 
 .bio-subh {
 	text-align: left;
+}
+
+.shiryu {
+	width: 100%;
+	margin: auto;
+	margin-bottom: 50px;
+	min-height: 350px !important;
+}
+
+.shakentake {
+	width: 80%;
+	margin: auto;
+	margin-bottom: 50px;
+	min-height: 500px !important;
+}
+
+.malibu {
+	width: 100%;
 }
 
 /******************************************************************* RESUME SECTION *****************************************************************************/
@@ -567,7 +617,7 @@ a.magnific:focus {
 }
 
 .phase {
-	margin: 100px auto auto auto !important; 
+	margin: auto !important; 
 }
 
 .socicon {
@@ -634,32 +684,6 @@ a.nav-link:hover, #logo:hover,
 	.container { 
 		width: 70%; 
 		margin: auto;
-	}
-
-	.header li {
-		float: left;
-	}
-
-	.header li a {
-		padding: 20px 40px;
-	}
-
-	.header .menu {
-	  	clear: none;
-	  	float: right;
-	  	max-height: none;
-	  	margin-right: 50px;
-	}
-
-	.header .menu-icon {
-	  	display: none;  
-	}
-
-	.header ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		overflow: hidden;
 	}
 
 	.midori {
@@ -893,6 +917,33 @@ a.nav-link:hover, #logo:hover,
 
 
 
-.fadein {
+/* .fadein {
     opacity:0;
+} */
+
+
+/* display: flex;
+justify-content: center;
+align-items: center; */
+
+.linear-wipe {
+	text-align: center;
+	
+	background: linear-gradient(to right, #BE1F1F 5%, #BE1FA1 15%, #871FBE 25%, #3A1FBE 35%, #1F4DBE 45%, #1F8DBE 55%, #1FBE9E 65%, #6EBE1F 75%, #BE951F 85%, #BE1F1F 95%);
+	background-size: 1000% auto;
+	
+	color: #000;
+	background-clip: text;
+	text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	
+	animation: shine 20s linear infinite;
+
 }
+	@keyframes shine {
+	  to {
+		background-position: 200% center;
+	  }
+	}
+  

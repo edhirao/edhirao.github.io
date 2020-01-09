@@ -87,11 +87,7 @@ ul {
 
 a.nav-link {
 	color: #323232 !important;
- 	transition: all 1s ease;
-}
-
-a.nav-link.active {
-	text-decoration: underline orange!important;
+ 	transition: all .35s ease;
 }
 
 .header {
@@ -114,10 +110,8 @@ a.nav-link.active {
 	padding: 10px;
 	text-decoration: none;
 	color: #323232;
-	font-size: 20px;
 	text-align: center;
-	background-color: white;
-	font-size: 30px;
+	font-size: 18px;
 	font-weight: 300;
 }
   
@@ -184,7 +178,11 @@ a.nav-link.active {
 }
   
 .header .menu-btn:checked ~ .menu {
-	max-height: 840px;
+	min-height: 100vh !important;
+	margin-top: 0;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
 }
   
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -293,7 +291,7 @@ a.nav-link.active {
 	padding-left: 5%;
 	animation-delay: 2s;
 	font-size: 24px;
-	width: 700px;
+	width: 750px;
 	font-weight: normal;
 	text-transform: none;
 	color: #777;
@@ -331,6 +329,11 @@ a.magnific:focus {
 	outline: none;
 }
 
+.active {
+	text-decoration: underline orange !important;
+	font-weight: 400 !important;
+}
+
 .bottoms {
 	margin-bottom: 80px;
 }
@@ -351,7 +354,20 @@ a.magnific:focus {
 	color: #323232;
 	border-radius: 4px;
 	text-transform: uppercase;
-	transition: all 1s ease;
+	transition: .35s ease;
+	cursor: pointer;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.contactme {
+	margin-top: 40px;
+	height: 40px;
+	border: solid #323232 1px;
+	color: #323232;
+	border-radius: 4px;
+	text-transform: uppercase;
+	transition: .35s ease;
 	cursor: pointer;
 	padding-left: 60px;
 	padding-right: 60px;
@@ -430,6 +446,7 @@ a.magnific:focus {
     padding-bottom: 10px;
 	border-bottom: 2px solid #323232;
 	margin:auto;
+	margin-top: 100px;
 }
 
 .caseh2alt {
@@ -506,6 +523,12 @@ a.magnific:focus {
 
 .malibu {
 	width: 100%;
+}
+
+.me {
+	width: 75%;
+	margin-top: 100px !important;
+	margin: auto;
 }
 
 /******************************************************************* RESUME SECTION *****************************************************************************/
@@ -592,9 +615,21 @@ a.magnific:focus {
 #footlight {
 	width: 100%;
 	height: 100%;
-	border-top: solid #323232 4px;
+	border-top: solid #323232 1px;
 	background-color: white;
 	color: #323232 !important;
+}
+
+.coded {
+	font-size: 13px;
+	text-align: right !important;
+	padding-right: 20px;
+	font-weight: 300;
+}
+
+.design {
+	display: inline-block;
+	text-align: right !important;
 }
 
 .hfooter {
@@ -605,15 +640,13 @@ a.magnific:focus {
 	margin-bottom: 16px;
 }
 
-.meeds {
-	transition: all 2s ease;
-	line-height: 1.1em;
-}
-
 .pfooter {
-	font-size: 16px;
+	font-size: 13px;
 	text-align: left;
 	color: #323232 !important;
+	display: inline-block;
+	padding: 0 20px;
+	font-weight: 300;
 }
 
 .phase {
@@ -622,7 +655,7 @@ a.magnific:focus {
 
 .socicon {
 	margin-bottom: 20px;
-	padding: 50px;
+	display: inline-block;
 }
 
 .submit {
@@ -643,22 +676,29 @@ a:hover,
 	text-decoration: none;
 }
 
-a.nav-link:hover, #logo:hover,
+#logo:hover,
 .flag:hover, .techicon:hover {
-	transform: scale(1.2);
+	transform: scale(1.1);
+}
+
+a.nav-link:hover {
+	color: orange !important;
 }
 
 .ctobtn:hover {
 	color: #fff !important;
 	background: #323232;
-	transform: scale(1.1);
 	border-color: white;
 }
 
-.meeds:hover {
-	transform: scale(1.1);
-	color: #ff7400 !important;
-	text-decoration: underline #ff7400;
+.contactme:hover {
+	color: #fff !important;
+	background: #323232;
+	border-color: white;
+}
+
+.pfooter:hover {
+	text-decoration: underline #323232;
 }
 
 .zoompic:hover {
@@ -708,6 +748,21 @@ a.nav-link:hover, #logo:hover,
 	.thirds {
 		width: 33.333%;
 	}
+
+	.header li {
+		float: left;
+	}
+	.header li a {
+		padding: 13px 30px;
+	}
+	.header .menu {
+		clear: none;
+		float: right;
+		max-height: none;
+	}
+	.header .menu-icon {
+		display: none;
+	}
 }
 
 @media (max-width: 989px) {
@@ -722,6 +777,12 @@ a.nav-link:hover, #logo:hover,
 		margin-bottom: 50px;
 	}
 
+	.coded {
+		text-align: left !important;
+		padding-left: 20px;
+		margin-bottom: 10px;
+	}
+
 	.ctobtn {
 		margin-bottom: 100px;
 	}
@@ -734,12 +795,16 @@ a.nav-link:hover, #logo:hover,
 		font-size: 50px;
 	}
 
+	.header .menu-btn:checked ~ .menu {
+		justify-content: center;
+	}
+
 	.header ul {
 		margin-top: 76px;
 		padding: 0;
 		list-style: none;
 		overflow: hidden;
-		background-color: white;
+		background-color: rgba(255,255,255, .9);
 		text-align: center;
 	}
 
@@ -774,7 +839,7 @@ a.nav-link:hover, #logo:hover,
 	.uxdesign {
 		top: 50%;
 		animation-delay: 2s;
-		font-size: 30px;
+		font-size: 25px;
 		width: 490px;
 	}
 }

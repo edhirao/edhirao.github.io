@@ -79,13 +79,12 @@ ul {
 	width: 45px;
 	height: 45px;
 	margin-left: 5px;
-	transition: all 1s ease;
+	transition: .3s ease;
 }
 
 a.nav-link {
 	color: white !important;
-	transition: all 1s ease;
-	background-color: #222;
+	transition: .3s ease;
 	text-align: center;
 }
 
@@ -107,7 +106,7 @@ a.nav-link.active {
 	padding: 10px;
 	text-decoration: none;
 	color: white;
-	font-size: 30px;
+	font-size: 18px;
 	font-weight: 300;
 }
 
@@ -184,9 +183,13 @@ a.nav-link.active {
 .header .menu-btn {
 	display: none;
 }
-  
+
 .header .menu-btn:checked ~ .menu {
-	max-height: 840px;
+	min-height: 100vh !important;
+	margin-top: 0;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
 }
   
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -204,10 +207,6 @@ a.nav-link.active {
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 	top: 0;
-}
-
-.lastmenu {
-	padding-bottom: 60px !important;
 }
 
 /******************************************************************** PROGRESS BAR ******************************************************************************/
@@ -373,7 +372,7 @@ a.magnific:focus {
 }
 
 .zoompic {
-	transition: transform 1s;
+	transition: transform .3s;
 }
 
 .wide {
@@ -415,8 +414,13 @@ h3.ovdesc{
 
 .dashboards {
 	box-shadow: #555 2px 2px 20px;
-	margin-bottom: 40px;
-	margin-top: 40px;
+	text-align: center;
+	margin: 40px 15%;
+	width: 70%;
+}
+
+.swot {
+	margin-bottom: 80px;
 }
 
 /******************************************************************* FOOTER SECTION ****************************************************************************/
@@ -424,9 +428,27 @@ h3.ovdesc{
 #footlight {
 	width: 100%;
 	height: 100%;
-	border-top: solid #6cb019 4px;
-	background-color: #222;
+	border-top: solid #6cb019 1px;
+	background-color: #222 !important;
 	color: white !important;
+}
+
+.coded {
+	font-size: 13px;
+	text-align: right !important;
+	padding-right: 20px;
+	font-weight: 300;
+	color: white;
+}
+
+.design {
+	display: inline-block;
+	text-align: right !important;
+	float: right;
+}
+
+.double {
+	float: left;
 }
 
 .hfooter {
@@ -448,9 +470,12 @@ h3.ovdesc{
 }
 
 .pfooter {
-	font-size: 16px;
+	font-size: 13px;
 	text-align: left;
 	color: white !important;
+	display: inline-block;
+	padding: 0 20px;
+	font-weight: 300;
 }
 
 .phase {
@@ -459,7 +484,7 @@ h3.ovdesc{
 
 .socicon {
 	margin-bottom: 20px;
-	padding: 50px;
+	display: inline-block;
 }
 
 .submit {
@@ -480,9 +505,13 @@ a:hover,
 	text-decoration: none;
 }
 
-a.nav-link:hover, #logo:hover,
+#logo:hover,
 .flag:hover, .techicon:hover {
 	transform: scale(1.2);
+}
+
+a.nav-link:hover {
+	color: #6CB019 !important;
 }
 
 .ctobtn:hover {
@@ -502,8 +531,11 @@ a.nav-link:hover, #logo:hover,
 	color: #fff !important;
 	background: #6CB019;
 	border-color: white;
-	transform: scale(1.1);
 	cursor: pointer;
+}
+
+.pfooter:hover {
+	text-decoration: underline #6CB019;
 }
 
 .u-flows:hover {
@@ -511,7 +543,7 @@ a.nav-link:hover, #logo:hover,
 }
 
 .zoompic:hover {
-	transform: scale(1.05);
+	transform: scale(1.02);
 }
 
 /******************************************************************** MEDIA QUERY ******************************************************************************/
@@ -527,12 +559,12 @@ a.nav-link:hover, #logo:hover,
 		width: 90%;
 	}
 
-	/* .header li {
+	.header li {
 		float: left;
 	}
 
 	.header li a {
-		padding: 20px 40px;
+		padding: 13px 30px;
 	}
 
 	.header .menu {
@@ -551,7 +583,7 @@ a.nav-link:hover, #logo:hover,
 		padding: 0;
 		list-style: none;
 		overflow: hidden;
-	} */
+	}
 
 	.ov-li {
 		width: 25%;
@@ -571,7 +603,6 @@ a.nav-link:hover, #logo:hover,
 
 	.screen-half { 
 		width: 50%; 
-		float: left;
 	}
 
 	.thirds { 
@@ -585,14 +616,14 @@ a.nav-link:hover, #logo:hover,
 		margin-bottom: 100px;
 	}
 
-	/* .header ul {
+	.header ul {
 		margin-top: 76px;
 		padding: 0;
 		list-style: none;
 		overflow: hidden;
 		background-color: rgba(25, 25, 25, .9);
 		text-align: center;
-	} */
+	}
 
 	.phaseline {
 		width: 90%;
@@ -617,8 +648,14 @@ a.nav-link:hover, #logo:hover,
 	}
 }
 
-@media only screen and (max-width: 989px){
+@media (max-width: 989px){
 
+	.coded {
+		text-align: left !important;
+		padding-left: 20px;
+		margin-bottom: 10px;
+	}
+	
 	.prefBar {
 		width: 100%;
 	}
@@ -636,12 +673,22 @@ a.nav-link:hover, #logo:hover,
 	.mikumosub {
 		font-size: 25px !important;
 	}
+
+	.header .menu-btn:checked ~ .menu {
+		justify-content: center;
+		background-color: rgba(34,34,34, .9);
+	}
+	
 }
 
 @media(min-width: 990px){
 
 	.story {
-		padding-inline-start: 100px;
+		padding-inline-start: 200px;
+	}
+
+	.story2 {
+		padding-inline-start: 50px;
 	}
 
 	.prefBar {
@@ -777,7 +824,7 @@ a.nav-link:hover, #logo:hover,
 	text-transform: uppercase;
 	font-weight: 300;
 	border: #323232 1px solid;
-	transition: all 1s ease;
+	transition: .3s ease;
 }
 
 .parspace {
@@ -844,9 +891,8 @@ p.persCompP {
 
 .u-flows {
 	width: 70%;
-	box-shadow: 5px 5px 5px #909090;
-	border-radius: 9px; 
-	transition: transform 1s;
+	box-shadow: 5px 5px 15px #909090;
+	transition: transform .3s;
 }
 
 .wiresketch {

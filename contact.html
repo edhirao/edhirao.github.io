@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Eddie Yuki Hirao</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,600,700&display=swap" rel="stylesheet">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153993271-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-153993271-1');
+	</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="js/parallaxTest.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="icon" href="img/newlogo.png">
+</head>
+
+<!-- //////////////////////////////////////////////////////////     NAV BAR STARTS     ///////////////////////////////////////////////////////////// -->
+
+<body>
+	<header>
+		<nav class="header">
+			<a href="#" class="logo"><img src="img/logodark.png" alt="logo" id="logo"></a>
+			<input class="menu-btn" type="checkbox" id="menu-btn" />
+			<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+			<ul class="menu">
+				<li class="">
+					<a class="nav-link" href="index.html">Projects</a>
+				</li>
+				<li class="">
+					<a class="nav-link" href="about.html">About</a>
+				</li>
+				<li class="">
+					<a class="nav-link active" href="#">Contact</a>
+				</li>
+				<li class="">
+					<a class="nav-link" href="resume.pdf" target="_blank"><img src="img/pdf.png" alt="pdf icon" id="pdf"> Resume</a>
+				</li>
+			</ul>
+			<section class="progress-container">
+					<div class="progress-bar" id="myBar"></div>
+			</section> 	
+			
+		</nav>
+	</header>
+
+<main>
+
+
+<section class="container">
+	
+	<section id="contact">
+		<section class="flex">
+			<section class="wide subphase bottoms">
+				<h2 class="caseh2alt">Contact</h2>
+
+			</section>
+
+			<section class="wide">
+				<section class="contact-form">
+					<form method="POST" action="https://formspree.io/eduardohirao@live.com">
+						<section class="form-group">
+							<label for="name">Name*:</label>
+							<input type="text" id="name" name="name" class="form-control" placeholder="name" required>
+						</section>
+						<section class="form-group">
+							<label for="company">Company:</label>
+							<input type="text" id="company" name="company" class="form-control" placeholder="company">
+						</section>
+						<section class="form-group">
+							<label for="email">Email*:</label>
+							<input type="email" id="email" name="_replyto" class="form-control" placeholder="email" required>
+						</section>
+						<section class="form-group">
+							<label for="message">Message*:</label>
+							<textarea name="messsage" id="message" class="form-message" placeholder="message" rows="5" required></textarea>
+						</section>
+						<section class="form-group submit">
+							<input type="submit" class="ctobtn">
+							<input type="hidden" name="_subject" value="New Submission">
+							<input type="hidden" name="_next" value="thanks.html" />
+						</section>
+					</form>
+				</section>
+			</section>
+		</section>
+	</section>
+</section>
+</main>
+<!-- ////////////////////////////////////////////           CONTACT Section ENDS            ///////////////////////////////////////////////////// -->
+<footer id="footlight">
+	<section class="socicon screen-half">
+		<a href="#" target="_blank">
+			<p class="pfooter">LinkedIn</p>
+		</a>
+		<a href="https://dribbble.com/edhirao" target="_blank">
+			<p class="pfooter">Dribbble</p>
+		</a>
+		<a href="https://github.com/edhirao" target="_blank">
+			<p class="pfooter">GitHub</p>
+		</a>
+		<a href="#" target="_blank">
+			<p class="pfooter">Twitter</p>
+		</a>
+	</section>
+
+	<section class="screen-half design">
+		<p class="coded">Designed and Coded By Eddie Yuki Hirao</p>
+	</section>
+</footer>
+
+
+<script src="js/rellax.min.js"></script>
+<script>
+	var rellax = new Rellax('.rellax');
+</script>
+<!-- <script src="js/activeScroll.js"></script> -->
+<script>
+$(document).ready(function() {
+    $(window).scroll( function(){
+        $('.fadein').each( function(i){
+            
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            if( bottom_of_window > bottom_of_element ){
+                $(this).animate({'opacity':'1'},1000);
+            }
+            
+        }); 
+    });
+});
+</script>
+</body>
+</html>

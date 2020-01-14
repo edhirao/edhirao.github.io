@@ -16,18 +16,22 @@
 		gtag('config', 'UA-153993271-1');
 	</script>
 
+	<!-- Google Analytics ends -->
+
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/parallaxTest.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
-	<link href="css/lightbox.css" rel="stylesheet" />
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="css/mikumocase.css">
 	<link rel="icon" href="img/greeneh.png">
 </head>
 <body>
 
-<!-- ///////////////////////////////////////////////////////        Nav Bar Starts      ///////////////////////////////////////////////////////////// -->
+<!--         Nav Bar Starts       -->
 	<header>
 		<nav class="header">
 			<a href="index.html" class="logo"><img src="img/greeneh.png" alt="logo" id="logo"></a>
@@ -36,13 +40,13 @@
 			<ul class="menu">
 
 				<li class="">
-					<a class="nav-link" href="index.html#work">Projects</a>
+					<a class="nav-link" href="index.html#work">Work</a>
 				</li>
 				<li class="">
-					<a class="nav-link" href="index.html#about">About</a>
+					<a class="nav-link" href="about.html">About</a>
 				</li>
 				<li class="">
-					<a class="nav-link" href="index.html#contact">Contact</a>
+					<a class="nav-link" href="contact.html">Contact</a>
 				</li>
 				<li class="">
 					<a class="nav-link lastmenu" href="resume.pdf" target="_blank"><img src="img/pdfw.png" alt="pdf icon" id="pdf"> Resume</a>
@@ -55,7 +59,7 @@
 
 	</header>
 
-<!-- ///////////////////////////////////////////////////////        HERO SECTION STARTS      ///////////////////////////////////////////////////////////// -->
+<!--         HERO SECTION STARTS       -->
 
 <main>
 	<section id="home">
@@ -73,7 +77,7 @@
 
 	</section>
 
-<!-- ///////////////////////////////////////////////////////        OVERVIEW SECTION STARTS      ///////////////////////////////////////////////////////////// -->	
+<!--       OVERVIEW SECTION STARTS     -->	
 
 	<section id="overview">
 		<section class="flex container">
@@ -121,7 +125,7 @@
 			</ul>
 		</section>
 
-	<!-- ///////////////////////////////////////////////       OVEREVIEW SECTION CONTINUES     ///////////////////////////////////////////////////////// -->
+	<!--      OVEREVIEW SECTION CONTINUES    -->
 
 		<section class="lightgraybg">
 			<section class="container flex">
@@ -149,7 +153,7 @@
 		</section>
 	</section>
 
-<!-- ///////////////////////////////////////////////////////        USER SURVEY SECTION STARTS      ///////////////////////////////////////////////////////////// -->
+<!--      USER SURVEY SECTION STARTS      -->
 
 	<section id="discovery">
 		<section class="container flex">
@@ -231,7 +235,7 @@
 			</section>
 		</section>
 
-		<!-- ////////////////////////////////////////////////        USER PERSONA SECTION STARTS      ////////////////////////////////////////////////////// -->
+		<!--        USER PERSONA SECTION STARTS      -->
 
 		<section class="lightgraybg">
 			<section class="container flex">
@@ -319,7 +323,7 @@
 			</section>
 		</section>
 
-		<!-- ////////////////////////////////////////////        COMPETITIVE ANALYSIS SECTION STARTS     /////////////////////////////////////////////// -->
+		<!--        COMPETITIVE ANALYSIS SECTION STARTS      -->
 
 		<section class="">
 			<section class="container flex">
@@ -474,7 +478,7 @@
 		</section>
 	</section>
 
-<!-- /////////////////////////////////////////////////////        USER STORY SECTION STARTS      /////////////////////////////////////////////////////////// -->
+<!--        USER STORY SECTION STARTS      -->
 
 	<section id="ia">	
 		<section class="lightgraybg pad-b">
@@ -529,7 +533,7 @@
 			</section>
 		</section>
 
-		<!-- //////////////////////////////////////////////////       USER FLOWS SECTION STARTS     ////////////////////////////////////////////////////// -->
+		<!--      USER FLOWS SECTION STARTS    -->
 
 		<section class="">
 			<section class="container flex bottoms pad-b">
@@ -545,13 +549,14 @@
 
 				<section class="screen-half centers bottoms">
 					<h4>Log in and Sign Up</h4>
-					<a href="bigimg/login.jpg" data-lightbox="flow">
+					<a data-fancybox="gallery" href="bigimg/login.jpg">
 						<img src="bigimg/login.jpg" class="u-flows" alt="Sign In and Sign Up User Flow">
 					</a>
 				</section>
+
 				<section class="screen-half centers bottoms">
 					<h4>Share and Browse</h4>
-					<a href="bigimg/share.jpg" data-lightbox="flow">
+					<a data-fancybox="gallery" href="bigimg/share.jpg">
 						<img src="bigimg/share.jpg" class="u-flows" alt="Share and Browse User Flow">
 					</a>
 				</section>
@@ -559,7 +564,7 @@
 		</section>
 
 
-<!-- /////////////////////////////////////////////////////        WIREFRAMES SECTION STARTS      /////////////////////////////////////////////////////////// -->
+<!--        WIREFRAMES SECTION STARTS       -->
 		<section class="lightgraybg">
 			<section class="container flex pad-b">
 				<section class="wide subphase  bottoms">
@@ -588,44 +593,44 @@
 				</section>
 				<section class="thirds centers bottoms">
 					<h4>Hero Page</h4>
-					<a href="bigimg/herowireframe.jpg" data-lightbox="wire">
+					<a href="bigimg/herowireframe.jpg" data-fancybox="gallery1">
 						<img src="img/wireframehero.png" class="zoompic" alt="Hero Page Wireframe">
 					</a>
 				</section>
 				<section class="thirds centers bottoms">
 					<h4>Plans Page</h4>
-					<a href="bigimg/planswireframe.jpg" data-lightbox="wire">
+					<a href="bigimg/planswireframe.jpg" data-fancybox="gallery1">
 						<img src="img/planwireframe.png" class="zoompic" alt="Plans Page Wireframe">
 					</a>
 				</section>
 				<section class="thirds centers bottoms">
 					<h4>Sign In Page</h4>
-					<a href="bigimg/signinwireframe.jpg" data-lightbox="wire">
+					<a href="bigimg/signinwireframe.jpg" data-fancybox="gallery1">
 						<img src="img/signinwireframe.png" class="zoompic" alt="Sign In Page Wireframe">
 					</a>
 				</section>
 				<section class="thirds centers bottoms">
 					<h4>Sign Up Page</h4>
-					<a href="bigimg/signupwireframe.jpg" data-lightbox="wire">
+					<a href="bigimg/signupwireframe.jpg" data-fancybox="gallery1">
 						<img src="img/signupwireframe.png" class="zoompic" alt="Sign Up Page Wireframe">
 					</a>
 				</section>
 				<section class="thirds centers bottoms">
 					<h4>Dashboard</h4>
-					<a href="bigimg/dashboardwireframe.jpg" data-lightbox="wire">
+					<a href="bigimg/dashboardwireframe.jpg" data-fancybox="gallery1">
 						<img src="img/dashboardwireframe.png" class="zoompic" alt="Dashboard Page Wireframe">
 					</a>
 				</section>
 				<section class="thirds centers bottoms">
 					<h4>Uploading</h4>
-					<a href="bigimg/uploadwireframe.jpg" data-lightbox="wire">
+					<a href="bigimg/uploadwireframe.jpg" data-fancybox="gallery1">
 						<img src="img/uploadcom.png" class="zoompic" alt="Upload Wireframe">
 					</a>
 				</section>
 			</section>
 		</section>
 
-		<!-- ////////////////////////////////////////////////        USER TESTING SECTION STARTS     /////////////////////////////////////////////////////// -->
+		<!--        USER TESTING SECTION STARTS     -->
 
 		<section class="container flex bottoms pad-b">
 			<section class="wide subphase ">
@@ -641,13 +646,13 @@
 
 				<section class="screen-half centers bottoms double">
 					<h4>Ellipsis is too small</h4>
-					<a href="img/badellipsis.jpg" data-lightbox="test">
+					<a href="img/badellipsis.jpg" data-fancybox="gallery2">
 						<img src="img/badellipsis.jpg" class="u-flows" alt="Bad Ellipsis">
 					</a>
 				</section>
 				<section class="screen-half centers bottoms double">
 					<h4>Upload Button is not detailed enough</h4>
-					<a href="img/badupload.jpg" data-lightbox="test">
+					<a href="img/badupload.jpg" data-fancybox="gallery2">
 						<img src="img/badupload.jpg" class="u-flows" alt="Bad Upload Button">
 					</a>
 				</section>
@@ -660,7 +665,7 @@
 		</section>
 	</section>
 
-<!-- ///////////////////////////////////////////////////        BRAND IDENTITY SECTION STARTS       ///////////////////////////////////////////////////////// -->
+<!--        BRAND IDENTITY SECTION STARTS        -->
 	
 	<section id="visual">
 		<section class="lightgraybg">
@@ -681,7 +686,7 @@
 							However after a few feedbacks from testing and surveys, I realized that by making Mikumo’s logo mark into a cloud, it would’ve become too cliché</p>
 					</section>
 					<section class="screen-half bottoms double">
-						<a href="bigimg/initsketchbig.jpeg" data-lightbox="sketch">
+						<a href="bigimg/initsketchbig.jpeg" data-fancybox="gallery3">
 							<img src="img/initsketch.png" class="brandsketch center-block zoompic" alt="Initial Brand Sketches">
 						</a>
 					</section>
@@ -693,7 +698,7 @@
 						<p>Ultimately I decided to go with the  three 135º angled lines, which represents the letter Mi in Japanese Katakana.</p>
 					</section>
 					<section class="screen-half bottoms double">
-						<a href="bigimg/finalsketchbig.jpeg" data-lightbox="sketch">
+						<a href="bigimg/finalsketchbig.jpeg" data-fancybox="gallery3">
 							<img src="img/finalsketch.png" class="brandsketch center-block zoompic" alt="Final Brand Sketches">
 						</a>
 					</section>
@@ -714,7 +719,7 @@
 			</section>
 		</section>
 
-		<!-- ///////////////////////////////////////////////////        HIFI MOCKUP SECTION STARTS     /////////////////////////////////////////////////////// -->
+		<!--        HIFI MOCKUP SECTION STARTS      -->
 
 		<section class="pad-b">
 			<section class="container flex">
@@ -726,38 +731,38 @@
 
 				<section class="thirds centers bottoms">
 					<h4>Hero Page</h4>
-					<a href="bigimg/heroone.jpg" data-lightbox="mockup">
+					<a href="bigimg/heroone.jpg" data-fancybox="gallery4">
 						<img src="img/herohifione.png" class="zoompic" alt="Hero Page Hifi Mockup">
 					</a>
 				</section>
 
 				<section class="thirds centers">
 					<h4>Plans Page</h4>
-					<a href="bigimg/planone.jpg" data-lightbox="mockup">
+					<a href="bigimg/planone.jpg" data-fancybox="gallery4">
 						<img src="img/planshifi.png" class="bottoms zoompic" alt="Plans Page Hifi Mockup">
 					</a>
 
 					<h4>Sign Up Page</h4>
-					<a href="bigimg/signupone.jpg" data-lightbox="mockup">
+					<a href="bigimg/signupone.jpg" data-fancybox="gallery4">
 						<img src="img/signuphifi.png" class="bottoms zoompic" alt="Sign Up Page Hifi Mockup">
 					</a>
 				</section>
 
 				<section class="thirds centers">
 					<h4>Sign In Page</h4>
-					<a href="bigimg/signinone.jpg" data-lightbox="mockup">
+					<a href="bigimg/signinone.jpg" data-fancybox="gallery4">
 						<img src="img/signinhifi.png" class="bottoms zoompic" alt="Sign In Page Hifi Mockup">
 					</a>
 
 					<h4>Dashboard</h4>
-					<a href="bigimg/dashboardone.jpg" data-lightbox="mockup">
+					<a href="bigimg/dashboardone.jpg" data-fancybox="gallery4">
 						<img src="img/dashboardhifi.png" class="bottoms zoompic" alt="Dashboard Page hifi Mockup">
 					</a>
 				</section>
 			</section>
 		</section>
 
-		<!-- ////////////////////////////////////////////////        PREFERENCE TESTING SECTION STARTS      ////////////////////////////////////////////////// -->
+		<!--       PREFERENCE TESTING SECTION STARTS      -->
 
 		<section class="lightgraybg">
 			<section class="container flex">
@@ -769,14 +774,14 @@
 
 				<section class="screen-half centers bottoms pad-b">
 					<h4>Dashboard - A</h4>
-					<a href="bigimg/dashboardone.jpg" data-lightbox="pref">
+					<a href="bigimg/dashboardone.jpg" data-fancybox="gallery5">
 						<img src="img/dasha.png" class="preft center-block zoompic" alt="Final Dashboard">
 					</a>
 				</section>
 
 				<section class="screen-half centers bottom pad-b">
 					<h4>Dashboard - B</h4>
-					<a href="bigimg/dashboardtwo.jpg" data-lightbox="pref">
+					<a href="bigimg/dashboardtwo.jpg" data-fancybox="gallery5">
 						<img src="img/dashb.png" class="preft center-block zoompic" alt="Dashboard Before">
 					</a>
 				</section>
@@ -788,7 +793,7 @@
 		</section>
 	</section>
 
-<!-- /////////////////////////////////////////////////////        CONCLUSION SECTION STARTS      ////////////////////////////////////////////////////////// -->
+<!--       CONCLUSION SECTION STARTS       -->
 
 	<section id="conclusion">
 		<section class="container flex centers bottoms">
@@ -811,7 +816,7 @@
 	</section>
 </main>
 
-<!-- ///////////////////////////////////////////////////////       FOOTER SECTION STARTS      ///////////////////////////////////////////////////////////// -->
+<!--       FOOTER SECTION STARTS      -->
 
 	<footer id="footlight">
 		<section class="socicon screen-half">
@@ -835,6 +840,10 @@
 	</footer>
 	<script src="js/rellax.min.js"></script>
 	<script src="js/lightbox.js"></script>
+	<script src="js/fslightbox.js"></script>
+
+	<script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+
 	<script>
 		var rellax = new Rellax('.rellax');
 	</script>

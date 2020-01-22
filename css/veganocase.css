@@ -83,7 +83,7 @@ ul {
 }
 
 a.nav-link {
-	color: white !important;
+	color: #323232 !important;
 	transition: .3s ease;
 	text-align: center;
 }
@@ -93,7 +93,7 @@ a.nav-link.active {
 }
 
 .header {
-	background-color: #222;
+	background-color: white;
 	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
 	position: fixed;
 	width: 100%;
@@ -105,7 +105,7 @@ a.nav-link.active {
 	display: block;
 	padding: 10px;
 	text-decoration: none;
-	color: white;
+	color: #323232;
 	font-size: 18px;
 	font-weight: 300;
 }
@@ -151,7 +151,7 @@ a.nav-link.active {
 }
   
 .header .menu-icon .navicon {
-	background: white;
+	background: #6cb019;
 	display: block;
 	height: 2px;
 	position: relative;
@@ -161,7 +161,7 @@ a.nav-link.active {
   
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-	background: white;
+	background: #6cb019;
 	content: '';
 	display: block;
 	height: 100%;
@@ -213,7 +213,7 @@ a.nav-link.active {
 
 .progress-bar {
 	height: 4px;
-	background: linear-gradient(270deg, #6cb019, #3E4E2A);
+	background: linear-gradient(270deg, #429422, #94D343);
 	background-size: 400% 400%;
 	width: 0%;
 	-webkit-animation: barGradient 4s ease infinite !important;
@@ -224,7 +224,7 @@ a.nav-link.active {
 .progress-container {
 	width: 100%;
 	height: 4px;
-	background-color: #222;
+	background-color: white;
 	position: fixed;
 	top: 61px;
 	left: 0px;
@@ -241,7 +241,7 @@ a.nav-link.active {
 	top: 70vh;
 	padding: 10px 40px;
 	color: white !important;
-	background-color: #6cb019;
+	background-color: #429422;
 	text-align: center !important;
 	border-radius: 7px;
 	text-transform: uppercase;
@@ -254,7 +254,7 @@ a.nav-link.active {
 	width: 100%;
 	height: 100vh;
 	position: absolute;
-	background: url(../parallaxBG/mikumohero.png) no-repeat 50% 50%;
+	background: url(../img/veganohero.png) no-repeat 50% 50%;
 	background-size: cover;
 }
 
@@ -276,7 +276,7 @@ a.nav-link.active {
 	padding: 5%;
 	font-weight: 300;
 	text-transform: none;
-	color: white;
+	color: #323232;
 	width: 80%;
 	margin: auto !important;
 	line-height: 50px;
@@ -413,10 +413,9 @@ h3.ovdesc{
 }
 
 .dashboards {
-	box-shadow: #555 2px 2px 20px;
 	text-align: center;
-	margin: 40px 15%;
-	width: 70%;
+	margin: 40px auto;
+	width: 100%;
 }
 
 .swot {
@@ -429,7 +428,6 @@ h3.ovdesc{
 	width: 100%;
 	height: 100%;
 	border-top: solid #6cb019 1px;
-	background-color: #222 !important;
 	color: white !important;
 }
 
@@ -438,14 +436,13 @@ h3.ovdesc{
 	text-align: right !important;
 	padding-right: 20px;
 	font-weight: 300;
-	color: white;
+	color: #323232;
 }
 
 .design {
 	display: inline-block;
 	text-align: right !important;
 	float: right;
-	background-color: #222;
 }
 
 .double {
@@ -473,7 +470,7 @@ h3.ovdesc{
 .pfooter {
 	font-size: 13px;
 	text-align: left;
-	color: white !important;
+	color: #323232 !important;
 	display: inline-block;
 	padding: 0 20px;
 	font-weight: 300;
@@ -609,6 +606,11 @@ a.nav-link:hover {
 	.thirds { 
 		width: 33.333%; 
 	}
+
+	.u_story {
+		width: 75%;
+		margin: auto;
+	}
 }
 
 @media (max-width: 767px) {
@@ -682,7 +684,7 @@ a.nav-link:hover {
 
 	.header .menu-btn:checked ~ .menu {
 		justify-content: center;
-		background-color: rgba(34,34,34, .9);
+		background-color: rgba(255,255,255, .9);
 	}
 	
 }
@@ -746,12 +748,12 @@ a.nav-link:hover {
 }
 
 .brandspec {
-	width: 60%;
+	width: 70%;
 	margin-left: 30px;
 }
 
 .brandcolor {
-	width: 50%;
+	width: 70%;
 }
 
 .caseh3 {
@@ -793,8 +795,8 @@ a.nav-link:hover {
 }
 
 .compLogo {
-	width: 10%;
-	margin-bottom: 20px;
+	width: 25%;
+	margin-top: 20px;
 }
 
 .h3alt{
@@ -902,5 +904,9 @@ p.persCompP {
 }
 
 .wiresketch {
+	width: 60%;
+}
+
+.wiredig {
 	width: 100%;
 }

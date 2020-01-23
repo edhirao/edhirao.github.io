@@ -15,7 +15,6 @@ body {
 }
 
 h1, h2, h3 {
-	text-align: center;
 	text-transform: uppercase;
 	margin-block-start: 0;
     margin-block-end: 0;
@@ -26,12 +25,11 @@ h1 {
 }
 
 h2 {
-	font-size: 40px;
-	font-weight: 300;
+	font-size: 30px;
 }
 
 h3 {
-	font-size: 30px;
+	font-size: 24px;
 	font-weight: 600;
 }
 
@@ -87,6 +85,7 @@ ul {
 
 a.nav-link {
 	color: #323232 !important;
+	text-transform: uppercase;
  	transition: all .35s ease;
 }
 
@@ -240,18 +239,10 @@ a.nav-link {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	top: 130%;
+	top: 100%;
 	z-index: 2;
 }
 
-
-#lighthero {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	background: url(parallaxBG/japandark.jpg) no-repeat 50% 50%;
-	background-size: cover;
-}
 
 .h1-secondline {
 	font-size: 100px;
@@ -330,8 +321,8 @@ a.magnific:focus {
 }
 
 .active {
-	text-decoration: underline orange !important;
-	font-weight: 400 !important;
+	/* text-decoration: underline orange !important; */
+	font-weight: 600 !important;
 }
 
 .bottoms {
@@ -353,7 +344,6 @@ a.magnific:focus {
 	border: solid #323232 1px;
 	color: #323232;
 	border-radius: 4px;
-	text-transform: uppercase;
 	transition: .35s ease;
 	cursor: pointer;
 	padding-left: 60px;
@@ -427,27 +417,44 @@ a.magnific:focus {
 
 /********** PROJECT SECTION *****************/
 
+
+.abouth2{
+	width: 40%;
+	padding-top: 100px;
+    padding-bottom: 10px;
+	border-bottom: 4px solid #323232;
+	margin-bottom: 40px;
+
+}
+
 .busybuscase {
 	width: 50%;
 	float: right;
 }
 
+.casedesc, .veganodesc {
+	width: 90%;
+	margin: auto 5% auto 5%;
+}
+
+
 .casehead {
 	text-align: left;
-	margin-bottom: 20px;
-	text-transform: none;
 	font-weight: 700;
-	font-size: 40px;
+	font-size: 24px;
+	border-bottom: #323232 solid 4px;
+	padding-bottom: 4px;
+	width: 40%;
 }
 
 .caseh2{
-	width: 50%;
+	width: 30%;
 	padding-top: 100px;
     padding-bottom: 10px;
-	border-bottom: 2px solid #323232;
-	margin:auto;
+	border-bottom: 4px solid #323232;
 	margin-top: 100px;
 }
+
 
 .caseh2alt {
 	width: 50%;
@@ -461,6 +468,14 @@ a.magnific:focus {
 	box-shadow: #323232 10px 10px 20px;
 }
 
+.contacth2 {
+    padding-bottom: 10px;
+	border-bottom: 4px solid #323232;
+	margin: auto;
+	width: 63%;
+	margin: 200px auto 60px auto !important;
+}
+
 .greenbox {
 	height: 100%;
 	width: 40%;
@@ -468,13 +483,13 @@ a.magnific:focus {
 	float: left;
 }
 
-.mikumocase {
+.mikumocase, .veganocase {
 	width: 100%;
 	float: left:
 }
 
 .casep {
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 	text-align: left;
 }
 
@@ -483,6 +498,10 @@ a.magnific:focus {
 	width: 60%;
 	height: 1px;
 	background: #505050;
+}
+
+.vegano {
+
 }
 
 /*************** ABOUT SECTION ****************/
@@ -497,10 +516,10 @@ a.magnific:focus {
 }
 
 .bioline {
-	margin: 10px auto 30px 0;
-	width: 100%;
+	margin: 40px auto 20px 0;
+	width: 70%;
 	padding-bottom: 10px;
-	border-bottom: 1px #323232 solid;
+	border-bottom: 4px #323232 solid;
 }
 
 .bio-subh {
@@ -514,8 +533,8 @@ a.magnific:focus {
 }
 
 .shakentake {
-	width: 80%;
-	margin: auto;
+	width: 60%;
+	margin: auto 20%;
 	margin-bottom: 50px;
 	min-height: 500px !important;
 }
@@ -663,7 +682,7 @@ a.magnific:focus {
 }
 
 .subphase {
-	text-align: center;
+	text-align: left;
 	margin: 100px auto !important;
 }
 
@@ -731,6 +750,23 @@ a.nav-link:hover {
 		text-align: left;
 	}
 
+	.mikumocase {
+		width: 90%;
+		float: left;
+		/* margin-left: 10%;  */
+	}
+
+	.veganocase {
+		width: 90%;
+		float: left;
+		margin-left: 15%; 
+	}
+
+	.veganodesc {
+		width: 90%;
+		margin: auto 0% auto 15%;
+	}
+
 	.lefty {
 		text-align: left !important;
 	}
@@ -784,6 +820,11 @@ a.nav-link:hover {
 
 	.ctobtn {
 		margin-bottom: 100px;
+	}
+
+	.contacth2 {
+		margin: auto;
+		width: 85%;
 	}
 
 	.form-group {

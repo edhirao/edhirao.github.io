@@ -973,7 +973,7 @@ a.nav-link:hover {
 	}
 
 	.biglogo {
-		top: 120%;
+		top: 200%;
 	}
 }
 
@@ -1010,7 +1010,8 @@ a.nav-link:hover {
 	0% {
 	  -webkit-transform: rotate(-540deg) scale(0);
 			  transform: rotate(-540deg) scale(0);
-	  opacity: 0;
+		
+	  	opacity: 0;
 	}
 	100% {
 	  -webkit-transform: rotate(0) scale(1);
@@ -1018,6 +1019,7 @@ a.nav-link:hover {
 	  opacity: 1;
 	}
   }
+  
   @keyframes swirl-in-fwd {
 	0% {
 	  -webkit-transform: rotate(-540deg) scale(0);
@@ -1061,26 +1063,30 @@ a.nav-link:hover {
 
 @-webkit-keyframes text-focus-in {
 	0% {
-	  -webkit-filter: blur(12px);
-			  filter: blur(12px);
-	  opacity: 0;
+	  	-webkit-filter: blur(12px);
+			filter: blur(12px);
+		-webkit-opacity: 0;
+	  		opacity: 0;
 	}
 	100% {
-	  -webkit-filter: blur(0px);
-			  filter: blur(0px);
-	  opacity: 1;
+	  	-webkit-filter: blur(0px);
+			filter: blur(0px);
+		-webkit-opacity: 1;
+	  		opacity: 1;
 	}
 }
 @keyframes text-focus-in {
 	0% {
-	  -webkit-filter: blur(12px);
-			  filter: blur(12px);
-	  opacity: 0;
+	  	-webkit-filter: blur(12px);
+			filter: blur(12px);
+		-webkit-opacity: 0;
+	  		opacity: 0;
 	}
 	100% {
-	  -webkit-filter: blur(0px);
-			  filter: blur(0px);
-	  opacity: 1;
+	 	-webkit-filter: blur(0px);
+			filter: blur(0px);
+		-webkit-opacity: 1;
+	  		opacity: 1;
 	}
 }
 

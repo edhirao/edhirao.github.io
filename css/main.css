@@ -936,7 +936,7 @@ a.nav-link:hover {
 	}
 }
 
-@media (max-width: 580px) {
+@media only screen and (max-width: 580px) {
 
 	.h1-secondline {
 		font-size: 36px;
@@ -955,12 +955,13 @@ a.nav-link:hover {
 	}
 
 	.uxdesign {
-		font-size: 18px;
 		top: 45%;
 	}
 
 	.quickme {
 		text-transform: none;
+		font-size: 14px;
+		line-height: 2em;
 	}
 
 	.chevron {
@@ -970,9 +971,9 @@ a.nav-link:hover {
 		width: 80%;
 		margin: auto 10%;
 	}
-	
-	.quickme {
-		font-size: 18px;
+
+	.biglogo {
+		top: 120%;
 	}
 }
 

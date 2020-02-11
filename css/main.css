@@ -972,6 +972,10 @@ a.nav-link:hover {
 		margin: auto 10%;
 	}
 
+	.biglogo {
+		top: 140%;
+	}
+
 }
 
 /********** KEYFRAMES *************/

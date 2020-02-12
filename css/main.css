@@ -10,12 +10,11 @@ a {
 
 body {
 	margin: 0;
-	font-family: "Raleway", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	background-color: white;
 }
 
 h1, h2, h3 {
-	text-transform: uppercase;
 	margin-block-start: 0;
     margin-block-end: 0;
 }
@@ -29,7 +28,7 @@ h2 {
 }
 
 h3 {
-	font-size: 24px;
+	font-size: 22.5px;
 	font-weight: 600;
 }
 
@@ -62,7 +61,8 @@ p {
 	line-height: 1.8em;
 	margin-bottom: 0;
 	z-index: 1;
-	color: #323232
+	color: #323232;
+	font-weight: 300;
 }
 
 ul {
@@ -84,7 +84,6 @@ ul {
 }
 
 a.nav-link {
-	color: #323232 !important;
 	text-transform: uppercase;
  	transition: all .35s ease;
 }
@@ -210,7 +209,7 @@ a.nav-link {
 
 .progress-bar {
 	height: 4px;
-	background: linear-gradient(270deg, #7C00FF, #D50ED6);
+	background: #B386DC;
 	background-size: 400% 400%;
 	width: 0%;
 	-webkit-animation: barGradient 4s ease infinite !important;
@@ -315,6 +314,7 @@ a.magnific:focus {
 .active {
 	/* text-decoration: underline orange !important; */
 	font-weight: 600 !important;
+	color: #B386DC !important;
 }
 
 .bottoms {
@@ -387,10 +387,6 @@ a.magnific:focus {
 	background: #505050;
 }
 
-.quickme {
-	font-weight: 300;
-	text-transform: none;
-}
 
 .separator {
 	margin: auto;
@@ -436,7 +432,7 @@ a.magnific:focus {
 
 .casehead {
 	text-align: left;
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 24px;
 	padding-bottom: 4px;
 	width: 40%;
@@ -464,10 +460,10 @@ a.magnific:focus {
 }
 
 .contacth2 {
+	text-align: center;
     padding-bottom: 10px;
-	margin: auto;
-	width: 63%;
-	margin: 200px auto 60px auto !important;
+	margin: 200px auto 40px auto !important;
+
 }
 
 .greenbox {
@@ -502,14 +498,6 @@ a.magnific:focus {
 
 /*************** ABOUT SECTION ****************/
 
-.about_section_text {
-	width: 55%;
-}
-
-.about_section_images {
-	width: 45%;
-}
-
 
 .biobox {
 	width: 100%;
@@ -517,13 +505,12 @@ a.magnific:focus {
 }
 
 .bio-p {
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 }
 
 .bioline {
-	margin: 40px auto 20px 0;
+	margin: 40px auto auto 0;
 	width: 70%;
-	padding-bottom: 10px;
 }
 
 .bio-subh {
@@ -540,6 +527,19 @@ a.magnific:focus {
 	width: 75%;
 	margin-top: 100px !important;
 	margin: auto;
+}
+
+.biome {
+	width: 65%;
+	margin: auto;
+}
+
+.arch {
+	width: 100%;
+}
+
+.projects {
+	margin-bottom: 50px;
 }
 
 /*************** RESUME SECTION ************/
@@ -626,7 +626,7 @@ a.magnific:focus {
 #footlight {
 	width: 100%;
 	height: 100%;
-	border-top: solid #323232 1px;
+	border-top: solid #B386DC 1px;
 	background-color: white;
 	color: #323232 !important;
 }
@@ -693,9 +693,7 @@ a:hover,
 }
 
 a.nav-link:hover {
-	background: -webkit-linear-gradient(#7C00FF, #D50ED6);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color: #B386DC !important;
 }
 
 .ctobtn:hover {
@@ -722,6 +720,9 @@ a.nav-link:hover {
 	transform: scale(1.1);
 }
 
+.quickme{
+	font-weight: 300;
+}
 /***************** MEDIA QUERY ***************/
 
 @media only screen and (min-width: 990px) {
@@ -735,9 +736,8 @@ a.nav-link:hover {
 	}
 
 	.meandnikki {
-		width: 80%;
-		margin: auto auto auto 20%;
-		margin-bottom: 50px;
+		width: 50%;
+		margin: 100px 25% 50px 25%;
 	}
 	
 	.shakentake {
@@ -823,6 +823,10 @@ a.nav-link:hover {
 	.biobox {
 		width: 100%;
 		margin: auto;
+	}
+
+	.biome {
+		width: 90%;
 	}
 
 	.caseimg {
